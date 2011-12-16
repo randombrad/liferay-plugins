@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="ykQcq8P8" name="item-group-name" type="text" index-type="text">
+		<dynamic-content><![CDATA[Section]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="jXgRF1Kv" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="Za7Ez3wQ" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[#]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="yAodDMq1" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<p>
+		We are devoted to solutions that cut down the impact we have on our planet.</p>
+	<a class="read-more" href="#"><span>Read more</span></a></div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Sustainability]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="9DfOfwlS" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="gbmmQdeC" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[#]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="RfqKsrBp" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<p>
+		We are devoted to solutions that cut down the impact we have on our planet.</p>
+	<a class="read-more" href="#"><span>Read more</span></a></div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[LEED CERTIFIED]]></dynamic-content>
+	</dynamic-element>
+</root>

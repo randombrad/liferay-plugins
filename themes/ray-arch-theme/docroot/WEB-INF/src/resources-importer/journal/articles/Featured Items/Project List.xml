@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="tjADRJJ2" name="item-group-name" type="text" index-type="text">
+		<dynamic-content><![CDATA[Project List]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="ASt8d9Bz" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="1B0OI7hJ" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="SDJxa5bj" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_1.jpg$]" style="width: 140px; height: 97px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 1</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 1]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="SV6Si9Io" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="FF4daXHU" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="w87VKqjJ" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_2.jpg$]" style="width: 140px; height: 97px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 2</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 2]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="g2og46vf" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="m0pgnDXW" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="2qxLj2C5" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_3.jpg$]" style="width: 140px; height: 97px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 3</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 3]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="4T6Gb07J" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="j31KpNLX" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="g9uyU0GR" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_4.jpg$]" style="width: 140px; height: 97px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 4</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 4]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="6AewyoxJ" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="wgqHZwIK" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="e0JM1HmN" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_1.jpg$]" style="width: 140px; height: 97px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 5</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 5]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="Vdcuk1xo" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="KItZ7urY" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="bkD8hGZS" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_1.jpg$]" style="width: 140px; height: 97px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 6</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 6]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="3vhoAFO4" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="SIIh0euF" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="7iLKItkD" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_1.jpg$]" style="width: 140px; height: 97px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 7</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 7]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="UqzlOYYd" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="zOSE06B6" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="wAGX0EsA" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_1.jpg$]" style="width: 140px; height: 97px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 8</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 8]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="Jtmu4bjt" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="VTjkSQEq" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="SrJPZEt1" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_1.jpg$]" style="width: 140px; height: 97px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 9</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 9]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="A3EF8zlc" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="yFlPSrgH" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="6hyOICw4" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_1.jpg$]" style="width: 140px; height: 97px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 10</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 10]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="gGMV0viu" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="cqwmGSGx" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="lSALHTgx" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_1.jpg$]" style="width: 221px; height: 154px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 11</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 11]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="KvFNE44E" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="EyIf69ms" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="iEZUAZHU" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_1.jpg$]" style="width: 221px; height: 154px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 12</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Project 12]]></dynamic-content>
+	</dynamic-element>
+</root>

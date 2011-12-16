@@ -1,0 +1,351 @@
+{
+	"layoutTemplateId": "1-2-columns",
+	"layouts": [
+		{
+			"name": "home",
+			"friendlyURL": "/home",
+			"layoutTemplateId": "2-2-columns",
+			"columns": [
+				[
+					"Carousel.xml"
+				],
+				[
+					"Side Featured Content 1.xml",
+					"Side Featured Content 2.xml"
+				],
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Home News.xml",
+							"groupId": "${groupId}",
+							"portletSetupCss": {
+								"advancedData": {
+									"customCSSClassName": "home-news"
+								}
+							}
+						}
+					}
+				],
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Home Featured Project.xml",
+							"groupId": "${groupId}",
+							"portletSetupCss": {
+								"advancedData": {
+									"customCSSClassName": "featured-project"
+								}
+							}
+						}
+					}
+				]
+			]
+		},
+		{
+			"name": "Areas of Work",
+			"friendlyURL": "/areas-of-work",
+			"layoutTemplateId": "1_2_columns_i",
+			"layouts": [
+				{
+					"name": "Architecture",
+					"friendlyURL": "/architecture",
+					"layoutTemplateId": "columns-2_10-90",
+					"layouts": [
+						{
+							"name": "Project 1",
+							"friendlyURL": "/project-1",
+							"layoutTemplateId": "columns-2_10-90",
+							"columns": [
+								[
+									{
+										"portletId": "71_INSTANCE_${groupId}",
+										"portletPreferences": {
+											"displayStyle": "[custom]"
+										}
+									}
+								],
+								[
+									"Project 1.html",
+									"Project 1 Content.xml"
+								]
+							]
+						}
+					],
+					"columns": [
+						[
+							{
+								"portletId": "71_INSTANCE_${groupId}",
+								"portletPreferences": {
+									"displayStyle": "[custom]"
+								}
+							}
+						],
+						[
+							{
+								"portletId": "56",
+								"portletPreferences": {
+									"articleId": "Project List.xml",
+									"groupId": "${groupId}",
+									"portletSetupCss": {
+										"advancedData": {
+											"customCSSClassName": "project-list"
+										}
+									}
+								}
+							}
+						]
+					]
+				},
+				{
+					"name": "Planning",
+					"friendlyURL": "/planning",
+					"layoutTemplateId": "columns-2_10-90",
+					"columns": [
+						[
+							{
+								"portletId": "71_INSTANCE_${groupId}",
+								"portletPreferences": {
+									"displayStyle": "[custom]"
+								}
+							}
+						],
+						[
+							{
+								"portletId": "56",
+								"portletPreferences": {
+									"articleId": "Project List.xml",
+									"groupId": "${groupId}",
+									"portletSetupCss": {
+										"advancedData": {
+											"customCSSClassName": "project-list"
+										}
+									}
+								}
+							}
+						]
+					]
+				},
+				{
+					"name": "Interiors",
+					"friendlyURL": "/interiors",
+					"layoutTemplateId": "columns-2_10-90",
+					"columns": [
+						[
+							{
+								"portletId": "71_INSTANCE_${groupId}",
+								"portletPreferences": {
+									"displayStyle": "[custom]"
+								}
+							}
+						],
+						[
+							{
+								"portletId": "56",
+								"portletPreferences": {
+									"articleId": "Project List.xml",
+									"groupId": "${groupId}",
+									"portletSetupCss": {
+										"advancedData": {
+											"customCSSClassName": "project-list"
+										}
+									}
+								}
+							}
+						]
+					]
+				},
+				{
+					"name": "Landscapes",
+					"friendlyURL": "/landscapes",
+					"layoutTemplateId": "columns-2_10-90",
+					"columns": [
+						[
+							{
+								"portletId": "71_INSTANCE_${groupId}",
+								"portletPreferences": {
+									"displayStyle": "[custom]"
+								}
+							}
+						],
+						[
+							{
+								"portletId": "56",
+								"portletPreferences": {
+									"articleId": "Project List.xml",
+									"groupId": "${groupId}",
+									"portletSetupCss": {
+										"advancedData": {
+											"customCSSClassName": "project-list"
+										}
+									}
+								}
+							}
+						]
+					]
+				},
+			],
+			"columns": [
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Work Areas of Work.xml",
+							"groupId": "${groupId}",
+							"portletSetupCss": {
+								"advancedData": {
+									"customCSSClassName": "areas-of-work"
+								}
+							}
+						}
+					}
+				],
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Work Section.xml",
+							"groupId": "${groupId}",
+							"portletSetupCss": {
+								"advancedData": {
+									"customCSSClassName": "work-section"
+								}
+							}
+						}
+					}
+				],
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Home Featured Project.xml",
+							"groupId": "${groupId}",
+							"portletSetupCss": {
+								"advancedData": {
+									"customCSSClassName": "featured-project"
+								}
+							}
+						}
+					}
+				]
+			]
+		},
+		{
+			"name": "Philosophy",
+			"friendlyURL": "/philosophy",
+			"columns": [
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Philosophy Why We Work.xml",
+							"groupId": "${groupId}",
+							"portletSetupCss": {
+								"advancedData": {
+									"customCSSClassName": "why-we-work"
+								}
+							}
+						}
+					}
+				],
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "Philosophy Defining Projects.xml",
+							"groupId": "${groupId}",
+							"portletSetupCss": {
+								"advancedData": {
+									"customCSSClassName": "defining-projects"
+								}
+							}
+						}
+					}
+				]
+			]
+		},
+		{
+			"name": "About Us",
+			"friendlyURL": "/about-us",
+			"columns": [
+				[
+					{
+						"portletId": "56",
+						"portletPreferences": {
+							"articleId": "About Us.xml",
+							"groupId": "${groupId}",
+							"portletSetupCss": {
+								"advancedData": {
+									"customCSSClassName": "about-us"
+								}
+							}
+						}
+					}
+				]
+			]
+		},
+		{
+			"name": "Blog",
+			"friendlyURL": "/blog",
+			"layoutTemplateId": "2_columns_iii",
+			"columns": [
+				[
+					{
+						"portletId": "115",
+						"portletPreferences": {
+							"portletSetupTitle": "Blogs"
+						}
+					}
+				],
+				[
+					{
+						"portletId": "114"
+					}
+				]
+			]
+		},
+		{
+			"name": "More Information",
+			"friendlyURL": "/more-information",
+			"layoutTemplateId": "3_columns",
+			"hidden": "true",
+			"columns": [
+				[
+				],
+				[
+					{
+						"portletId": "1_WAR_webformportlet_INSTANCE_${groupId}",
+						"portletPreferences": {
+							"fieldType1": "text",
+							"fieldLabel1": "First Name",
+							"fieldType2": "text",
+							"fieldLabel2": "Last Name",
+							"fieldType3": "text",
+							"fieldLabel3": "Address 1",
+							"fieldType4": "text",
+							"fieldLabel4": "Address 2",
+							"fieldType5": "text",
+							"fieldLabel5": "City",
+							"fieldType6": "text",
+							"fieldLabel6": "Region",
+							"fieldType7": "text",
+							"fieldLabel7": "Postal Code",
+							"fieldType8": "text",
+							"fieldLabel8": "Country",
+							"fieldType9": "text",
+							"fieldLabel9": "Email",
+							"title" : "Request More Information",
+							"description" : "",
+					        "portletSetupCss": {
+								"advancedData": {
+									"customCSSClassName": "make-appointment"
+								}
+							}
+						}
+					}
+				]
+			]
+		}
+	]
+}

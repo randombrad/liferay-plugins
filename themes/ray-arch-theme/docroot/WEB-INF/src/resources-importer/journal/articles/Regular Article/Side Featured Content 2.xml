@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="7AbPRvpw" name="show-display-date" type="boolean" index-type="">
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="sP4nNUPX" name="article-title" type="text" index-type="text">
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="vARf0i5V" name="article-main-image" type="image" index-type="text">
+		<dynamic-element instance-id="7CnfS5Eg" name="preview-image" type="image" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=side_2.png$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="m9QVeOnG" name="article-body" type="text_area" index-type="text">
+		<dynamic-content><![CDATA[<h3>
+	LEED CERTIFIED</h3>
+<p>
+	As certified LEED architects we will guide your project toward LEED Certification.</p>
+]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="mjSH45tu" name="show-author" type="boolean" index-type="text">
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+</root>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="4wkB721V" name="item-group-name" type="text" index-type="text">
+		<dynamic-content><![CDATA[Areas of Work]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="BMd0tvoK" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="mJOSCk6n" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="JDqy0foI" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./architecture"> <img alt="" src="[$FILE=area_of_work_1.jpg$]" style="width: 220px; height: 152px; " /> </a>
+	<h3>
+		<a href="./architecture">Architecture</a></h3>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="2EWxjQI5" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="5LBWUh56" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="DOBzGxCN" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./planning"><img alt="" src="[$FILE=area_of_work_2.jpg$]" style="width: 220px; height: 152px; " /></a>
+	<h3>
+		<a href="./planning"> Planning</a></h3>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="tBHc202K" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="jRmLoNLZ" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="sz3o58pf" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./interiors"><img alt="" src="[$FILE=area_of_work_3.jpg$]" style="width: 220px; height: 152px; " /></a></div>
+<h3>
+	<a href="./interiors"> Interiors</a></h3>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="A4ydKqaY" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="fGuPk0pO" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="NMg6vMwu" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./landscapes"><img alt="" src="[$FILE=area_of_work_4.jpg$]" style="width: 220px; height: 153px; " /></a>
+	<h3>
+		<a href="./landscapes"> Landscapes</a></h3>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+</root>

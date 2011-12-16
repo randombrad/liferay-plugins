@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="R5huORCW" name="item-group-name" type="text" index-type="text">
+		<dynamic-content><![CDATA[Defining Projects]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="Lc0N6itu" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="xPtSn4GC" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="R58VjcWK" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_2.jpg$]" style="width: 221px; height: 153px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 1</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Defining Projects]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="1Oh43a5B" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="Jy2qP6nj" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="3hfdfecy" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_3.jpg$]" style="width: 221px; height: 153px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 2</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Defining Projects]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="Jf1h8Bbu" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="YF0oZUjG" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="MjqwhG6R" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<a href="./project-1"> <img alt="" src="[$FILE=area_of_work_4.jpg$]" style="width: 220px; height: 153px; " /></a>
+	<h4>
+		<a href="./project-1"> Project 3</a></h4>
+	<p>
+		<a class="download" href="">Download case study</a></p>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Defining Projects]]></dynamic-content>
+	</dynamic-element>
+</root>

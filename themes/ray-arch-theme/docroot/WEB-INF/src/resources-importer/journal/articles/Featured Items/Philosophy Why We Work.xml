@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="NzNO1x9z" name="item-group-name" type="text" index-type="text">
+		<dynamic-content><![CDATA[Why We Work]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="8qhnLeT2" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="PNwlijy7" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="sFQbpdr2" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div class="featured-wrapper">
+	<img alt="" src="[$FILE=why_we_work.jpg$]" style="width: 460px; height: 190px; " />
+	<div class="featured-content">
+		<p>
+			Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna.In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla</p>
+		<p>
+			orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>
+		<p>
+			<a class="download" href="./more-information">Request more information</a></p>
+	</div>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Why We Work]]></dynamic-content>
+	</dynamic-element>
+</root>

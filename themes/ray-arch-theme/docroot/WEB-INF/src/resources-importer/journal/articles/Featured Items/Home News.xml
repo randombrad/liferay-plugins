@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="bn4vWg93" name="item-group-name" type="text" index-type="text">
+		<dynamic-content><![CDATA[News]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="H0VrzwlN" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="l0X0SRUz" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[#]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="N8ai4gpG" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<span class="date">Nov. 17th 2011</span> <a class="read-more" href="#"><span>Read more</span></a></div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[RAY/ARCH starts renovations on Montifino Project.]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="WkURhErk" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="vKlAnO8q" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[#]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="3yAX8WCa" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<span class="date">Nov. 17th 2011</span> <a class="read-more" href="#"><span>Read more</span></a></div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[RAY/ARCH starts renovations on Montifino Project.]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="M0Cdsuxy" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="889aZifA" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[#]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="krkctMeM" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div>
+	<span class="date">Nov. 17th 2011</span> <a class="read-more" href="#"><span>Read more</span></a></div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[RAY/ARCH starts renovations on Montifino Project.]]></dynamic-content>
+	</dynamic-element>
+</root>

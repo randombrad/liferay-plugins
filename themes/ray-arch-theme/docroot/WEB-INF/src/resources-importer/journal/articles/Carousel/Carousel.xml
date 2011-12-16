@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="eM33Ddj9" name="duration" type="list" index-type="">
+		<dynamic-content><![CDATA[5]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="eGIydRA4" name="height" type="text" index-type="">
+		<dynamic-content><![CDATA[361]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="CRgUldE9" name="width" type="text" index-type="">
+		<dynamic-content><![CDATA[700]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="r9jCZGsJ" name="content" type="text_area" index-type="text">
+		<dynamic-content><![CDATA[<p>
+	<img alt="" src="[$FILE=carousel_1.jpg$]" style="width: 700px; height: 361px; " /></p>
+]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="sTqCdecC" name="content" type="text_area" index-type="text">
+		<dynamic-content><![CDATA[<p>
+	<img alt="" src="[$FILE=carousel_2.jpg$]" style="width: 700px; height: 360px; " /></p>
+]]></dynamic-content>
+	</dynamic-element>
+</root>

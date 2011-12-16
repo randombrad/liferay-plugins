@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="HkV0BBNo" name="show-display-date" type="boolean" index-type="">
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="Q5RQvtF5" name="article-title" type="text" index-type="text">
+		<dynamic-content><![CDATA[Project 1]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="S9DBluVD" name="article-main-image" type="image" index-type="text">
+		<dynamic-element instance-id="8cRVYHkD" name="preview-image" type="image" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="0gHmq4Qp" name="article-body" type="text_area" index-type="text">
+		<dynamic-content><![CDATA[<h4>
+	Client Name</h4>
+<p>
+	Fugia volorrum hilis as volores dolum, nostrupta sunt que moles eate volorem odiorep elisquam, ea doloratur, sit in nonsequas nosandi tiorem que am, ea voloritam fugiae odio. Ape doluptaque peribus eum etus, volupti quibearum qui ommolup taturione dolorum eos consedi de lam eum qui cusande ndipsam fugiam, etur? Tem sapita nonsequist evelibea non coriatus ersperum in consequo quoditatem faccus, aut eaque verum doluptatem quissundam, susam, ulpa nulparumene sim sam, tectore as doluptatem re nem hiliquid quatur, nonsequam nest et ut venis quam, si si repedi quid modis dollab is eos ne sequibust lit ma ilibus eruntotae. Et quo et offic tem vid molore, alit ipsantiunt aut quam que enditio que cum qui volupta temporem erumque re es unt, iniende ribusa asperat iisquis ut ut officta nonsed et estioriora viti ulla parum dolo berrum quis rehent expliqu aspernatio ium nim es eatureh entinve nimus.</p>
+<p>
+	Gitaessum reptaquatis explaudam sint volecatus ellabo. Ibus eumquib usciis rest, nonsequi autenimus eos expliquam volum quam ab imilign isitae nonecat ectasperunt, od quas solor si doluptur mod moluptatque lant postis sunti doluptu mquodipsam ut ius. Quiam ium nusant fugitem culparciet eic toriandenime nonsenihit aces aut rerum fugit, utemporerum serit et explande consequi ressi dis ex et eos dolorro reprem sinisit et ut aut iurendis restibusdae lis conse sum lisintum nullist, ipsum ipsa que laudi consendicia quis ut eaqui sandund ipsanis seque debitem ad mint quod quam dolo est mosanitas voloreperum inulparciati ommos ra voluptasin etusdamet dolorae peria secerspel id eatibus, officte v</p>
+]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="J5Vr9C89" name="show-author" type="boolean" index-type="text">
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+</root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="e9aMfIR4" name="item-group-name" type="text" index-type="text">
+		<dynamic-content><![CDATA[Featured Project]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="6J4vhnhj" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="O4uaRPnb" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[#]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="a0eimXzQ" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div class="featured-wrapper">
+	<img alt="" src="[$FILE=featured_project.jpg$]" style="width: 220px; height: 128px; " />
+	<div class="featured-content">
+		<h3>
+			the shop</h3>
+		<p>
+			How do you make a store stick out when it is surrounded by other stores? Instead of trying to compete with the endless budgets of other stores we worked on making this store honest and simple with lots of natural light and bare structures. Instead of trying to compete with the endless budgets of other stores we worked on making this store honest and simple with lots of natural light and bare structures. Download the shop's case study Read more</p>
+		<a class="download" href="./more-information"><span>Request more information</span></a> <a class="read-more" href="#"><span>Read more</span></a></div>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+</root>

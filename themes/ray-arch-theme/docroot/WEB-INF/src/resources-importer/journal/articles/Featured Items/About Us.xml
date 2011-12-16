@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="1ibiiYfa" name="item-group-name" type="text" index-type="text">
+		<dynamic-content><![CDATA[About Us]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="MUq0McjK" name="item-title" type="text" index-type="text">
+		<dynamic-element instance-id="f2zQIbHk" name="item-link" type="text" index-type="text">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element instance-id="F0vs0sJx" name="item-body" type="text_area" index-type="text">
+			<dynamic-content><![CDATA[<div class="featured-wrapper">
+	<img alt="" src="[$FILE=about_us.jpg$]" style="width: 620px; height: 243px; " />
+	<div class="featured-content">
+		<p>
+			RAY/ARCH started in the summer of 2002 after a trip to Asia. The architecture and systems that are being used in Asia are simply amazing. With the amount of people that need to get to their destination design and architecture play a huge role. What happens if the height of the steps are too short so it takes people longer to walk up, thus causing a human traffic jam. Where built objects colide with humanity, RAY/ARCH exsists to bring a smart approach to architecture.</p>
+		<p>
+			<a class="download" href="./more-information">Request more information</a></p>
+	</div>
+</div>
+]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[About Us]]></dynamic-content>
+	</dynamic-element>
+</root>
