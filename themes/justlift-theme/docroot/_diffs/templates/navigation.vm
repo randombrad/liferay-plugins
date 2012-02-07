@@ -1,0 +1,47 @@
+<nav class="sort-pages modify-pages" id="navigation">
+	<h1>
+		<span>#language("navigation")</span>
+	</h1>
+
+	<ul>
+		#foreach ($nav_item in $nav_items)
+			#if ($nav_item.isSelected())
+				<li class="selected">
+			#else
+				<li>
+			#end
+
+				<a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $htmlUtil.escape($nav_item.getName())</span></a>
+
+				#if ($nav_item.hasChildren())
+					<ul class="child-menu">
+						#foreach ($nav_child in $nav_item.getChildren())
+							#set($order = '')
+							$velocityCount
+							#if($velocityCount == 1)
+								#set($order = $order + 'first ')
+							#end
+							#if(!$velocityHasNext)
+								#set($order = $order + 'last ')
+							#end
+							#if($velocityCount == 1 && !$velocityHasNext)
+								#set($order = $order + 'only ')
+							#end
+							#if($nav_child.isSelected())
+								#set($order = $order + 'selected ')
+							#end
+							#if ($order != '')
+								<li class="$order">
+							#else
+								<li>
+							#end
+							
+								<a href="$nav_child.getURL()" $nav_child.getTarget()>$velocityCount$nav_child.getName()</a>
+							</li>
+						#end
+					</ul>
+				#end
+			</li>
+		#end
+	</ul>
+</nav>

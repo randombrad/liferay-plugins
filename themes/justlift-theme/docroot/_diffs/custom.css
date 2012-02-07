@@ -1,0 +1,17 @@
+/* -------- Global -------- */
+
+#skip-to-content,
+#heading .page-title,
+#navigation h1,
+#navigation .child-menu,
+.community-title,
+#breadcrumbs,
+#footer-content ul.social li a span {
+	clip: rect(0 0 0 0);
+	position: absolute;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
