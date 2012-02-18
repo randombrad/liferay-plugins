@@ -111,3 +111,77 @@ body {
 	padding: 110px 0 10px;
 	width: 960px;
 }
+
+/* -------- Custom -------- */
+
+.lfr-actions.portlet-options .lfr-trigger strong a {
+	text-indent: -9999px;
+}
+
+.opens-new-window-accessible {
+	display: none;
+}
+
+.portlet-blogs .aui-search-bar,
+.portlet-blogs .search-pages .delta-selector, 
+.portlet-blogs .search-pages .page-selector {
+	display: none;
+}
+
+.portlet-blogs .taglib-header {
+	border-bottom: 0;
+	color: #0f1c2d;
+	margin-bottom: 0;
+}
+
+.portlet-blogs .entry .entry-title {
+	border-bottom: 6px solid #0f1c2d;
+	color: #0f1c2d;
+	font-size: 1.8em;
+	padding-bottom: 0.6em;
+}
+
+.portlet-blogs .entry .entry-title a {
+	color: #0f1c2d;
+	text-decoration: none;
+}
+
+.portlet-blogs .entry .entry-title a:hover {
+	text-decoration: underline;
+}
+
+.portlet-blogs .entry .entry-date {
+	margin-bottom: 0.8em;
+}
+
+.portlet-blogs .entry .entry-footer {
+	border-top: 1px dotted #BFBFBF;
+	margin-top: 0.6em;
+	padding-top: 1em;
+}
+
+.portlet-blogs .entry .entry-tags,
+.portlet-blogs .entry .entry-tags {
+	display: block;
+	padding: 0.6em 0;
+}
+
+.portlet-blogs .taglib-asset-categories-summary, 
+.portlet-blogs .taglib-asset-tags-summary {
+	border-left: 0;
+	padding: 0;
+}
+
+.portlet-blogs .taglib-social-bookmarks .show-bookmarks img {
+	margin-left: 0.5em;
+}
+
+.portlet-blogs .separator {
+	border-top: 1px dotted #BFBFBF;
+}
+
+.portlet-search .aui-field-select,
+.portlet-search select,
+.portlet-search .aui-button-holder  {
+	display: none;
+}

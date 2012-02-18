@@ -51,7 +51,7 @@
 		#if ($has_navigation)
 			#parse ("$full_templates_path/navigation.vm")
 		#end
-		<div id="stats">
+	#*	<div id="stats">
 			<h3>Rankings</h3>
 			<ol>
 				<li>Bob</li>
@@ -59,6 +59,7 @@
 				<li>Sam</li>
 			</ol>
 		</div>
+	*#
 	</header>
 
 	<div id="content">
