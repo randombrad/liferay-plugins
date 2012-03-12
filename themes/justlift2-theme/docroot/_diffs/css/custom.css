@@ -11,17 +11,18 @@
 }
 
 html {
-	background: #0f1C2D url(../images/custom/bg.jpg) 0 100% no-repeat;
-	background-attachment: fixed;
+	background: url(../images/custom/bg-repeat.jpg) 0 100% repeat-y;
 }
 
 body {
-	background: none;
+	background: url(../images/custom/bg.jpg) 50% 0 no-repeat;
+	background-attachment: fixed;
 	font: 12px/1 Arial, helvetica;
 }
 
 #wrapper {
 	margin: 0 auto;
+	padding-top: 35px;
 	position: relative;
 	width: 960px;
 }
@@ -35,7 +36,7 @@ body {
 }
 
 #heading .logo {
-	margin: 35px 0;
+	margin: 0 0 35px 0;
 }
 
 #navigation {
@@ -68,7 +69,7 @@ body {
 #sign-in {
 	color: #FFF;
 	position: absolute;
-	top: -20px;
+	top: 20px;
 	right: 0;
 	text-decoration: none;
 }
@@ -79,6 +80,7 @@ body {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+	min-height: 500px;
 	padding: 10px;
 	z-index: 1;
 }
@@ -101,8 +103,9 @@ body {
 #footer {
 	background: #425E98;
 	display: block;
-	height: 300px;
+	height: 200px;
 	margin-top: -100px;
+	margin-bottom: -25px;
 	z-index: 0;
 }
 
@@ -184,4 +187,37 @@ body {
 .portlet-search select,
 .portlet-search .aui-button-holder  {
 	display: none;
+}
+
+/* -------- Nav Menu Portlet -------- */
+
+.nav-menu ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.nav-menu ul li {
+	margin: 5px 0;
+}
+
+.nav-menu ul a {
+	background: #425E98;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFF;
+	display: block;
+	margin: 3px 0;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.nav-menu ul a:hover {
+	color: lightgrey;
+}
+
+.nav-menu ul ul li {
+	font-size: 10px;
+	margin: 5px 0;
 }
