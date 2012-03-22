@@ -442,6 +442,7 @@ Navigation Portlet Code
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Tooltip with Image Code" class="textarea" />
 
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h6 class="tooltips-heading">Video Preview</h6>
@@ -463,6 +464,7 @@ Navigation Portlet Code
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Tooltip with Video Code" class="textarea" />
 
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h6 class="tooltips-heading">No Arrow</h6>
@@ -511,6 +513,7 @@ Navigation Portlet Code
 			</aui:layout>
 		</div>
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h4>HR</h4>
@@ -711,6 +714,7 @@ Navigation Portlet Code
 			<li><span class="aui-icon aui-icon-loading"></span></li>
 		</ul>
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <ul class="icon-example">
@@ -1031,6 +1035,7 @@ Navigation Portlet Code
 			<button type="button" class="aui-buttonitem-content" title=""><span class="aui-buttonitem-icon aui-icon aui-icon-loading"></span><span class="aui-buttonitem-label">loading</span></button>
 		</div>
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <div class="button-example">
@@ -1198,6 +1203,7 @@ Navigation Portlet Code
 			</div>
 		</div>
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <div class="markupTabs">
@@ -1223,8 +1229,7 @@ Navigation Portlet Code
 	</div>
 </div>
 
-<script type="text/javascript">
-AUI().ready( 'aui-tabs', 'substitute', function(A) {
+&lt;aui:script use="aui-tabs,substitute"&gt;
 	var tabs = A.all('.markupTabs');
 	tabs.each( function(item){
 		var tab = new A.TabView(
@@ -1235,13 +1240,13 @@ AUI().ready( 'aui-tabs', 'substitute', function(A) {
 			}
 		).render();
 	});
-});
-</script>
+&lt;/aui:script&gt;
 			</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Tabs Code" class="textarea" />
 
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 &lt;liferay-ui:tabs
@@ -1287,6 +1292,7 @@ AUI().ready( 'aui-tabs', 'substitute', function(A) {
 			</div>
 		</div>
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 Breadcrumb Portlet
@@ -1295,6 +1301,7 @@ Breadcrumb Portlet
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Breadcrumb Code" class="textarea" />
 
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 Breadcrumb Portlet
@@ -1390,237 +1397,241 @@ Breadcrumb Portlet
 					</p>
 				</aui:column>
 			</aui:layout>
-				<hr class="alt1"/>
+			<hr class="alt1"/>
 
-				<aui:layout>
-					<aui:column columnWidth="25" first="true">
-						<h5 class="column-heading">Column 7 (25%)</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>
-							<ul>
-								<li>Item 1</li>
-								<li>Item 2</li>
-								<li>Item 3</li>
-								<li>Item 4</li>
-								<li>Item 5</li>
-								<li>Item 6</li>
-								<li>Item 7</li>
-							</ul>
-						</p>
-					</aui:column>
-					<aui:column columnWidth="50" center="true">
-						<h5 class="column-heading">Column 8 (50% container)</h5>
-						<aui:layout>
-							<aui:column columnWidth="60" first="true">
-								<h6 class="column-heading">Sub-Column 1 (60%)</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							</aui:column>
-							<aui:column columnWidth="40" last="true">
-										<h6 class="column-heading">Sub-Column 2 (40%)</h6>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							</aui:column>
-						</aui:layout>
-					</aui:column>
-					<aui:column columnWidth="25" last="true">
-						<h5 class="column-heading">Column 9 (25%)</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</aui:column>
-				</aui:layout>
-					<hr class="alt1"/>
-
-				<aui:layout>
-					<aui:column columnWidth="33" first="true">
-						<h5 class="column-heading">Column 10 (33%)</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</aui:column>
-					<aui:column columnWidth="33">
-						<h5 class="column-heading">Column 11 (33%)</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</aui:column>
-					<aui:column columnWidth="33" last="true">
-						<h5 class="column-heading">Column 12 (33%)</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</aui:column>
-				</aui:layout>
-					<hr class="alt1"/>
-
-				<div class="column-width">
-					<h5>Example of all Possible Column Widths</h5>
-					<aui:layout >
-						<aui:column columnWidth="10" first="true">
-							<h5>10%</h5>
-						</aui:column>
-						<aui:column columnWidth="90" last="true">
-							<h5>90%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="15" first="true">
-							<h5>15%</h5>
-						</aui:column>
-						<aui:column columnWidth="85" last="true">
-							<h5>85%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="20" first="true">
-							<h5>20%</h5>
-						</aui:column>
-						<aui:column columnWidth="80" last="true">
-							<h5>80%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="25" first="true">
-							<h5>25%</h5>
-						</aui:column>
-						<aui:column columnWidth="75" last="true">
-							<h5>75%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="30" first="true">
-							<h5>30%</h5>
-						</aui:column>
-						<aui:column columnWidth="70" last="true">
-							<h5>70%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="33" first="true">
-							<h5>33%</h5>
-						</aui:column>
-						<aui:column columnWidth="66" last="true">
-							<h5>66%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="35" first="true">
-							<h5>35%</h5>
-						</aui:column>
-						<aui:column columnWidth="65" last="true">
-							<h5>65%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="40" first="true">
-							<h5>40%</h5>
-						</aui:column>
-						<aui:column columnWidth="60" last="true">
-							<h5>60%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="45" first="true">
-							<h5>45%</h5>
-						</aui:column>
-						<aui:column columnWidth="55" last="true">
-							<h5>55%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="50" first="true">
-							<h5>50%</h5>
-						</aui:column>
-						<aui:column columnWidth="50" last="true">
-							<h5>50%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="55" first="true">
-							<h5>55%</h5>
-						</aui:column>
-						<aui:column columnWidth="45" last="true">
-							<h5>45%</h5>
-						</aui:column>
-					</aui:layout>
+			<aui:layout>
+				<aui:column columnWidth="25" first="true">
+					<h5 class="column-heading">Column 7 (25%)</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>
+						<ul>
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+							<li>Item 5</li>
+							<li>Item 6</li>
+							<li>Item 7</li>
+						</ul>
+					</p>
+				</aui:column>
+				<aui:column columnWidth="50" center="true">
+					<h5 class="column-heading">Column 8 (50% container)</h5>
 					<aui:layout>
 						<aui:column columnWidth="60" first="true">
-							<h5>60%</h5>
+							<h6 class="column-heading">Sub-Column 1 (60%)</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</aui:column>
 						<aui:column columnWidth="40" last="true">
-							<h5>40%</h5>
+									<h6 class="column-heading">Sub-Column 2 (40%)</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</aui:column>
 					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="62" first="true">
-							<h5>62%</h5>
-						</aui:column>
-						<aui:column columnWidth="38" last="true">
-							<h5>38%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="65" first="true">
-							<h5>65%</h5>
-						</aui:column>
-						<aui:column columnWidth="35" last="true">
-							<h5>35%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="66" first="true">
-							<h5>66%</h5>
-						</aui:column>
-						<aui:column columnWidth="33" last="true">
-							<h5>33%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="70" first="true">
-							<h5>70%</h5>
-						</aui:column>
-						<aui:column columnWidth="30" last="true">
-							<h5>30%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="75" first="true">
-							<h5>75%</h5>
-						</aui:column>
-						<aui:column columnWidth="25" last="true">
-							<h5>25%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="80" first="true">
-							<h5>80%</h5>
-						</aui:column>
-						<aui:column columnWidth="20" last="true">
-							<h5>20%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="85" first="true">
-							<h5>85%</h5>
-						</aui:column>
-						<aui:column columnWidth="15" last="true">
-							<h5>15%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="90" first="true">
-							<h5>90%</h5>
-						</aui:column>
-						<aui:column columnWidth="10" last="true">
-							<h5>10%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="95" first="true">
-							<h5>95%</h5>
-						</aui:column>
-					</aui:layout>
-					<aui:layout>
-						<aui:column columnWidth="100" first="true">
-							<h5>100%</h5>
-						</aui:column>
-					</aui:layout>
-					</div>
+				</aui:column>
+				<aui:column columnWidth="25" last="true">
+					<h5 class="column-heading">Column 9 (25%)</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</aui:column>
+			</aui:layout>
+			<hr class="alt1"/>
+
+			<aui:layout>
+				<aui:column columnWidth="33" first="true">
+					<h5 class="column-heading">Column 10 (33%)</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</aui:column>
+				<aui:column columnWidth="33">
+					<h5 class="column-heading">Column 11 (33%)</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</aui:column>
+				<aui:column columnWidth="33" last="true">
+					<h5 class="column-heading">Column 12 (33%)</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</aui:column>
+			</aui:layout>
+			<hr class="alt1"/>
+
+			<div class="column-width">
+				<h5>Example of all Possible Column Widths</h5>
+				<aui:layout >
+					<aui:column columnWidth="10" first="true">
+						<h5>10%</h5>
+					</aui:column>
+					<aui:column columnWidth="90" last="true">
+						<h5>90%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="15" first="true">
+						<h5>15%</h5>
+					</aui:column>
+					<aui:column columnWidth="85" last="true">
+						<h5>85%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="20" first="true">
+						<h5>20%</h5>
+					</aui:column>
+					<aui:column columnWidth="80" last="true">
+						<h5>80%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="25" first="true">
+						<h5>25%</h5>
+					</aui:column>
+					<aui:column columnWidth="75" last="true">
+						<h5>75%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="30" first="true">
+						<h5>30%</h5>
+					</aui:column>
+					<aui:column columnWidth="70" last="true">
+						<h5>70%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="33" first="true">
+						<h5>33%</h5>
+					</aui:column>
+					<aui:column columnWidth="66" last="true">
+						<h5>66%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="35" first="true">
+						<h5>35%</h5>
+					</aui:column>
+					<aui:column columnWidth="65" last="true">
+						<h5>65%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="40" first="true">
+						<h5>40%</h5>
+					</aui:column>
+					<aui:column columnWidth="60" last="true">
+						<h5>60%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="45" first="true">
+						<h5>45%</h5>
+					</aui:column>
+					<aui:column columnWidth="55" last="true">
+						<h5>55%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="50" first="true">
+						<h5>50%</h5>
+					</aui:column>
+					<aui:column columnWidth="50" last="true">
+						<h5>50%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="55" first="true">
+						<h5>55%</h5>
+					</aui:column>
+					<aui:column columnWidth="45" last="true">
+						<h5>45%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="60" first="true">
+						<h5>60%</h5>
+					</aui:column>
+					<aui:column columnWidth="40" last="true">
+						<h5>40%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="62" first="true">
+						<h5>62%</h5>
+					</aui:column>
+					<aui:column columnWidth="38" last="true">
+						<h5>38%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="65" first="true">
+						<h5>65%</h5>
+					</aui:column>
+					<aui:column columnWidth="35" last="true">
+						<h5>35%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="66" first="true">
+						<h5>66%</h5>
+					</aui:column>
+					<aui:column columnWidth="33" last="true">
+						<h5>33%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="70" first="true">
+						<h5>70%</h5>
+					</aui:column>
+					<aui:column columnWidth="30" last="true">
+						<h5>30%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="75" first="true">
+						<h5>75%</h5>
+					</aui:column>
+					<aui:column columnWidth="25" last="true">
+						<h5>25%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="80" first="true">
+						<h5>80%</h5>
+					</aui:column>
+					<aui:column columnWidth="20" last="true">
+						<h5>20%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="85" first="true">
+						<h5>85%</h5>
+					</aui:column>
+					<aui:column columnWidth="15" last="true">
+						<h5>15%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="90" first="true">
+						<h5>90%</h5>
+					</aui:column>
+					<aui:column columnWidth="10" last="true">
+						<h5>10%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="95" first="true">
+						<h5>95%</h5>
+					</aui:column>
+					<aui:column columnWidth="5" last="true">
+						<h5>5%</h5>
+					</aui:column>
+				</aui:layout>
+				<aui:layout>
+					<aui:column columnWidth="100" first="true">
+						<h5>100%</h5>
+					</aui:column>
+				</aui:layout>
+				</div>
 			</div>
 		</liferay-ui:section>
+
 		<liferay-ui:section>
 			<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
@@ -1629,11 +1640,12 @@ Breadcrumb Portlet
 		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-		</liferay-util:buffer>
+			</liferay-util:buffer>
 
-		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Single Column Code" class="textarea" />
+			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Single Column Code" class="textarea" />
 
 		</liferay-ui:section>
+
 		<liferay-ui:section>
 			<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
@@ -1647,11 +1659,12 @@ Breadcrumb Portlet
 		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-		</liferay-util:buffer>
+			</liferay-util:buffer>
 
-		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (50% / 50%) Code" class="textarea" />
+			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (50% / 50%) Code" class="textarea" />
 
 		</liferay-ui:section>
+
 		<liferay-ui:section>
 			<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
@@ -1666,11 +1679,12 @@ Breadcrumb Portlet
 		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-		</liferay-util:buffer>
+			</liferay-util:buffer>
 
-		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (33% / 66%) Code" class="textarea" />
+			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (33% / 66%) Code" class="textarea" />
 
 		</liferay-ui:section>
+
 		<liferay-ui:section>
 			<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
@@ -1694,11 +1708,12 @@ Breadcrumb Portlet
 		&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-		</liferay-util:buffer>
+			</liferay-util:buffer>
 
-		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (25% / 75%) Code" class="textarea" />
+			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (25% / 75%) Code" class="textarea" />
 
 		</liferay-ui:section>
+
 		<liferay-ui:section>
 			<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
@@ -1735,11 +1750,12 @@ Breadcrumb Portlet
 		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-		</liferay-util:buffer>
+			</liferay-util:buffer>
 
-		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Sub Columns Code" class="textarea" />
+			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Sub Columns Code" class="textarea" />
 
 		</liferay-ui:section>
+
 		<liferay-ui:section>
 			<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
@@ -1758,11 +1774,12 @@ Breadcrumb Portlet
 		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-		</liferay-util:buffer>
+			</liferay-util:buffer>
 
-		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Three Columns (33% / 33% / 33%) Code" class="textarea" />
+			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Three Columns (33% / 33% / 33%) Code" class="textarea" />
 
 		</liferay-ui:section>
+
 		<liferay-ui:section>
 			<liferay-util:buffer var="codeContent">
 &lt;aui:layout &gt;
@@ -1935,9 +1952,9 @@ Breadcrumb Portlet
 		&lt;h5&gt;100%&lt;/h5&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-		</liferay-util:buffer>
+			</liferay-util:buffer>
 
-		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="All Possible Columns Code" class="textarea" />
+			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="All Possible Columns Code" class="textarea" />
 
 		</liferay-ui:section>
 </liferay-ui:tabs>
@@ -1973,6 +1990,7 @@ Breadcrumb Portlet
 			</a>
 		</div>
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <div id="gallery1" class="gallery">
@@ -1998,9 +2016,7 @@ Breadcrumb Portlet
 	</a>
 </div>
 
-<script type="text/javascript">
-
-	AUI().ready('aui-image-viewer-base', function(A) {
+&lt;aui:script use="aui-image-viewer-base"&gt;
 
 	var imageViewer1 = new A.ImageViewer({
 		links: '#gallery1 a',
@@ -2017,12 +2033,11 @@ Breadcrumb Portlet
 		}
 	})
 	.render();
-	});
 
-</script>
-			</liferay-util:buffer>
+&lt;/aui:script&gt;
+		</liferay-util:buffer>
 
-			<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Image Viewer Code" class="textarea" />
+		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Image Viewer Code" class="textarea" />
 
 	</liferay-ui:section>
 </liferay-ui:tabs>
@@ -2045,6 +2060,7 @@ Breadcrumb Portlet
 			<div style="background: url(http://placehold.it/940x260/7400E4/ffffff/&text=Image+8); width: 940px; height: 260px;" class="aui-carousel-item">Image8</div>
 		</div>
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <div id="demo-example">
@@ -2058,9 +2074,7 @@ Breadcrumb Portlet
 	<div style="background: url(http://placehold.it/940x260/7400E4/ffffff/&text=Image+8); width: 940px; height: 260px;" class="aui-carousel-item">Image8</div>
 </div>
 
-<script type="text/javascript" charset="utf-8">
-
-AUI().ready('aui-carousel', function(A) {
+&lt;aui:script use="aui-carousel"&gt;
 
 	var component = new A.Carousel(
 		{
@@ -2071,12 +2085,11 @@ AUI().ready('aui-carousel', function(A) {
 			width: 940
 		}
 	).render();
-});
 
-</script>
-			</liferay-util:buffer>
+&lt;/aui:script&gt;
+		</liferay-util:buffer>
 
-			<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Image Carousel Code" class="textarea" />
+		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Image Carousel Code" class="textarea" />
 
 	</liferay-ui:section>
 </liferay-ui:tabs>
@@ -2112,6 +2125,7 @@ AUI().ready('aui-carousel', function(A) {
 			</a>
 		</div>
 	</liferay-ui:section>
+
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <div id="gallery" class="gallery">
@@ -2138,9 +2152,7 @@ AUI().ready('aui-carousel', function(A) {
 	</a>
 </div>
 
-<script type="text/javascript">
-
-AUI().ready('aui-image-viewer-gallery', 'aui-media-viewer-plugin', function(A) {
+&lt;aui:script use="aui-image-viewer-gallery, aui-media-viewer-plugin"&gt;
 
 	var mediaGallery = new A.ImageGallery({
 		caption: 'AlloyUI - MediaGallery mixed demo',
@@ -2150,7 +2162,7 @@ AUI().ready('aui-image-viewer-gallery', 'aui-media-viewer-plugin', function(A) {
 			{
 				cfg: {
 					'providers.dailymotion': {
-						container: '<iframe frameborder="0" width="{width}" height="{height}" src="http://www.dailymotion.com/embed/video/{media}"></iframe>',
+						container: '&lt;iframe frameborder="0" width="{width}" height="{height}" src="http://www.dailymotion.com/embed/video/{media}"&gt;&lt;/iframe&gt;',
 						matcher: new RegExp(
 							A.Lang.sub(
 								A.MediaViewerPlugin.REGEX_DOMAIN,
@@ -2161,7 +2173,7 @@ AUI().ready('aui-image-viewer-gallery', 'aui-media-viewer-plugin', function(A) {
 							'i'
 						),
 						options: A.MediaViewerPlugin.DEFAULT_OPTIONS,
-						mediaRegex: /\/video\/([^&#_]*)/i
+						mediaRegex: /\/video\/([^&amp;#_]*)/i
 					}
 				},
 				fn: A.MediaViewerPlugin
@@ -2171,10 +2183,10 @@ AUI().ready('aui-image-viewer-gallery', 'aui-media-viewer-plugin', function(A) {
 	});
 
 	mediaGallery.render();
-</script>
-			</liferay-util:buffer>
+&lt;/aui:script&gt;
+		</liferay-util:buffer>
 
-			<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Media Gallery Code" class="textarea" />
+		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Media Gallery Code" class="textarea" />
 
 	</liferay-ui:section>
 </liferay-ui:tabs>
@@ -2185,304 +2197,300 @@ AUI().ready('aui-image-viewer-gallery', 'aui-media-viewer-plugin', function(A) {
 	names="Form Example,Example 1 Code,Example 2 Code,Example 3 Code"
 	refresh="<%= false %>"
 >
-		<liferay-ui:section>
-			<aui:layout>
-				<aui:column columnWidth="33" first="true">
-					<div id="myForm">
-						<aui:form name="Form Example 1">
+	<liferay-ui:section>
+		<aui:layout>
+			<aui:column columnWidth="33" first="true">
+				<div id="myForm">
+					<aui:form name="Form Example 1">
 
-							<div class="aui-fieldset-bd aui-widget-bd">
-								<aui:input name="Text" value="" label="Text" />
-								<aui:input name="Password" value="" label="Password" />
+						<div class="aui-fieldset-bd aui-widget-bd">
+							<aui:input name="Text" value="" label="Text" />
+							<aui:input name="Password" value="" label="Password" />
 
-								<aui:select name="selectList" label="Select(Menu)">
-									<aui:option name="menuSelection1" label="Menu Selection 1" />
-									<aui:option name="menuSelection2" label="Menu Selection 2" />
-									<aui:option name="menuSelection3" label="Menu Selection 3" />
-								</aui:select>
+							<aui:select name="selectList" label="Select(Menu)">
+								<aui:option name="menuSelection1" label="Menu Selection 1" />
+								<aui:option name="menuSelection2" label="Menu Selection 2" />
+								<aui:option name="menuSelection3" label="Menu Selection 3" />
+							</aui:select>
 
-								<aui:select name="selectMultipleList" label="Select Multiple(Menu)" multiple="true">
-									<aui:option name="menuSelection1" label="Menu Selection 1" selected="true" />
-									<aui:option name="menuSelection2" label="Menu Selection 2" />
-									<aui:option name="menuSelection3" label="Menu Selection 3" />
-								</aui:select>
+							<aui:select name="selectMultipleList" label="Select Multiple(Menu)" multiple="true">
+								<aui:option name="menuSelection1" label="Menu Selection 1" selected="true" />
+								<aui:option name="menuSelection2" label="Menu Selection 2" />
+								<aui:option name="menuSelection3" label="Menu Selection 3" />
+							</aui:select>
 
-								<aui:input name="textarea" type="textarea" value="" label="Textarea" />
+							<aui:input name="textarea" type="textarea" value="" label="Textarea" />
 
-								<aui:field-wrapper name="checkboxes" label="Checkboxes">
-									<aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 1" />
-									<aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 2" />
-									<aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 3" />
-								</aui:field-wrapper>
+							<aui:field-wrapper name="checkboxes" label="Checkboxes">
+								<aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 1" />
+								<aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 2" />
+								<aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 3" />
+							</aui:field-wrapper>
 
-								<aui:field-wrapper name="radio buttons">
-									<aui:input inlineLabel="right" name="radio buttons" type="radio" value="1" label="Radio 1" />
-									<aui:input inlineLabel="right" name="radio buttons" type="radio" value="2" label="Radio 2" />
-									<aui:input inlineLabel="right" name="radio buttons" type="radio" value="3" label="Radio 3" />
-								</aui:field-wrapper>
+							<aui:field-wrapper name="radio buttons">
+								<aui:input inlineLabel="right" name="radio buttons" type="radio" value="1" label="Radio 1" />
+								<aui:input inlineLabel="right" name="radio buttons" type="radio" value="2" label="Radio 2" />
+								<aui:input inlineLabel="right" name="radio buttons" type="radio" value="3" label="Radio 3" />
+							</aui:field-wrapper>
 
-							</div>
+						</div>
 
-								<aui:button name="submitButton" type="button" value="submit" first="true" />
-								<aui:button name="resetButton" type="button" value="reset" />
-								<aui:button name="cancelButton" type="button" value="cancel" last="true" />
+							<aui:button name="submitButton" type="button" value="submit" first="true" />
+							<aui:button name="resetButton" type="button" value="reset" />
+							<aui:button name="cancelButton" type="button" value="cancel" last="true" />
 
-						</aui:form>
+					</aui:form>
+				</div>
+			</aui:column>
+
+			<aui:column columnWidth="33" class="aui-field-labels-inline">
+				<aui:fieldset column="true" title="Form Example 2" class="aui-field-labels-inline">
+
+					<aui:input alignLabel="right" name="username" value="" label="Username" />
+						<p class="aui-form-hint">
+							<span>The username you wish to use.</span>
+						</p>
+
+					<aui:input alignLabel="right" name="email" value="" label="Email" />
+						<p class="aui-form-hint">
+							<span>The email address to associate with this account.</span>
+						</p>
+
+					<aui:select alignLabel="right" name="accountType" label="Account Type">
+						<aui:option name="premium" label="Premium User" />
+						<aui:option name="midlevel" label="Mid-level User" />
+						<aui:option name="regular" label="Regular User" />
+					</aui:select>
+					<p class="aui-form-hint">
+						<span>What level of user would you like to be?</span>
+					</p>
+
+					<aui:input alignLabel="right" name="interests" type="textarea" value="" label="Interests" />
+						<p class="aui-form-hint">
+							<span>What are some of your interests?</span>
+						</p>
+
+					<aui:field-wrapper name="userOptions" label="User Options">
+						<aui:input alignLabel="right" type="checkbox" name="notifyMessages" value="1" label="Do you wish to be notified by email when another user sends you a message?" />
+						<aui:input alignLabel="right" type="checkbox" name="displayEmail" value="1" label="Do you wish for other users to be able to see your email address?" />
+						<aui:input alignLabel="right" type="checkbox" name="subscribeNewsletter" value="1" label="Would you like to receive our monthly newsletter?" />
+					</aui:field-wrapper>
+					<p class="aui-form-hint">
+						We will not sell your information, or needlessly spam you. This is just to keep you in the loop.
+					</p>
+
+					<div class="aui-button-holder">
+						<aui:button name="submitButton" type="button" value="submit" first="true" />
+						<aui:button name="resetButton" type="button" value="reset" last="true" />
 					</div>
-				</aui:column>
+				</aui:fieldset>
+			</aui:column>
 
-				<aui:column columnWidth="33" class="aui-field-labels-inline">
-					<aui:fieldset column="true" title="Form Example 2" class="aui-field-labels-inline">
+			<aui:column columnWidth="33" last="true">
+				<aui:fieldset column="true" title="Form Example 3" class="aui-field-labels-inline">
 
-						<aui:input alignLabel="right" name="username" value="" label="Username" />
-							<p class="aui-form-hint">
-								<span>The username you wish to use.</span>
-							</p>
-
-						<aui:input alignLabel="right" name="email" value="" label="Email" />
-							<p class="aui-form-hint">
-								<span>The email address to associate with this account.</span>
-							</p>
-
-						<aui:select alignLabel="right" name="accountType" label="Account Type">
-							<aui:option name="premium" label="Premium User" />
-							<aui:option name="midlevel" label="Mid-level User" />
-							<aui:option name="regular" label="Regular User" />
-						</aui:select>
+					<aui:input alignLabel="right" name="fullName" value="" label="Full Name" />
 						<p class="aui-form-hint">
-							<span>What level of user would you like to be?</span>
+							<span>Your full name.</span>
 						</p>
 
-						<aui:input alignLabel="right" name="interests" type="textarea" value="" label="Interests" />
-							<p class="aui-form-hint">
-								<span>What are some of your interests?</span>
-							</p>
-
-						<aui:field-wrapper name="userOptions" label="User Options">
-							<aui:input alignLabel="right" type="checkbox" name="notifyMessages" value="1" label="Do you wish to be notified by email when another user sends you a message?" />
-							<aui:input alignLabel="right" type="checkbox" name="displayEmail" value="1" label="Do you wish for other users to be able to see your email address?" />
-							<aui:input alignLabel="right" type="checkbox" name="subscribeNewsletter" value="1" label="Would you like to receive our monthly newsletter?" />
-						</aui:field-wrapper>
+					<aui:input alignLabel="right" name="cityState" value="" label="City, State" />
 						<p class="aui-form-hint">
-							We will not sell your information, or needlessly spam you. This is just to keep you in the loop.
+							<span>What city and state do you live in?</span>
 						</p>
 
-						<div class="aui-button-holder">
-							<aui:button name="submitButton" type="button" value="submit" first="true" />
-							<aui:button name="resetButton" type="button" value="reset" last="true" />
-						</div>
-					</aui:fieldset>
-				</aui:column>
+					<aui:select alignLabel="right" name="ageGroup" label="Your Age Group">
+						<aui:option name="teen" label="13 - 19" selected="true" />
+						<aui:option name="young-adult" label="20 - 30" />
+						<aui:option name="adult" label="31 - 50" />
+						<aui:option name="vintage-adult" label="51+" />
+					</aui:select>
+					<p class="aui-form-hint">
+						<span>The age group that best describes you.</span>
+					</p>
 
-				<aui:column columnWidth="33" last="true">
-					<aui:fieldset column="true" title="Form Example 3" class="aui-field-labels-inline">
-
-						<aui:input alignLabel="right" name="fullName" value="" label="Full Name" />
-							<p class="aui-form-hint">
-								<span>Your full name.</span>
-							</p>
-
-						<aui:input alignLabel="right" name="cityState" value="" label="City, State" />
-							<p class="aui-form-hint">
-								<span>What city and state do you live in?</span>
-							</p>
-
-						<aui:select alignLabel="right" name="ageGroup" label="Your Age Group">
-							<aui:option name="teen" label="13 - 19" selected="true" />
-							<aui:option name="young-adult" label="20 - 30" />
-							<aui:option name="adult" label="31 - 50" />
-							<aui:option name="vintage-adult" label="51+" />
-						</aui:select>
+					<aui:input alignLabel="right" name="description" type="textarea" value="" label="Description" />
 						<p class="aui-form-hint">
-							<span>The age group that best describes you.</span>
+							<span>Please describe yourself.</span>
 						</p>
 
-						<aui:input alignLabel="right" name="description" type="textarea" value="" label="Description" />
-							<p class="aui-form-hint">
-								<span>Please describe yourself.</span>
-							</p>
+					<aui:field-wrapper name="radio buttons">
+						<aui:input inlineLabel="right" name="usageLevel" type="radio" value="1" label="All the time. I'm already addicted just by signing up." />
+						<aui:input inlineLabel="right" name="usageLevel" type="radio" value="2" label="Sometimes, but maybe more. Depends how good it is." />
+						<aui:input inlineLabel="right" name="usageLevel" type="radio" value="3" label="Probably not that often, I'm just checking it out." />
+					</aui:field-wrapper>
+						<p class="aui-form-hint">
+							This helps us guage your interest in us.
+						</p>
 
-						<aui:field-wrapper name="radio buttons">
-							<aui:input inlineLabel="right" name="usageLevel" type="radio" value="1" label="All the time. I'm already addicted just by signing up." />
-							<aui:input inlineLabel="right" name="usageLevel" type="radio" value="2" label="Sometimes, but maybe more. Depends how good it is." />
-							<aui:input inlineLabel="right" name="usageLevel" type="radio" value="3" label="Probably not that often, I'm just checking it out." />
-						</aui:field-wrapper>
-							<p class="aui-form-hint">
-								This helps us guage your interest in us.
-							</p>
+					<div class="aui-button-holder">
+						<aui:button name="submitButton" type="button" value="submit" first="true" />
+						<aui:button name="resetButton" type="button" value="reset" last="true" />
+					</div>
+				</aui:fieldset>
+			</aui:column>
+		</aui:layout>
+	</liferay-ui:section>
 
-						<div class="aui-button-holder">
-							<aui:button name="submitButton" type="button" value="submit" first="true" />
-							<aui:button name="resetButton" type="button" value="reset" last="true" />
-						</div>
-					</aui:fieldset>
-				</aui:column>
-			</aui:layout>
-		</liferay-ui:section>
-		<liferay-ui:section>
-			<liferay-util:buffer var="codeContent">
+	<liferay-ui:section>
+		<liferay-util:buffer var="codeContent">
 &lt;aui:form name="Form Example 1"&gt;
 
-	&lt;div class="aui-fieldset-bd aui-widget-bd"&gt;
-		&lt;aui:input name="Text" value="" label="Text" /&gt;
-		&lt;aui:input name="Password" value="" label="Password" /&gt;
+&lt;div class="aui-fieldset-bd aui-widget-bd"&gt;
+	&lt;aui:input name="Text" value="" label="Text" /&gt;
+	&lt;aui:input name="Password" value="" label="Password" /&gt;
 
-		&lt;aui:select name="selectList" label="Select(Menu)"&gt;
-			&lt;aui:option name="menuSelection1" label="Menu Selection 1" /&gt;
-			&lt;aui:option name="menuSelection2" label="Menu Selection 2" /&gt;
-			&lt;aui:option name="menuSelection3" label="Menu Selection 3" /&gt;
-		&lt;/aui:select&gt;
+	&lt;aui:select name="selectList" label="Select(Menu)"&gt;
+		&lt;aui:option name="menuSelection1" label="Menu Selection 1" /&gt;
+		&lt;aui:option name="menuSelection2" label="Menu Selection 2" /&gt;
+		&lt;aui:option name="menuSelection3" label="Menu Selection 3" /&gt;
+	&lt;/aui:select&gt;
 
-		&lt;aui:select name="selectMultipleList" label="Select Multiple(Menu)" multiple="true"&gt;
-			&lt;aui:option name="menuSelection1" label="Menu Selection 1" selected="true" /&gt;
-			&lt;aui:option name="menuSelection2" label="Menu Selection 2" /&gt;
-			&lt;aui:option name="menuSelection3" label="Menu Selection 3" /&gt;
-		&lt;/aui:select&gt;
+	&lt;aui:select name="selectMultipleList" label="Select Multiple(Menu)" multiple="true"&gt;
+		&lt;aui:option name="menuSelection1" label="Menu Selection 1" selected="true" /&gt;
+		&lt;aui:option name="menuSelection2" label="Menu Selection 2" /&gt;
+		&lt;aui:option name="menuSelection3" label="Menu Selection 3" /&gt;
+	&lt;/aui:select&gt;
 
-		&lt;aui:input name="textarea" type="textarea" value="" label="Textarea" /&gt;
+	&lt;aui:input name="textarea" type="textarea" value="" label="Textarea" /&gt;
 
-		&lt;aui:field-wrapper name="checkboxes" label="Checkboxes"&gt;
-			&lt;aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 1" /&gt;
-			&lt;aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 2" /&gt;
-			&lt;aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 3" /&gt;
-		&lt;/aui:field-wrapper&gt;
+	&lt;aui:field-wrapper name="checkboxes" label="Checkboxes"&gt;
+		&lt;aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 1" /&gt;
+		&lt;aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 2" /&gt;
+		&lt;aui:input inlineLabel="right" type="checkbox" name="checkboxes" value="1" label="Checkbox 3" /&gt;
+	&lt;/aui:field-wrapper&gt;
 
-		&lt;aui:field-wrapper name="radio buttons"&gt;
-			&lt;aui:input inlineLabel="right" name="radio buttons" type="radio" value="1" label="Radio 1" /&gt;
-			&lt;aui:input inlineLabel="right" name="radio buttons" type="radio" value="2" label="Radio 2" /&gt;
-			&lt;aui:input inlineLabel="right" name="radio buttons" type="radio" value="3" label="Radio 3" /&gt;
-		&lt;/aui:field-wrapper&gt;
+	&lt;aui:field-wrapper name="radio buttons"&gt;
+		&lt;aui:input inlineLabel="right" name="radio buttons" type="radio" value="1" label="Radio 1" /&gt;
+		&lt;aui:input inlineLabel="right" name="radio buttons" type="radio" value="2" label="Radio 2" /&gt;
+		&lt;aui:input inlineLabel="right" name="radio buttons" type="radio" value="3" label="Radio 3" /&gt;
+	&lt;/aui:field-wrapper&gt;
 
-	&lt;/div&gt;
+&lt;/div&gt;
 
-		&lt;aui:button name="submitButton" type="button" value="submit" first="true" /&gt;
-		&lt;aui:button name="resetButton" type="button" value="reset" /&gt;
-		&lt;aui:button name="cancelButton" type="button" value="cancel" last="true" /&gt;
+	&lt;aui:button name="submitButton" type="button" value="submit" first="true" /&gt;
+	&lt;aui:button name="resetButton" type="button" value="reset" /&gt;
+	&lt;aui:button name="cancelButton" type="button" value="cancel" last="true" /&gt;
 
 &lt;/aui:form&gt;
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Form Example 1 Code" class="textarea" />
 
-		</liferay-ui:section>
-		<liferay-ui:section>
-			<liferay-util:buffer var="codeContent">
+	</liferay-ui:section>
+
+	<liferay-ui:section>
+		<liferay-util:buffer var="codeContent">
 &lt;aui:fieldset column="true" title="Form Example 2" class="aui-field-labels-inline"&gt;
 
-	&lt;aui:input alignLabel="right" name="username" value="" label="Username" /&gt;
-		&lt;p class="aui-form-hint"&gt;
-			&lt;span&gt;The username you wish to use.&lt;/span&gt;
-		&lt;/p&gt;
-
-	&lt;aui:input alignLabel="right" name="email" value="" label="Email" /&gt;
-		&lt;p class="aui-form-hint"&gt;
-			&lt;span&gt;The email address to associate with this account.&lt;/span&gt;
-		&lt;/p&gt;
-
-	&lt;aui:select alignLabel="right" name="accountType" label="Account Type"&gt;
-		&lt;aui:option name="premium" label="Premium User" /&gt;
-		&lt;aui:option name="midlevel" label="Mid-level User" /&gt;
-		&lt;aui:option name="regular" label="Regular User" /&gt;
-	&lt;/aui:select&gt;
+&lt;aui:input alignLabel="right" name="username" value="" label="Username" /&gt;
 	&lt;p class="aui-form-hint"&gt;
-		&lt;span&gt;What level of user would you like to be?&lt;/span&gt;
+		&lt;span&gt;The username you wish to use.&lt;/span&gt;
 	&lt;/p&gt;
 
-	&lt;aui:input alignLabel="right" name="interests" type="textarea" value="" label="Interests" /&gt;
-		&lt;p class="aui-form-hint"&gt;
-			&lt;span&gt;What are some of your interests?&lt;/span&gt;
-		&lt;/p&gt;
-
-	&lt;aui:field-wrapper name="userOptions" label="User Options"&gt;
-		&lt;aui:input alignLabel="right" type="checkbox" name="notifyMessages" value="1" label="Do you wish to be notified by email when another user sends you a message?" /&gt;
-		&lt;aui:input alignLabel="right" type="checkbox" name="displayEmail" value="1" label="Do you wish for other users to be able to see your email address?" /&gt;
-		&lt;aui:input alignLabel="right" type="checkbox" name="subscribeNewsletter" value="1" label="Would you like to receive our monthly newsletter?" /&gt;
-	&lt;/aui:field-wrapper&gt;
+&lt;aui:input alignLabel="right" name="email" value="" label="Email" /&gt;
 	&lt;p class="aui-form-hint"&gt;
-		We will not sell your information, or needlessly spam you. This is just to keep you in the loop.
+		&lt;span&gt;The email address to associate with this account.&lt;/span&gt;
 	&lt;/p&gt;
 
-	&lt;div class="aui-button-holder"&gt;
-		&lt;aui:button name="submitButton" type="button" value="submit" first="true" /&gt;
-		&lt;aui:button name="resetButton" type="button" value="reset" last="true" /&gt;
-	&lt;/div&gt;
+&lt;aui:select alignLabel="right" name="accountType" label="Account Type"&gt;
+	&lt;aui:option name="premium" label="Premium User" /&gt;
+	&lt;aui:option name="midlevel" label="Mid-level User" /&gt;
+	&lt;aui:option name="regular" label="Regular User" /&gt;
+&lt;/aui:select&gt;
+&lt;p class="aui-form-hint"&gt;
+	&lt;span&gt;What level of user would you like to be?&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;aui:input alignLabel="right" name="interests" type="textarea" value="" label="Interests" /&gt;
+	&lt;p class="aui-form-hint"&gt;
+		&lt;span&gt;What are some of your interests?&lt;/span&gt;
+	&lt;/p&gt;
+
+&lt;aui:field-wrapper name="userOptions" label="User Options"&gt;
+	&lt;aui:input alignLabel="right" type="checkbox" name="notifyMessages" value="1" label="Do you wish to be notified by email when another user sends you a message?" /&gt;
+	&lt;aui:input alignLabel="right" type="checkbox" name="displayEmail" value="1" label="Do you wish for other users to be able to see your email address?" /&gt;
+	&lt;aui:input alignLabel="right" type="checkbox" name="subscribeNewsletter" value="1" label="Would you like to receive our monthly newsletter?" /&gt;
+&lt;/aui:field-wrapper&gt;
+&lt;p class="aui-form-hint"&gt;
+	We will not sell your information, or needlessly spam you. This is just to keep you in the loop.
+&lt;/p&gt;
+
+&lt;div class="aui-button-holder"&gt;
+	&lt;aui:button name="submitButton" type="button" value="submit" first="true" /&gt;
+	&lt;aui:button name="resetButton" type="button" value="reset" last="true" /&gt;
+&lt;/div&gt;
 &lt;/aui:fieldset&gt;
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Form Example 2 Code" class="textarea" />
 
-		</liferay-ui:section>
-		<liferay-ui:section>
-			<liferay-util:buffer var="codeContent">
+	</liferay-ui:section>
+
+	<liferay-ui:section>
+		<liferay-util:buffer var="codeContent">
 &lt;aui:fieldset column="true" title="Form Example 3" class="aui-field-labels-inline"&gt;
 
-	&lt;aui:input alignLabel="right" name="fullName" value="" label="Full Name" /&gt;
-		&lt;p class="aui-form-hint"&gt;
-			&lt;span&gt;Your full name.&lt;/span&gt;
-		&lt;/p&gt;
-
-	&lt;aui:input alignLabel="right" name="cityState" value="" label="City, State" /&gt;
-		&lt;p class="aui-form-hint"&gt;
-			&lt;span&gt;What city and state do you live in?&lt;/span&gt;
-		&lt;/p&gt;
-
-	&lt;aui:select alignLabel="right" name="ageGroup" label="Your Age Group"&gt;
-		&lt;aui:option name="teen" label="13 - 19" selected="true" /&gt;
-		&lt;aui:option name="young-adult" label="20 - 30" /&gt;
-		&lt;aui:option name="adult" label="31 - 50" /&gt;
-		&lt;aui:option name="vintage-adult" label="51+" /&gt;
-	&lt;/aui:select&gt;
+&lt;aui:input alignLabel="right" name="fullName" value="" label="Full Name" /&gt;
 	&lt;p class="aui-form-hint"&gt;
-		&lt;span&gt;The age group that best describes you.&lt;/span&gt;
+		&lt;span&gt;Your full name.&lt;/span&gt;
 	&lt;/p&gt;
 
-	&lt;aui:input alignLabel="right" name="description" type="textarea" value="" label="Description" /&gt;
-		&lt;p class="aui-form-hint"&gt;
-			&lt;span&gt;Please describe yourself.&lt;/span&gt;
-		&lt;/p&gt;
+&lt;aui:input alignLabel="right" name="cityState" value="" label="City, State" /&gt;
+	&lt;p class="aui-form-hint"&gt;
+		&lt;span&gt;What city and state do you live in?&lt;/span&gt;
+	&lt;/p&gt;
 
-	&lt;aui:field-wrapper name="radio buttons"&gt;
-		&lt;aui:input inlineLabel="right" name="usageLevel" type="radio" value="1" label="All the time. I'm already addicted just by signing up." /&gt;
-		&lt;aui:input inlineLabel="right" name="usageLevel" type="radio" value="2" label="Sometimes, but maybe more. Depends how good it is." /&gt;
-		&lt;aui:input inlineLabel="right" name="usageLevel" type="radio" value="3" label="Probably not that often, I'm just checking it out." /&gt;
-	&lt;/aui:field-wrapper&gt;
-		&lt;p class="aui-form-hint"&gt;
-			This helps us guage your interest in us.
-		&lt;/p&gt;
+&lt;aui:select alignLabel="right" name="ageGroup" label="Your Age Group"&gt;
+	&lt;aui:option name="teen" label="13 - 19" selected="true" /&gt;
+	&lt;aui:option name="young-adult" label="20 - 30" /&gt;
+	&lt;aui:option name="adult" label="31 - 50" /&gt;
+	&lt;aui:option name="vintage-adult" label="51+" /&gt;
+&lt;/aui:select&gt;
+&lt;p class="aui-form-hint"&gt;
+	&lt;span&gt;The age group that best describes you.&lt;/span&gt;
+&lt;/p&gt;
 
-	&lt;div class="aui-button-holder"&gt;
-		&lt;aui:button name="submitButton" type="button" value="submit" first="true" /&gt;
-		&lt;aui:button name="resetButton" type="button" value="reset" last="true" /&gt;
-	&lt;/div&gt;
+&lt;aui:input alignLabel="right" name="description" type="textarea" value="" label="Description" /&gt;
+	&lt;p class="aui-form-hint"&gt;
+		&lt;span&gt;Please describe yourself.&lt;/span&gt;
+	&lt;/p&gt;
+
+&lt;aui:field-wrapper name="radio buttons"&gt;
+	&lt;aui:input inlineLabel="right" name="usageLevel" type="radio" value="1" label="All the time. I'm already addicted just by signing up." /&gt;
+	&lt;aui:input inlineLabel="right" name="usageLevel" type="radio" value="2" label="Sometimes, but maybe more. Depends how good it is." /&gt;
+	&lt;aui:input inlineLabel="right" name="usageLevel" type="radio" value="3" label="Probably not that often, I'm just checking it out." /&gt;
+&lt;/aui:field-wrapper&gt;
+	&lt;p class="aui-form-hint"&gt;
+		This helps us guage your interest in us.
+	&lt;/p&gt;
+
+&lt;div class="aui-button-holder"&gt;
+	&lt;aui:button name="submitButton" type="button" value="submit" first="true" /&gt;
+	&lt;aui:button name="resetButton" type="button" value="reset" last="true" /&gt;
+&lt;/div&gt;
 &lt;/aui:fieldset&gt;
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Form Example 3 Code" class="textarea" />
 
-		</liferay-ui:section>
-	</div>
-</div>
+	</liferay-ui:section>
 </liferay-ui:tabs>
 
-<script type="text/javascript">
-	AUI().ready( 'aui-tabs', 'substitute', function(A) {
-		var tabs = A.all('.markupTabs');
-		tabs.each( function(item){
-			var tab = new A.TabView(
-				{
-					boundingBox: item,
-					listNode: item.one('.tab-list'),
-					contentNode: item.one('.tab-content')
-				}
-			).render();
-		});
+<aui:script use="aui-tabs,substitute">
+	var tabs = A.all('.markupTabs');
+	tabs.each( function(item){
+		var tab = new A.TabView(
+			{
+				boundingBox: item,
+				listNode: item.one('.tab-list'),
+				contentNode: item.one('.tab-content')
+			}
+		).render();
 	});
-</script>
+</aui:script>
 
-<script src="../../build/aui/aui.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-AUI().ready('aui-tooltip', 'aui-io-plugin', function(A) {
+<aui:script use="aui-tooltip,aui-io-plugin">
 
 	var t1 = new A.Tooltip({
 		trigger: '.t1',
@@ -2511,13 +2519,10 @@ AUI().ready('aui-tooltip', 'aui-io-plugin', function(A) {
 		bodyContent: '<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/PiSxJwB29R8&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/PiSxJwB29R8&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>',
 	})
 	.render();
-});
 
-</script>
+</aui:script>
 
-<script type="text/javascript">
-
-AUI().ready('aui-image-viewer-base', function(A) {
+<aui:script use="aui-image-viewer-base">
 
 	var imageViewer1 = new A.ImageViewer({
 		links: '#gallery1 a',
@@ -2534,13 +2539,10 @@ AUI().ready('aui-image-viewer-base', function(A) {
 		}
 	})
 	.render();
-});
 
-</script>
+</aui:script>
 
-<script type="text/javascript" charset="utf-8">
-
-AUI().ready('aui-carousel', function(A) {
+<aui:script use="aui-carousel">
 
 	var component = new A.Carousel(
 		{
@@ -2551,13 +2553,10 @@ AUI().ready('aui-carousel', function(A) {
 			width: 940
 		}
 	).render();
-});
 
-</script>
+</aui:script>
 
-<script type="text/javascript">
-
-AUI().ready('aui-image-viewer-gallery', 'aui-media-viewer-plugin', function(A) {
+<aui:script use="aui-image-viewer-gallery,aui-media-viewer-plugin">
 
 	var mediaGallery = new A.ImageGallery({
 		caption: 'AlloyUI - MediaGallery mixed demo',
@@ -2588,6 +2587,5 @@ AUI().ready('aui-image-viewer-gallery', 'aui-media-viewer-plugin', function(A) {
 	});
 
 	mediaGallery.render();
-});
 
-</script>
+</aui:script>
