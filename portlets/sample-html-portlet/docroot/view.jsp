@@ -27,25 +27,20 @@
 			<aui:column columnWidth="70" first="true">
 				<div class="typography">
 					<h4 class="style-heading">Paragraphs</h4>
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
 						magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
 						suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
-						hendrerit in vulputate velit esse molestie consequat
-					</p>
-					<p>
-						El illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+						hendrerit in vulputate velit esse molestie consequat</p>
+					<p>El illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
 						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam
 						liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-						placerat facer possim assum.
-					</p>
+						placerat facer possim assum.</p>
 				</div>
 
 				<div class="typography">
 					<h4 class="style-heading">Blockquote</h4>
 					<blockquote>
-						<p>
-							lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
+						<p>lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
 							in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
 							et iusto odio
 							<span>Someone Important</span>
@@ -56,8 +51,7 @@
 				<div class="typography">
 					<h4 class="style-heading">Blockquote Small</h4>
 					<blockquote class="small">
-						<p>
-							lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
+						<p>lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
 							in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
 							et iusto odio
 							<span>Someone Important</span>
@@ -69,20 +63,17 @@
 			<aui:column columnWidth="30" last="true">
 				<div class="typography">
 					<h4 class="style-heading">Inline Styles</h4>
+					
 					<ul>
 						<li><strong>Strong</strong></li>
-						</br>
 						<li><em>Emphasis</em></li>
-						</br>
 						<li><a href="">Inline Link</a></li>
-						</br>
 						<li><strike>Strike</strike></li>
-						</br>
 						<li>Inline <span class="aui-buttonitem-icon aui-icon aui-icon-person"></span> Icons</li>
-						</br>
 						<li><code>&lt;h1&gt;Sample Code&lt;/h1&gt;</code></li>
 					</ul>
 				</div>
+				
 				<hr />
 
 				<div class="typography">
@@ -93,15 +84,16 @@
 					<h5 class="style-heading">Heading 5</h5>
 					<h6 class="style-heading">Heading 6</h6>
 				</div>
+				
 				<hr />
 
 				<div class="typography">
 					<h4 class="style-heading">Address</h4>
-					<address><p>
+					<address>
 						1234 South Creek Lane<br />
 						Calgary, Alberta, Canada<br />
 						T4Bâ€“1S6
-					</p></address>
+					</address>
 				</div>
 			</aui:column>
 		</aui:layout>
@@ -110,59 +102,41 @@
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h4>Paragraphs</h4>
-<p>
-	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-	magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-	suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
-	hendrerit in vulputate velit esse molestie consequat
-</p>
-<p>
-	El illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
-	qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam
-	liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-	placerat facer possim assum.
-</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+
+<p>El illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Paragraphs Code" class="textarea" />
-
 	</liferay-ui:section>
 
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <blockquote>
-	<p>
-		lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
+	<p>lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
 		in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
 		et iusto odio
-		<span>
-			Someone Important
-		</span>
+		<span>Someone Important</span>
 	</p>
 </blockquote>
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Blockquote Code" class="textarea" />
-
 	</liferay-ui:section>
 
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h4 class="style-heading">Blockquote Small</h4>
 <blockquote class="small">
-	<p>
-		lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
+	<p>lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
 		in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
 		et iusto odio
-		<span>
-			Someone Important
-		</span>
+		<span>Someone Important</span>
 	</p>
 </blockquote>
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Blockquote Small Code" class="textarea" />
-
 	</liferay-ui:section>
 
 	<liferay-ui:section>
@@ -172,7 +146,7 @@
 <li><a href="">Inline Link</a></li>
 <li><strike>Strike</strike></li>
 <li>Inline <span class="aui-buttonitem-icon aui-icon aui-icon-person"></span> Icons</li>
-<li><code>&lt;h1&gt;Sample Code&lt;/h1&gt;</code></li>
+<li><code><h1>Sample Code</h1></code></li>
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Inline Styles Code" class="textarea" />
@@ -196,20 +170,22 @@
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h4 class="style-heading">Address</h4>
-	<address><p>
-		1234 South Creek Lane<br />
-		Calgary, Alberta, Canada<br />
-		T4Bâ€“1S6
-	</p></address>
+<address>
+	1234 South Creek Lane<br />
+	Calgary, Alberta, Canada<br />
+	T4Bâ€“1S6
+</address>
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Address Code" class="textarea" />
 
 	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Lists</h2>
+
 <liferay-ui:tabs
 	names="List Example,UL,OL,UL.icons,UL.alt"
 	refresh="<%= false %>"
@@ -290,12 +266,12 @@
 		<liferay-ui:section>
 			<liferay-util:buffer var="codeContent">
 <h4 class="list-heading">UL.icons</h4>
-	<ul class="icon">
-		<li><span class="aui-icon aui-icon-check"></span>tation ullamcorper suscipit lobortis</li>
-		<li><span class="aui-icon aui-icon-check"></span>Nam liber tempor cum soluta nobis</li>
-		<li><span class="aui-icon aui-icon-check"></span>imperdiet doming id quod mazim</li>
-		<li><span class="aui-icon aui-icon-check"></span>suscipit lobortis nisl ut aliquip ex</li>
-	</ul>
+<ul class="icon">
+	<li><span class="aui-icon aui-icon-check"></span>tation ullamcorper suscipit lobortis</li>
+	<li><span class="aui-icon aui-icon-check"></span>Nam liber tempor cum soluta nobis</li>
+	<li><span class="aui-icon aui-icon-check"></span>imperdiet doming id quod mazim</li>
+	<li><span class="aui-icon aui-icon-check"></span>suscipit lobortis nisl ut aliquip ex</li>
+</ul>
 			</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Ordered List Code" class="textarea" />
@@ -305,22 +281,24 @@
 		<liferay-ui:section>
 			<liferay-util:buffer var="codeContent">
 <h4 class="list-heading">UL.alt</h4>
-	<ul class="alt">
-		<li><span class="aui-icon aui-icon-carat-1-r"></span>tation ullamcorper suscipit lobortis</li>
-		<li><span class="aui-icon aui-icon-close"></span>Nam liber tempor cum soluta nobis</li>
-		<li><span class="aui-icon aui-icon-signal"></span>imperdiet doming id quod mazim</li>
-		<li><span class="aui-icon aui-icon-alert"></span>suscipit lobortis nisl ut aliquip ex</li>
-	</ul>
+<ul class="alt">
+	<li><span class="aui-icon aui-icon-carat-1-r"></span>tation ullamcorper suscipit lobortis</li>
+	<li><span class="aui-icon aui-icon-close"></span>Nam liber tempor cum soluta nobis</li>
+	<li><span class="aui-icon aui-icon-signal"></span>imperdiet doming id quod mazim</li>
+	<li><span class="aui-icon aui-icon-alert"></span>suscipit lobortis nisl ut aliquip ex</li>
+</ul>
 			</liferay-util:buffer>
 
-		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Unordered List Unique Icon Code" class="textarea" />
+			<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Unordered List Unique Icon Code" class="textarea" />
 
 		</liferay-ui:section>
 </liferay-ui:tabs>
 </br>
+
 <hr class="alt1"/>
 
 <h2>Navigation Portlet</h2>
+
 <liferay-ui:tabs
 	names="Navigation Example,Navigation Setting"
 	refresh="<%= false %>"
@@ -339,6 +317,7 @@
 					rootLayoutType="absolute"
 				/>
 			</div>
+			
 			<div class="aui-column-content-last">
 				<liferay-ui:navigation
 					bulletStyle="dots"
@@ -356,15 +335,17 @@
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 Navigation Portlet Code
-			</liferay-util:buffer>
+		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Navigation Portlet Code" class="textarea" />
 
 	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Tooltips</h2>
+
 <liferay-ui:tabs
 	names="Tooltips Example,Sharing Trigger,With Image,Video Preview,No Arrow"
 	refresh="<%= false %>"
@@ -374,28 +355,24 @@ Navigation Portlet Code
 			<aui:layout>
 				<aui:column columnWidth="25" first="true">
 					<h6 class="tooltips-heading">Sharing Trigger</h6>
-					<a href="javascript:void(0);" class="t1" title="Here's a sample Tooltip. The pointer requires no images! First trigger.">Tooltip - Sharing the same trigger, content from title attribute</a>
-					<br/>
+					<a href="javascript:void(0);" class="t1" title="Here's a sample Tooltip. The pointer requires no images! First trigger.">Tooltip - Sharing the same trigger, content from title attribute</a><br/>
 					<a href="javascript:void(0);" class="t1" title="Here's a sample Tooltip. The pointer requires no images! Second trigger.">Tooltip - Sharing the same trigger, content from title attribute</a>
 				</aui:column>
+				
 				<aui:column columnWidth="25">
 					<h6 class="tooltips-heading">With Image</h6>
-					<p><a href="javascript:void(0);" class="t2">Tooltip - With Image</a>
-					<br/>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><a href="javascript:void(0);" class="t2">Tooltip - With Image</a><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</aui:column>
+				
 				<aui:column columnWidth="25">
 					<h6 class="tooltips-heading">Video Preview</h6>
-					<p><a href="javascript:void(0);" class="t4">Tooltip - Video Preview</a>
-					<br/>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><a href="javascript:void(0);" class="t4">Tooltip - Video Preview</a><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</aui:column>
+				
 				<aui:column columnWidth="25" last="true">
 					<h6 class="tooltips-heading">No Arrow</h6>
-					<p><a href="javascript:void(0);" class="t3">Tooltip - Simple tooltip without arrow and no animation</a>
-					<br/>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><a href="javascript:void(0);" class="t3">Tooltip - Simple tooltip without arrow and no animation</a><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</aui:column>
 			</aui:layout>
 		</div>
@@ -404,61 +381,60 @@ Navigation Portlet Code
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h6 class="tooltips-heading">Sharing Trigger</h6>
-	<a href="javascript:void(0);" class="t1" title="Here's a sample Tooltip. The pointer requires no images! First trigger.">Tooltip - Sharing the same trigger, content from title attribute</a>
-	<br/>
-	<a href="javascript:void(0);" class="t1" title="Here's a sample Tooltip. The pointer requires no images! Second trigger.">Tooltip - Sharing the same trigger, content from title attribute</a>
+<a href="javascript:void(0);" class="t1" title="Here's a sample Tooltip. The pointer requires no images! First trigger.">Tooltip - Sharing the same trigger, content from title attribute</a><br/>
+<a href="javascript:void(0);" class="t1" title="Here's a sample Tooltip. The pointer requires no images! Second trigger.">Tooltip - Sharing the same trigger, content from title attribute</a>
 
-	<aui:script use="aui-tooltip,aui-io-plugin">
-		var t1 = new A.Tooltip({
-			trigger: '.t1',
-			align: { points: [ 'bc', 'tc' ] },
-			title: true
-		})
-		.render();
-	</aui:script>
+<aui:script use="aui-tooltip,aui-io-plugin">
+	var t1 = new A.Tooltip({
+		trigger: '.t1',
+		align: { points: [ 'bc', 'tc' ] },
+		title: true
+	})
+	.render();
+</aui:script>
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Sharing Trigger Code" class="textarea" />
-
 	</liferay-ui:section>
 
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h6 class="tooltips-heading">With Image</h6>
-	<p><a href="javascript:void(0);" class="t2">Tooltip - With Image</a>
-	<br/>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>
+	<a href="javascript:void(0);" class="t2">Tooltip - With Image</a><br/>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
 
-	<aui:script use="aui-tooltip,aui-io-plugin">
-		var t2 = new A.Tooltip({
-			trigger: '.t2',
-			bodyContent: '<img src="http://placehold.it/182x154/98BF0D/1F1A16/&text=Image+Example" /><br/><div style="text-align: center;">Image Example</div>',
-		})
+<aui:script use="aui-tooltip,aui-io-plugin">
+	var t2 = new A.Tooltip({
+		trigger: '.t2',
+		bodyContent: '<img src="http://placehold.it/182x154/98BF0D/1F1A16/&text=Image+Example" /><br/><div style="text-align: center;">Image Example</div>',
+	})
 
-		.render();
-	</aui:script>
-			</liferay-util:buffer>
+	.render();
+</aui:script>
+		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Tooltip with Image Code" class="textarea" />
-
 	</liferay-ui:section>
 
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h6 class="tooltips-heading">Video Preview</h6>
-	<p><a href="javascript:void(0);" class="t4">Tooltip - Video Preview</a>
-	<br/>
+<p>
+	<a href="javascript:void(0);" class="t4">Tooltip - Video Preview</a><br/>
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
 
-	<aui:script use="aui-tooltip,aui-io-plugin">
-		var t4 = new A.Tooltip({
-			trigger: '.t4',
-			bodyContent: '<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/PiSxJwB29R8&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/PiSxJwB29R8&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>',
-		})
+<aui:script use="aui-tooltip,aui-io-plugin">
+	var t4 = new A.Tooltip({
+		trigger: '.t4',
+		bodyContent: '<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/PiSxJwB29R8&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/PiSxJwB29R8&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>',
+	})
 
-		.render();
-	</aui:script>
+	.render();
+</aui:script>
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Tooltip with Video Code" class="textarea" />
@@ -468,29 +444,31 @@ Navigation Portlet Code
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h6 class="tooltips-heading">No Arrow</h6>
-	<p><a href="javascript:void(0);" class="t3">Tooltip - Simple tooltip without arrow and no animation</a>
-	<br/>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>
+	<a href="javascript:void(0);" class="t3">Tooltip - Simple tooltip without arrow and no animation</a><br/>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
 
-	<aui:script use="aui-tooltip,aui-io-plugin">
-		var t3 = new A.Tooltip({
-			trigger: '.t3',
-			align: { points: [ 'lc', 'rc' ] },
-			showArrow: false,
-			bodyContent: 'Simple tooltip without arrow! No animation.'
-		})
+<aui:script use="aui-tooltip,aui-io-plugin">
+	var t3 = new A.Tooltip({
+		trigger: '.t3',
+		align: { points: [ 'lc', 'rc' ] },
+		showArrow: false,
+		bodyContent: 'Simple tooltip without arrow! No animation.'
+	})
 
-		.render();
-	</aui:script>
+	.render();
+</aui:script>
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Tooltip without Arrow and no Animation Code" class="textarea" />
-
 	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Horizontal Rules</h2>
+
 <liferay-ui:tabs
 	names="Horizontal Rules Example,HTML"
 	refresh="<%= false %>"
@@ -502,10 +480,12 @@ Navigation Portlet Code
 					<h5 class="hr-heading">HR</h4>
 					<hr />
 				</aui:column>
+				
 				<aui:column columnWidth="33">
 					<h5 class="hr-heading">HR.alt1</h4>
 					<hr class="alt1" />
 				</aui:column>
+				
 				<aui:column columnWidth="33" last="true">
 					<h5 class="hr-heading">HR.alt2</h4>
 					<hr class="alt2" />
@@ -517,22 +497,26 @@ Navigation Portlet Code
 	<liferay-ui:section>
 		<liferay-util:buffer var="codeContent">
 <h4>HR</h4>
+
 <hr />
 
 <h4>HR.alt1</h4>
+
 <hr class="alt1" />
 
 <h4>HR.alt1</h4>
+
 <hr class="alt1" />
-			</liferay-util:buffer>
+		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Horizontal Rules Code" class="textarea" />
-
 	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Icons</h2>
+
 <liferay-ui:tabs
 	names="Icon Example,Icon Code"
 	refresh="<%= false %>"
@@ -892,15 +876,16 @@ Navigation Portlet Code
 	<li><span class="aui-icon aui-icon-grip-diagonal-br"></span></li>
 	<li><span class="aui-icon aui-icon-loading"></span></li>
 </ul>
-			</liferay-util:buffer>
+		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Icon Code" class="textarea" />
-
 	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Buttons</h2>
+
 <liferay-ui:tabs
 	names="Button Example,Button Code"
 	refresh="<%= false %>"
@@ -1166,15 +1151,16 @@ Navigation Portlet Code
 	<button type="button" class="aui-buttonitem-content" title=""><span class="aui-buttonitem-icon aui-icon aui-icon-grip-diagonal-br"></span><span class="aui-buttonitem-label">grip-diagonal-br</span></button>
 	<button type="button" class="aui-buttonitem-content" title=""><span class="aui-buttonitem-icon aui-icon aui-icon-loading"></span><span class="aui-buttonitem-label">loading</span></button>
 </div>
-			</liferay-util:buffer>
+		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Icon Code" class="textarea" />
-
 	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Tabs</h2>
+
 <liferay-ui:tabs
 	names="Tabs Example,Tabs Code,Tabs taglib Code"
 	refresh="<%= false %>"
@@ -1241,10 +1227,9 @@ Navigation Portlet Code
 		).render();
 	});
 &lt;/aui:script&gt;
-			</liferay-util:buffer>
+		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Tabs Code" class="textarea" />
-
 	</liferay-ui:section>
 
 	<liferay-ui:section>
@@ -1268,7 +1253,6 @@ Navigation Portlet Code
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Tabs Taglib Code" class="textarea" />
-
 	</liferay-ui:section>
 </liferay-ui:tabs>
 <hr class="alt1"/>
@@ -1284,6 +1268,7 @@ Navigation Portlet Code
 				<liferay-ui:breadcrumb displayStyle="horizontal"/>
 			</div>
 		</div>
+		
 		<div class="aui-w33 aui-column aui-column-first">
 			<div class="aui-column-content-only">
 				<div class="breadcrumb-styled">
@@ -1329,12 +1314,13 @@ Breadcrumb Portlet
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Breadcrumb Styling Code" class="textarea" />
-
 	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Columns</h2>
+
 <liferay-ui:tabs
 	names="Column Example,Single Column,Two Columns (50% / 50%),Two Columns (33% / 66%),Two Columns (25% / 75%),Sub Columns,Three Columns (33% / 33% / 33%),All Possible Column Widths"
 	refresh="<%= false %>"
@@ -1347,6 +1333,7 @@ Breadcrumb Portlet
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</aui:column>
 			</aui:layout>
+			
 			<hr class="alt1"/>
 
 			<aui:layout>
@@ -1367,13 +1354,18 @@ Breadcrumb Portlet
 					<h5 class="column-heading">Column 3 (33%)</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</aui:column>
+				
 				<aui:column columnWidth="66" last="true">
 					<h5 class="column-heading">Column 4 (66%)</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
 				</aui:column>
 			</aui:layout>
+			
 			<hr class="alt1"/>
 
 			<aui:layout>
@@ -1381,29 +1373,28 @@ Breadcrumb Portlet
 					<h5 class="column-heading">Column 5 (25%)</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</aui:column>
+				
 				<aui:column columnWidth="75" last="true">
 					<h5 class="column-heading">Column 6 (75%)</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>
-						<ul>
-							<li>Item 1</li>
-							<li>Item 2</li>
-							<li>Item 3</li>
-							<li>Item 4</li>
-							<li>Item 5</li>
-							<li>Item 6</li>
-							<li>Item 7</li>
-						</ul>
-					</p>
+					<ul>
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+						<li>Item 4</li>
+						<li>Item 5</li>
+						<li>Item 6</li>
+						<li>Item 7</li>
+					</ul>
 				</aui:column>
 			</aui:layout>
+			
 			<hr class="alt1"/>
 
 			<aui:layout>
 				<aui:column columnWidth="25" first="true">
 					<h5 class="column-heading">Column 7 (25%)</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>
 						<ul>
 							<li>Item 1</li>
 							<li>Item 2</li>
@@ -1413,8 +1404,8 @@ Breadcrumb Portlet
 							<li>Item 6</li>
 							<li>Item 7</li>
 						</ul>
-					</p>
 				</aui:column>
+				
 				<aui:column columnWidth="50" center="true">
 					<h5 class="column-heading">Column 8 (50% container)</h5>
 					<aui:layout>
@@ -1422,12 +1413,14 @@ Breadcrumb Portlet
 							<h6 class="column-heading">Sub-Column 1 (60%)</h6>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</aui:column>
+						
 						<aui:column columnWidth="40" last="true">
 									<h6 class="column-heading">Sub-Column 2 (40%)</h6>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</aui:column>
 					</aui:layout>
 				</aui:column>
+				
 				<aui:column columnWidth="25" last="true">
 					<h5 class="column-heading">Column 9 (25%)</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -1440,10 +1433,12 @@ Breadcrumb Portlet
 					<h5 class="column-heading">Column 10 (33%)</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</aui:column>
+				
 				<aui:column columnWidth="33">
 					<h5 class="column-heading">Column 11 (33%)</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</aui:column>
+				
 				<aui:column columnWidth="33" last="true">
 					<h5 class="column-heading">Column 12 (33%)</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -1451,6 +1446,7 @@ Breadcrumb Portlet
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</aui:column>
 			</aui:layout>
+			
 			<hr class="alt1"/>
 
 			<div class="column-width">
@@ -1463,6 +1459,7 @@ Breadcrumb Portlet
 						<h5>90%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="15" first="true">
 						<h5>15%</h5>
@@ -1471,6 +1468,7 @@ Breadcrumb Portlet
 						<h5>85%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="20" first="true">
 						<h5>20%</h5>
@@ -1479,6 +1477,7 @@ Breadcrumb Portlet
 						<h5>80%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="25" first="true">
 						<h5>25%</h5>
@@ -1487,6 +1486,7 @@ Breadcrumb Portlet
 						<h5>75%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="30" first="true">
 						<h5>30%</h5>
@@ -1495,6 +1495,7 @@ Breadcrumb Portlet
 						<h5>70%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="33" first="true">
 						<h5>33%</h5>
@@ -1503,6 +1504,7 @@ Breadcrumb Portlet
 						<h5>66%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="35" first="true">
 						<h5>35%</h5>
@@ -1511,6 +1513,7 @@ Breadcrumb Portlet
 						<h5>65%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="40" first="true">
 						<h5>40%</h5>
@@ -1519,6 +1522,7 @@ Breadcrumb Portlet
 						<h5>60%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="45" first="true">
 						<h5>45%</h5>
@@ -1527,6 +1531,7 @@ Breadcrumb Portlet
 						<h5>55%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="50" first="true">
 						<h5>50%</h5>
@@ -1535,6 +1540,7 @@ Breadcrumb Portlet
 						<h5>50%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="55" first="true">
 						<h5>55%</h5>
@@ -1543,6 +1549,7 @@ Breadcrumb Portlet
 						<h5>45%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="60" first="true">
 						<h5>60%</h5>
@@ -1551,6 +1558,7 @@ Breadcrumb Portlet
 						<h5>40%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="62" first="true">
 						<h5>62%</h5>
@@ -1559,6 +1567,7 @@ Breadcrumb Portlet
 						<h5>38%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="65" first="true">
 						<h5>65%</h5>
@@ -1567,6 +1576,7 @@ Breadcrumb Portlet
 						<h5>35%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="66" first="true">
 						<h5>66%</h5>
@@ -1575,6 +1585,7 @@ Breadcrumb Portlet
 						<h5>33%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="70" first="true">
 						<h5>70%</h5>
@@ -1583,6 +1594,7 @@ Breadcrumb Portlet
 						<h5>30%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="75" first="true">
 						<h5>75%</h5>
@@ -1591,6 +1603,7 @@ Breadcrumb Portlet
 						<h5>25%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="80" first="true">
 						<h5>80%</h5>
@@ -1599,6 +1612,7 @@ Breadcrumb Portlet
 						<h5>20%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="85" first="true">
 						<h5>85%</h5>
@@ -1607,6 +1621,7 @@ Breadcrumb Portlet
 						<h5>15%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="90" first="true">
 						<h5>90%</h5>
@@ -1615,6 +1630,7 @@ Breadcrumb Portlet
 						<h5>10%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="95" first="true">
 						<h5>95%</h5>
@@ -1623,31 +1639,31 @@ Breadcrumb Portlet
 						<h5>5%</h5>
 					</aui:column>
 				</aui:layout>
+				
 				<aui:layout>
 					<aui:column columnWidth="100" first="true">
 						<h5>100%</h5>
 					</aui:column>
 				</aui:layout>
-				</div>
 			</div>
-		</liferay-ui:section>
+		</div>
+	</liferay-ui:section>
 
-		<liferay-ui:section>
-			<liferay-util:buffer var="codeContent">
+	<liferay-ui:section>
+		<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
 	&lt;aui:column columnWidth="100" first="true"&gt;
 		&lt;h5 class="column-heading"&gt;One and Only Column (100%)&lt;/h5&gt;
 		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-			</liferay-util:buffer>
+		</liferay-util:buffer>
 
-			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Single Column Code" class="textarea" />
+		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Single Column Code" class="textarea" />
+	</liferay-ui:section>
 
-		</liferay-ui:section>
-
-		<liferay-ui:section>
-			<liferay-util:buffer var="codeContent">
+	<liferay-ui:section>
+		<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
 	&lt;aui:column columnWidth="50" first="true"&gt;
 		&lt;h5 class="column-heading"&gt;Column 1 (50%)&lt;/h5&gt;
@@ -1659,13 +1675,11 @@ Breadcrumb Portlet
 		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-			</liferay-util:buffer>
+		</liferay-util:buffer>
 
-			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (50% / 50%) Code" class="textarea" />
+		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (50% / 50%) Code" class="textarea" />	</liferay-ui:section>
 
-		</liferay-ui:section>
-
-		<liferay-ui:section>
+	<liferay-ui:section>
 			<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
 	&lt;aui:column columnWidth="33" first="true"&gt;
@@ -1682,11 +1696,10 @@ Breadcrumb Portlet
 			</liferay-util:buffer>
 
 			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (33% / 66%) Code" class="textarea" />
+	</liferay-ui:section>
 
-		</liferay-ui:section>
-
-		<liferay-ui:section>
-			<liferay-util:buffer var="codeContent">
+	<liferay-ui:section>
+		<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
 	&lt;aui:column columnWidth="25" first="true"&gt;
 		&lt;h5 class="column-heading"&gt;Column 5 (25%)&lt;/h5&gt;
@@ -1708,14 +1721,13 @@ Breadcrumb Portlet
 		&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-			</liferay-util:buffer>
+		</liferay-util:buffer>
 
-			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (25% / 75%) Code" class="textarea" />
+		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Two Columns (25% / 75%) Code" class="textarea" />
+	</liferay-ui:section>
 
-		</liferay-ui:section>
-
-		<liferay-ui:section>
-			<liferay-util:buffer var="codeContent">
+	<liferay-ui:section>
+		<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
 	&lt;aui:column columnWidth="25" first="true"&gt;
 		&lt;h5 class="column-heading"&gt;Column 7 (25%)&lt;/h5&gt;
@@ -1750,14 +1762,13 @@ Breadcrumb Portlet
 		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-			</liferay-util:buffer>
+		</liferay-util:buffer>
 
-			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Sub Columns Code" class="textarea" />
+		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Sub Columns Code" class="textarea" />
+</liferay-ui:section>
 
-		</liferay-ui:section>
-
-		<liferay-ui:section>
-			<liferay-util:buffer var="codeContent">
+	<liferay-ui:section>
+		<liferay-util:buffer var="codeContent">
 &lt;aui:layout&gt;
 	&lt;aui:column columnWidth="33" first="true"&gt;
 		&lt;h5 class="column-heading"&gt;Column 10 (33%)&lt;/h5&gt;
@@ -1774,14 +1785,13 @@ Breadcrumb Portlet
 		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-			</liferay-util:buffer>
-
-			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Three Columns (33% / 33% / 33%) Code" class="textarea" />
-
-		</liferay-ui:section>
-
-		<liferay-ui:section>
-			<liferay-util:buffer var="codeContent">
+		</liferay-util:buffer>
+		
+		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Three Columns (33% / 33% / 33%) Code" class="textarea" />
+	</liferay-ui:section>
+	
+	<liferay-ui:section>
+		<liferay-util:buffer var="codeContent">
 &lt;aui:layout &gt;
 	&lt;aui:column columnWidth="10" first="true"&gt;
 		&lt;h5&gt;10%&lt;/h5&gt;
@@ -1952,15 +1962,16 @@ Breadcrumb Portlet
 		&lt;h5&gt;100%&lt;/h5&gt;
 	&lt;/aui:column&gt;
 &lt;/aui:layout&gt;
-			</liferay-util:buffer>
+		</liferay-util:buffer>
 
-			<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="All Possible Columns Code" class="textarea" />
-
-		</liferay-ui:section>
+		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="All Possible Columns Code" class="textarea" />
+	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Images</h2>
+
 <liferay-ui:tabs
 	names="Image Viewer Example,Image Viewer Code"
 	refresh="<%= false %>"
@@ -2038,12 +2049,13 @@ Breadcrumb Portlet
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Image Viewer Code" class="textarea" />
-
 	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Image Carousel</h2>
+
 <liferay-ui:tabs
 	names="Image Carousel Example,Image Carousel Code"
 	refresh="<%= false %>"
@@ -2090,12 +2102,13 @@ Breadcrumb Portlet
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Image Carousel Code" class="textarea" />
-
 	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Media Gallery</h2>
+
 <liferay-ui:tabs
 	names="Media Gallery Example,Media Gallery Code"
 	refresh="<%= false %>"
@@ -2187,12 +2200,13 @@ Breadcrumb Portlet
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= codeContent %>" name="code" label="Media Gallery Code" class="textarea" />
-
 	</liferay-ui:section>
 </liferay-ui:tabs>
+
 <hr class="alt1"/>
 
 <h2>Forms</h2>
+
 <liferay-ui:tabs
 	names="Form Example,Example 1 Code,Example 2 Code,Example 3 Code"
 	refresh="<%= false %>"
@@ -2247,37 +2261,29 @@ Breadcrumb Portlet
 				<aui:fieldset column="true" title="Form Example 2" class="aui-field-labels-inline">
 
 					<aui:input alignLabel="right" name="username" value="" label="Username" />
-						<p class="aui-form-hint">
-							<span>The username you wish to use.</span>
-						</p>
+					<p class="aui-form-hint"><span>The username you wish to use.</span></p>
 
 					<aui:input alignLabel="right" name="email" value="" label="Email" />
-						<p class="aui-form-hint">
-							<span>The email address to associate with this account.</span>
-						</p>
+					<p class="aui-form-hint"><span>The email address to associate with this account.</span></p>
 
 					<aui:select alignLabel="right" name="accountType" label="Account Type">
 						<aui:option name="premium" label="Premium User" />
 						<aui:option name="midlevel" label="Mid-level User" />
 						<aui:option name="regular" label="Regular User" />
 					</aui:select>
-					<p class="aui-form-hint">
-						<span>What level of user would you like to be?</span>
-					</p>
+					
+					<p class="aui-form-hint"><span>What level of user would you like to be?</span></p>
 
 					<aui:input alignLabel="right" name="interests" type="textarea" value="" label="Interests" />
-						<p class="aui-form-hint">
-							<span>What are some of your interests?</span>
-						</p>
+						<p class="aui-form-hint"><span>What are some of your interests?</span></p>
 
 					<aui:field-wrapper name="userOptions" label="User Options">
 						<aui:input alignLabel="right" type="checkbox" name="notifyMessages" value="1" label="Do you wish to be notified by email when another user sends you a message?" />
 						<aui:input alignLabel="right" type="checkbox" name="displayEmail" value="1" label="Do you wish for other users to be able to see your email address?" />
 						<aui:input alignLabel="right" type="checkbox" name="subscribeNewsletter" value="1" label="Would you like to receive our monthly newsletter?" />
 					</aui:field-wrapper>
-					<p class="aui-form-hint">
-						We will not sell your information, or needlessly spam you. This is just to keep you in the loop.
-					</p>
+					
+					<p class="aui-form-hint">We will not sell your information, or needlessly spam you. This is just to keep you in the loop.</p>
 
 					<div class="aui-button-holder">
 						<aui:button name="submitButton" type="button" value="submit" first="true" />
@@ -2290,14 +2296,10 @@ Breadcrumb Portlet
 				<aui:fieldset column="true" title="Form Example 3" class="aui-field-labels-inline">
 
 					<aui:input alignLabel="right" name="fullName" value="" label="Full Name" />
-						<p class="aui-form-hint">
-							<span>Your full name.</span>
-						</p>
+						<p class="aui-form-hint"><span>Your full name.</span></p>
 
 					<aui:input alignLabel="right" name="cityState" value="" label="City, State" />
-						<p class="aui-form-hint">
-							<span>What city and state do you live in?</span>
-						</p>
+						<p class="aui-form-hint"><span>What city and state do you live in?</span></p>
 
 					<aui:select alignLabel="right" name="ageGroup" label="Your Age Group">
 						<aui:option name="teen" label="13 - 19" selected="true" />
@@ -2305,23 +2307,18 @@ Breadcrumb Portlet
 						<aui:option name="adult" label="31 - 50" />
 						<aui:option name="vintage-adult" label="51+" />
 					</aui:select>
-					<p class="aui-form-hint">
-						<span>The age group that best describes you.</span>
-					</p>
+					
+					<p class="aui-form-hint"><span>The age group that best describes you.</span></p>
 
 					<aui:input alignLabel="right" name="description" type="textarea" value="" label="Description" />
-						<p class="aui-form-hint">
-							<span>Please describe yourself.</span>
-						</p>
+						<p class="aui-form-hint"><span>Please describe yourself.</span></p>
 
 					<aui:field-wrapper name="radio buttons">
 						<aui:input inlineLabel="right" name="usageLevel" type="radio" value="1" label="All the time. I'm already addicted just by signing up." />
 						<aui:input inlineLabel="right" name="usageLevel" type="radio" value="2" label="Sometimes, but maybe more. Depends how good it is." />
 						<aui:input inlineLabel="right" name="usageLevel" type="radio" value="3" label="Probably not that often, I'm just checking it out." />
 					</aui:field-wrapper>
-						<p class="aui-form-hint">
-							This helps us guage your interest in us.
-						</p>
+						<p class="aui-form-hint">This helps us guage your interest in us.</p>
 
 					<div class="aui-button-holder">
 						<aui:button name="submitButton" type="button" value="submit" first="true" />
@@ -2376,7 +2373,6 @@ Breadcrumb Portlet
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Form Example 1 Code" class="textarea" />
-
 	</liferay-ui:section>
 
 	<liferay-ui:section>
@@ -2424,7 +2420,6 @@ Breadcrumb Portlet
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Form Example 2 Code" class="textarea" />
-
 	</liferay-ui:section>
 
 	<liferay-ui:section>
@@ -2473,7 +2468,6 @@ Breadcrumb Portlet
 		</liferay-util:buffer>
 
 		<aui:input type="textarea" value="<%= HtmlUtil.unescape(codeContent) %>" name="code" label="Form Example 3 Code" class="textarea" />
-
 	</liferay-ui:section>
 </liferay-ui:tabs>
 
@@ -2491,7 +2485,6 @@ Breadcrumb Portlet
 </aui:script>
 
 <aui:script use="aui-tooltip,aui-io-plugin">
-
 	var t1 = new A.Tooltip({
 		trigger: '.t1',
 		align: { points: [ 'bc', 'tc' ] },
@@ -2519,11 +2512,9 @@ Breadcrumb Portlet
 		bodyContent: '<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/PiSxJwB29R8&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/PiSxJwB29R8&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>',
 	})
 	.render();
-
 </aui:script>
 
 <aui:script use="aui-image-viewer-base">
-
 	var imageViewer1 = new A.ImageViewer({
 		links: '#gallery1 a',
 		captionFromTitle: true,
@@ -2539,11 +2530,9 @@ Breadcrumb Portlet
 		}
 	})
 	.render();
-
 </aui:script>
 
 <aui:script use="aui-carousel">
-
 	var component = new A.Carousel(
 		{
 			intervalTime: 1,
@@ -2553,11 +2542,9 @@ Breadcrumb Portlet
 			width: 940
 		}
 	).render();
-
 </aui:script>
 
 <aui:script use="aui-image-viewer-gallery,aui-media-viewer-plugin">
-
 	var mediaGallery = new A.ImageGallery({
 		caption: 'AlloyUI - MediaGallery mixed demo',
 		delay: 3000,
@@ -2587,5 +2574,4 @@ Breadcrumb Portlet
 	});
 
 	mediaGallery.render();
-
 </aui:script>
