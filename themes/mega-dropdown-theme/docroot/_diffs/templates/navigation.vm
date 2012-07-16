@@ -1,0 +1,66 @@
+<nav class="$nav_css_class" id="navigation">
+	<h1>
+		<span>#language("navigation")</span>
+	</h1>
+
+	<ul>
+		#foreach ($nav_item in $nav_items)
+			#set($nav_css_classes = "")
+
+			#if ($nav_item.isSelected())
+				#set($nav_css_classes = $nav_css_classes + "selected ")
+			#end
+
+			#if($nav_item.hasChildren())
+				#set($nav_css_classes = $nav_css_classes + "has-child ")
+			#end
+
+			#if($nav_css_classes != "")
+				<li class="$nav_css_classes">
+			#else
+				<li>
+			#end
+
+				<a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $nav_item.getName()</span></a>
+
+				#if ($nav_item.hasChildren())
+					<ul class="child-menu">
+						#foreach ($nav_child in $nav_item.getChildren())
+							#set($nav_css_classes1 = "")
+
+							#if ($nav_child.isSelected())
+								#set($nav_css_classes1 = $nav_css_classes1 + "selected ")
+							#end
+
+							#if($nav_child.hasChildren())
+								#set($nav_css_classes1 = $nav_css_classes1 + "has-child ")
+							#end
+
+							#if($nav_css_classes1 != "")
+								<li class="$nav_css_classes1">
+							#else
+								<li>
+							#end
+
+								<a href="$nav_child.getURL()" $nav_child.getTarget()>$nav_child.getName()</a>
+							</li>
+							#if ($nav_child.hasChildren())
+								<ul class="grand-child-menu">
+									#foreach ($nav_grandchild in $nav_child.getChildren())
+										#if ($nav_grandchild.isSelected())
+											<li class="selected">
+										#else
+											<li>
+										#end
+											<a href="$nav_grandchild.getURL()" $nav_grandchild.getTarget()>$nav_grandchild.getName()</a>
+										</li>
+									#end
+								</ul>
+							#end
+						#end
+					</ul>
+				#end
+			</li>
+		#end
+	</ul>
+</nav>

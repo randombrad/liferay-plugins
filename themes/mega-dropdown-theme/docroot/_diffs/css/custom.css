@@ -1,0 +1,82 @@
+@import "compass";
+
+/* -------- Global -------- */
+
+#skip-to-content, #heading .page-title, #navigation h1, #breadcrumbs, .powered-by {
+	clip: rect(0 0 0 0);
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+body {
+	font: 12px "Helvetica";
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#navigation {
+	border-bottom: 1px solid #000;
+
+	ul {
+		display: inline-block;
+		margin: 0;
+
+		li {
+			display: block;
+			float: left;
+
+			&.has-child {
+				&:after {
+					content:  "▼";
+					font-size: 10px;
+				}
+
+				a {
+					padding: 10px 0 10px 15px;
+				}
+
+				&:hover ul.child-menu {
+					border-left: 1px solid #000;
+					border-right: 1px solid #000;
+					border-bottom: 1px solid #000;
+					display: inline-block;
+					left: 0;
+					position: absolute;
+					top: 18px;
+					width: 150px;
+					z-index: 2;
+				}
+			}
+
+			&:first-child a {
+				padding-left: 0;
+			}
+		}
+
+		ul.child-menu, ul.child-menu ul.grand-child-menu {
+			background: #FFF;
+			display: none;
+
+			li {
+				display: block;
+				float: left;
+				width: 100%;
+
+				&:first-child a {
+					padding-left: 15px;
+				}
+			}
+		}
+
+		a {
+			color: #000;
+			padding: 10px 15px;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+}
