@@ -1,0 +1,10 @@
+#if ($title.data)
+    <h3>$title.data</h3>
+#end
+<ul>
+    #foreach ($link in $links.siblings)
+        <li>
+            <a href="$link.location.data">$link.data</a>
+        </li>
+    #end
+</ul>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="V6yzbo5K" name="display-controls" type="boolean" index-type="">
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="4Z0jzqCF" name="duration" type="list" index-type="">s
+		<dynamic-content><![CDATA[3]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="bTs62poE" name="height" type="text" index-type="">
+		<dynamic-content><![CDATA[349]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="Xu6Yybuc" name="width" type="text" index-type="">
+		<dynamic-content><![CDATA[959]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="e5mM22Ge" name="content" type="text_area" index-type="text">
+		<dynamic-content><![CDATA[<p>
+	<img alt="" src="[$FILE=carousel_1.jpg$]" style="width: 959px; height: 349px; " /></p>
+]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="HBeuSaBa" name="content" type="text_area" index-type="text">
+		<dynamic-content><![CDATA[<p>
+	<img alt="" src="[$FILE=carousel_2.jpg$]" style="width: 959px; height: 349px; " /></p>
+]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="ZcmrydnL" name="content" type="text_area" index-type="text">
+		<dynamic-content><![CDATA[<p>
+	<img alt="" src="[$FILE=carousel_3.jpg$]" style="width: 959px; height: 349px; " /></p>
+]]></dynamic-content>
+	</dynamic-element>
+</root>

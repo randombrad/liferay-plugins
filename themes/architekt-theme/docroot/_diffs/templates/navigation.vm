@@ -1,0 +1,40 @@
+<div class="$nav_css_class" id="menu_container">
+	<ul id="menu" class="menu">
+		#foreach ($nav_item in $nav_items)
+			#set ($menuCss = "menu-item-${nav_item.getLayout().getPlid()} ")
+			#if ($nav_item.isSelected())
+				#set ($menuCss = $menuCss + "current-menu-item ")
+			#end
+
+			#if ($nav_item.hasChildren())
+				#set ($menuCss = $menuCss + "has-children ")
+			#end
+
+			<li class="${menuCss}">
+				<a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $nav_item.getName()</span></a>
+
+				#if ($nav_item.hasChildren())
+					<ul class="sub-menu">
+						#foreach ($nav_child in $nav_item.getChildren())
+							#set ($menuChildCss = "menu-item-${nav_child.getLayout().getPlid()} ")
+							#if ($nav_child.isSelected())
+								#set ($menuChildCss = $menuChildCss + "current-menu-item ")
+							#end	
+
+							<li class="${menuChildCss}">
+
+								<a href="$nav_child.getURL()" $nav_child.getTarget()>$nav_child.getName()</a>
+							</li>
+						#end	
+					</ul>
+				#end
+			</li>
+		#end
+	</ul>
+	#if($theme_settings.display-search == true)
+			<div class="header_search">
+				$theme.journalContentSearch()
+			</div>
+			<div class="clear"></div>
+	#end
+</div>

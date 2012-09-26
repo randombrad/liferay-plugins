@@ -1,0 +1,233 @@
+{
+	"layouts": [
+		{
+			"columns": [
+				[
+					"Main Carousel.xml",
+					"Home Content.html"
+				]
+			],
+			"friendlyURL": "/home",
+			"name": "Home",
+			"title": "Home"
+		},
+		{
+			"columns": [
+				[
+					"About.xml"
+				]
+			],
+			"friendlyURL": "/about",
+			"name": "About",
+			"title": "About"
+		},
+		{
+			"columns": [
+				[
+					"Blog.xml"
+				]
+			],
+			"friendlyURL": "/blog",
+			"name": "Blog",
+			"title": "Blog"
+		},
+		{	"columns": [
+				[
+					"Commercial.html"
+				]
+			],
+			"friendlyURL": "/portfolio",
+			"name": "Portfolio",
+			"title": "Portfolio",
+			"layouts": [
+				{	
+					"columns": [
+						[
+							"Commercial.html"
+						]
+					],
+					"friendlyURL": "/commercial",
+					"name": "Commercial",
+					"title": "Commercial"
+				},
+				{	
+					"columns": [
+						[
+							"Exhibition.html"
+						]
+					],
+					"friendlyURL": "/exhibition",
+					"name": "Exhibition",
+					"title": "Exhibition"
+				},
+				{
+					"columns": [
+						[
+							"Planning.html"
+						]
+					],
+					"friendlyURL": "/planning",
+					"name": "Planning",
+					"title": "Planning"
+				}
+			]
+		},
+		{
+			"columns": [
+				[
+					"Resume.xml"
+				]
+			],
+			"friendlyURL": "/resume",
+			"name": "Resume",
+			"title": "Resume"
+		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "1_WAR_webformportlet_INSTANCE_${groupId}",
+						"portletPreferences": {
+							"description" : "",
+							"fieldType1": "text",
+							"fieldLabel1": "Your Name (required)",
+							"fieldOptional1":"false",
+							"fieldType2": "text",
+							"fieldLabel2": "Your Email (required)",
+							"fieldOptional2":"false",
+							"fieldType3": "text",
+							"fieldLabel3": "Subject",
+							"fieldOptional3":"true",
+							"fieldType4": "textarea",
+							"fieldLabel4": "Your Message",
+							"fieldOptional4":"true",
+							"portletSetupCss": {
+								"wapData":{
+									"title": "",
+									"initialWindowState": "NORMAL"
+								},
+								"spacingData":{
+									"margin":{
+										"sameForAll":true,
+										"bottom":{
+											"unit":"px",
+											"value":""
+										},
+										"left":{
+											"unit":"px",
+											"value":""
+										},
+										"right":{
+											"unit":"px",
+											"value":""
+										},
+										"top":{
+											"unit":"px",
+											"value":""
+										}
+									},
+									"padding":{
+										"sameForAll":true,
+										"bottom":{
+											"unit":"px",
+											"value":""
+										},
+										"left":{
+											"unit":"px",
+											"value":""
+										},
+										"right":{
+											"unit":"px",
+											"value":""
+										},
+										"top":{
+											"unit":"px",
+											"value":""
+										}
+									}
+								},
+								"borderData":{
+									"borderStyle":{
+										"sameForAll":true,
+										"bottom":"",
+										"left":"",
+										"right":"",
+										"top":""
+									},
+									"borderColor":{
+										"sameForAll":true,
+										"bottom":"",
+										"left":"",
+										"right":"",
+										"top":""
+									},
+									"borderWidth":{
+										"sameForAll":true,
+										"bottom":{
+											"unit":"px",
+											"value":""
+										},
+										"left":{
+											"unit":"px",
+											"value":""
+										},
+										"right":{
+											"unit":"px",
+											"value":""
+										},
+										"top":{
+											"unit":"px",
+											"value":""
+										}
+									}
+								},
+								"textData":{
+									"fontWeight":"",
+									"lineHeight":"",
+									"textDecoration":"",
+									"letterSpacing":"",
+									"color":"",
+									"textAlign":"",
+									"fontStyle":"",
+									"fontFamily":"",
+									"wordSpacing":"",
+									"fontSize":""
+								},
+								"bgData":{
+									"backgroundPosition":{
+										"left":{
+											"unit":"px",
+											"value":""
+										},
+										"top":{
+											"unit":"px",
+											"value":""
+										}
+									},
+									"backgroundColor":"",
+									"backgroundRepeat":"",
+									"backgroundImage":"",
+									"useBgImage":false
+								},
+								"advancedData":{
+									"customCSS":"\n#p_p_id_1_WAR_webformportlet_INSTANCE_${groupId}_ .aui-fieldset-legend{\n\tcolor: #C7C7C7;\n\tfont-size: 15px;\n\tmargin: 10px 0;\n}\n\n#p_p_id_1_WAR_webformportlet_INSTANCE_${groupId}_{\n\tcolor: #888;\n}\n\n#p_p_id_1_WAR_webformportlet_INSTANCE_36660_ textarea {\n\tmin-height: 100px;\n\twidth: 200px;\n}\n",
+									"customCSSClassName":"contact-form"
+								}
+							},
+							"portletSetupShowBorders": "false",
+							"title" : "Contact"
+						}
+					}
+				],
+				[
+					"Contact Sidebar.html"
+				]
+			],
+			"friendlyURL": "/contact",
+			"layoutTemplateId": "2_columns_iii",
+			"name": "Contact",
+			"title": "Contact"
+		},
+	],
+	"layoutTemplateId": "1_column"
+}

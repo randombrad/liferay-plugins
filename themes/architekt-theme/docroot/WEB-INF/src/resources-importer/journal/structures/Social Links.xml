@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<root>
+	<dynamic-element name="title" type="text" index-type="" repeatable="false">
+		<meta-data>
+			<entry name="displayAsTooltip"><![CDATA[false]]></entry>
+			<entry name="required"><![CDATA[false]]></entry>
+			<entry name="instructions"><![CDATA[]]></entry>
+			<entry name="label"><![CDATA[Section Title]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element name="links" type="text" index-type="" repeatable="true">
+		<dynamic-element name="location" type="text" index-type="" repeatable="false">
+			<meta-data>
+				<entry name="displayAsTooltip"><![CDATA[false]]></entry>
+				<entry name="required"><![CDATA[true]]></entry>
+				<entry name="instructions"><![CDATA[]]></entry>
+				<entry name="label"><![CDATA[Link URL]]></entry>
+				<entry name="predefinedValue"><![CDATA[]]></entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data>
+			<entry name="displayAsTooltip"><![CDATA[false]]></entry>
+			<entry name="required"><![CDATA[true]]></entry>
+			<entry name="instructions"><![CDATA[]]></entry>
+			<entry name="label"><![CDATA[Link Name]]></entry>
+			<entry name="predefinedValue"><![CDATA[]]></entry>
+		</meta-data>
+	</dynamic-element>
+</root>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="SgjYH0HQ" name="left-column" type="text_area" index-type="">
+		<dynamic-content><![CDATA[<h1>
+			About
+		</h1>
+		<div class="single_content">
+			<p>
+				<img class="alignnone size-full wp-image-115" title="style-about" src="[$FILE=about.jpg$]" alt="" width="624" height="198">
+			</p>
+			<p>
+				Write Something about yourself…
+			</p>
+			<p>
+				Various components of a book into a coherent whole. Front matter, or preliminaries, is the first section of a book, and is usually the smallest section in terms of the number of pages. Incorporating the content,style,format,design, and sequence of the various components of a book into a coherent whole. Front matter, or preliminaries, is the first section of a book, and is usually the smallest section in terms of the number of pages.
+			</p>
+			<p>
+				Private collectors, corporations, publicly funded arts organizations, contemporary art museums or by artists. Contemporary art is exhibited by commercial contemporary art galleries, private collectors, corporations, publicly funded arts organizations, contemporary art museums or by artists.
+			</p>
+		</div>
+		<br>
+		<br>]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="B7GlBoA3" name="side-bar" type="text_area" index-type="">
+		<dynamic-content><![CDATA[<div class="side_box">
+			<a href="http://www.dessign.net/architekttheme/cabin-vardehaugen-www-fantasticnorway-no/"><img width="306" height="215" src="[$FILE=vardehaugen.jpg$]" class="attachment-featured-side wp-post-image" alt="Vardehaugen-306x387" title="Vardehaugen-306x387"></a>
+			<h3>
+				<a href="http://www.dessign.net/architekttheme/cabin-vardehaugen-www-fantasticnorway-no/">Cabin Vardehaugen – www.fantasticnorway.no</a>
+			</h3>
+		</div>
+		<div class="side_box">
+			<a href="http://www.dessign.net/architekttheme/stimen-tourist-www-fantasticnorway-no/"><img width="306" height="215" src="[$FILE=fantastic_norway_cabin.jpg$]" class="attachment-featured-side wp-post-image" alt="fantastic-norway-cabin" title="fantastic-norway-cabin"></a>
+			<h3>
+				<a href="http://www.dessign.net/architekttheme/stimen-tourist-www-fantasticnorway-no/">Stimen Tourist – www.fantasticnorway.no</a>
+			</h3>
+		</div>
+		<div class="side_box">
+			<a href="http://www.dessign.net/architekttheme/arkitekton-www-fantasticnorway-no/"><img width="306" height="215" src="[$FILE=arkitekton1.jpg$]" class="attachment-featured-side wp-post-image" alt="arkitekton1" title="arkitekton1"></a>
+			<h3>
+				<a href="http://www.dessign.net/architekttheme/arkitekton-www-fantasticnorway-no/">Arkitekton – www.fantasticnorway.no</a>
+			</h3>
+		</div>]]></dynamic-content>
+	</dynamic-element>
+</root>

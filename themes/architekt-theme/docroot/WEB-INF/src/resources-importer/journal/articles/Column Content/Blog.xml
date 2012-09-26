@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="SgjYH0HQ" name="left-column" type="text_area" index-type="">
+		<dynamic-content><![CDATA[<div class="blog_box">
+    <h3>
+        <a href="http://www.dessign.net/architekttheme/mountain-hill-cabin-winter-www-fantasticnorway-no/">Mountain Hill Cabin Winter – www.fantasticnorway.no</a>
+    </h3><a href="http://www.dessign.net/architekttheme/mountain-hill-cabin-winter-www-fantasticnorway-no/"><img width="625" height="252" src="[$FILE=mountain_cabin.jpg$]" class="attachment-featured-blog-listing wp-post-image" alt="Mountain_Cabin-blog" title="Mountain_Cabin-blog"></a>
+    <p>
+        The project is a winter cabin to be built in a highly restricted area in the mountain landscape of Ål in Norway. The cabin is designed as a landscape element that leads wind and snow around and over the building. One of the client's initial wishes was to be able to actually go skiing, sledge riding and picnicking on top of the cabin. The cabin is to be erected during late summer 2012. Copyright [.....]
+    </p>
+</div>
+<div class="blog_box">
+    <h3>
+        <a href="http://www.dessign.net/architekttheme/kneisen-visitors-center-www-fantasticnorway-no/">Kneisen Visitors Center – www.fantasticnorway.no</a>
+    </h3><a href="http://www.dessign.net/architekttheme/kneisen-visitors-center-www-fantasticnorway-no/"><img width="625" height="152" src="[$FILE=keinser_logo.jpg$]" class="attachment-featured-blog-listing wp-post-image" alt="keinser-logo" title="keinser-logo"></a>
+    <p>
+        Kneisen is a dual purpose visitors center at the Black Glaciar in northern Norway. The building works both as a centre for eco-tourism and research on new environmentally friendly technology. The building's design is inspired by the rock glacier has brought with him and left in strange places in the landscape, when the ice finally melted. The building was designed on behalf of the Environmental Energy Nordland [.....]
+    </p>
+</div>
+<div class="blog_box">
+    <h3>
+        <a href="http://www.dessign.net/architekttheme/bronnoy-kunstbase-www-fantasticnorway-no/">Bronnoy Kunstbase – www.fantasticnorway.no</a>
+    </h3><a href="http://www.dessign.net/architekttheme/bronnoy-kunstbase-www-fantasticnorway-no/"><img width="625" height="152" src="[$FILE=base_of_bronnoysund_logo.jpg$]" class="attachment-featured-blog-listing wp-post-image" alt="Base-of-Bronnoysund-logo" title="Base-of-Bronnoysund-logo"></a>
+    <p>
+        Rhe Art Base of Brønnøysund is a project initiated in collaboration with local artist Vibeke Steinsholm. The ambition of the building was to create a regional forum for contemporary art in South Helgeland. The building is 450 m2 and contains spaces for art production, exhibitions and teaching. Fantastic Norway worked both with the mobilization process of the local inhabitants and politicians, founding and design for [.....]
+    </p>
+</div>
+]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="B7GlBoA3" name="side-bar" type="text_area" index-type="">
+		<dynamic-content><![CDATA[<div class="side_box">
+    <a href="http://www.dessign.net/architekttheme/stimen-tourist-www-fantasticnorway-no/"><img width="306" height="215" src="[$FILE=fantastic_norway_cabin.jpg$]" class="attachment-featured-side wp-post-image" alt="fantastic-norway-cabin" title="fantastic-norway-cabin"></a>
+    <h3>
+        <a href="http://www.dessign.net/architekttheme/stimen-tourist-www-fantasticnorway-no/">Stimen Tourist – www.fantasticnorway.no</a>
+    </h3>
+</div>
+<div class="side_box">
+    <a href="http://www.dessign.net/architekttheme/abygg-www-fantasticnorway-no/"><img width="306" height="215" src="[$FILE=abbyg.jpg$]" class="attachment-featured-side wp-post-image" alt="abbyg" title="abbyg"></a>
+    <h3>
+        <a href="http://www.dessign.net/architekttheme/abygg-www-fantasticnorway-no/">Abygg – www.fantasticnorway.no</a>
+    </h3>
+</div>
+<div class="side_box">
+    <a href="http://www.dessign.net/architekttheme/house-of-families-www-fantasticnorway-no/"><img width="306" height="215" src="[$FILE=house_of_families.jpg$]" class="attachment-featured-side wp-post-image" alt="house-of-families-front" title="house-of-families-front"></a>
+    <h3>
+        <a href="http://www.dessign.net/architekttheme/house-of-families-www-fantasticnorway-no/">House of Families – www.fantasticnorway.no</a>
+    </h3>
+</div>]]></dynamic-content>
+	</dynamic-element>
+</root>

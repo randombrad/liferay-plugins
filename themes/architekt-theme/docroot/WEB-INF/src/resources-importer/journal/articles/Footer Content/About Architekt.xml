@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="A4hbYmf0" name="title" type="text" index-type="">
+		<dynamic-content><![CDATA[About Architekt]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="7p3Y9yJ5" name="content" type="text_area" index-type="">
+		<dynamic-content><![CDATA[<div class="textwidget">We are small group of passionate designers and architects, looking to change and create amazing digital images to inspire others to follow in our innovative steps. </div>]]></dynamic-content>
+	</dynamic-element>
+</root>

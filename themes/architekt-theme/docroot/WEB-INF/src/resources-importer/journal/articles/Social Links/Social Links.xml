@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="dB7x9Lar" name="title" type="text" index-type="">
+		<dynamic-content><![CDATA[Social Links]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="AT3vc18l" name="links" type="text" index-type="">
+		<dynamic-element instance-id="RUSRgk2T" name="location" type="text" index-type="">
+			<dynamic-content><![CDATA[http://www.facebook.com/DessignNet]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Facebook]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="8cvqWZaV" name="links" type="text" index-type="">
+		<dynamic-element instance-id="QGmxdK0l" name="location" type="text" index-type="">
+			<dynamic-content><![CDATA[http://twitter.com/dessignnet]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Twitter]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="tbBOmXfZ" name="links" type="text" index-type="">
+		<dynamic-element instance-id="0av9w8AO" name="location" type="text" index-type="">
+			<dynamic-content><![CDATA[http://dessign.tumblr.com/]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Tumblr]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="eqFb9Fyf" name="links" type="text" index-type="">
+		<dynamic-element instance-id="fjaTXDjX" name="location" type="text" index-type="">
+			<dynamic-content><![CDATA[http://dribbble.com/dessign]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Dribble]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="5ZrjxdV4" name="links" type="text" index-type="">
+		<dynamic-element instance-id="rwJE7JSJ" name="location" type="text" index-type="">
+			<dynamic-content><![CDATA[http://forrst.me/dessign]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[Forrst]]></dynamic-content>
+	</dynamic-element>
+</root>

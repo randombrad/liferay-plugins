@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="A4hbYmf0" name="title" type="text" index-type="">
+		<dynamic-content><![CDATA[Blog]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="7p3Y9yJ5" name="content" type="text_area" index-type="">
+		<dynamic-content><![CDATA[<ul><li><a href="http://www.dessign.net/architekttheme/mountain-hill-cabin-winter-www-fantasticnorway-no/">Mountain Hill Cabin Winter – www.fantasticnorway.no</a></li><li><a href="http://www.dessign.net/architekttheme/kneisen-visitors-center-www-fantasticnorway-no/">Kneisen Visitors Center – www.fantasticnorway.no</a></li><li><a href="http://www.dessign.net/architekttheme/bronnoy-kunstbase-www-fantasticnorway-no/">Bronnoy Kunstbase – www.fantasticnorway.no</a></li><li><a href="http://www.dessign.net/architekttheme/sirene-luxurious/">Sirene Luxurious – www.fantasticnorway.no</a></li></ul>]]></dynamic-content>
+	</dynamic-element>
+</root>

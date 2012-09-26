@@ -1,0 +1,95 @@
+#set ($theme_image_folder = $request.get("theme-display").get("path-theme-images"))
+#set ($contentId = $reserved-article-id.getData())
+#set ($contentClass = "multiple-items-" + $contentId + "-carousel")
+
+#set ($Integer = 0)
+#set ($cHeight = $Integer.parseInt($height.getData()))
+#set ($adjustedHeight = $cHeight + 10)
+
+<style type="text/css">
+
+
+	#$contentClass {
+		border-bottom: 1px solid #E5E5E5;
+		height: ${adjustedHeight}px;
+		padding: 10px 0;
+		position: relative;
+		width: $width.getData()px;
+	}
+
+	#$contentClass .carousel-item {
+		height: ${adjustedHeight}px;
+		overflow: hidden;
+		width: $width.getData()px;
+		position: absolute;
+		top: 0;
+	}
+
+	#$contentClass .aui-carousel-menu-index,
+	#$contentClass .aui-carousel-menu-pause,
+	#$contentClass .aui-carousel-menu-play {
+		display: none;
+	}
+
+	.aui-carousel menu,
+	.aui-carousel-menu-item {
+		background: none;
+	}
+
+	.aui-carousel menu {
+		padding: 0;
+		top: 0;
+		left: 0;
+		width: ${width.getData}()px;
+	}
+
+	.aui-carousel-menu-prev {
+		background-image: url($theme_image_folder/custom/prev_arrow.png);
+		left: 0;
+		background-position-x: 10px;
+	}
+
+	.aui-carousel-menu-next {
+		background-image: url($theme_image_folder/custom/next_arrow.png);
+		background-position-x: 10px;
+		right: 0;
+		float: right;
+	}
+
+	.aui-carousel-menu-prev, .aui-carousel-menu-next {
+		background-position-y: 50%;
+		background-repeat: no-repeat;
+		height: $height.getData()px;
+		width: 50px;
+		position: absolute;
+		z-index: 20;
+		cursor: pointer;
+	}
+
+</style>
+
+<div id="$contentClass">
+	#foreach ($item in $content.getSiblings())
+		<div class="carousel-item">
+			$item.getData()
+		</div>
+	#end
+</div>
+
+
+
+<script type="text/javascript">
+	AUI().ready(
+	'aui-carousel',
+	function(A) {
+		var component = new A.Carousel(
+			{
+				contentBox: '#$contentClass',
+				height: ${adjustedHeight},
+				intervalTime: $duration.getData(),
+				width: $width.getData()
+			}
+		)
+		.render();
+	});
+</script>

@@ -1,0 +1,7 @@
+#if ($title.data)
+    <h3>$title.data</h3>
+#end
+
+#if ($content.data)
+    $content.data
+#end

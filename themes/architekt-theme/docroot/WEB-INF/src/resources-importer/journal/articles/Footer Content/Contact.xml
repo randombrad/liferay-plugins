@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="A4hbYmf0" name="title" type="text" index-type="">
+		<dynamic-content><![CDATA[Contact]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="7p3Y9yJ5" name="content" type="text_area" index-type="">
+		<dynamic-content><![CDATA[<ul><li>Marios Lublinski</li><li>Tel: 1-800-111-2233</li><li>Fax: 1-800-111-2244</li><li>marios@dessign.net</li></ul>]]></dynamic-content>
+	</dynamic-element>
+</root>

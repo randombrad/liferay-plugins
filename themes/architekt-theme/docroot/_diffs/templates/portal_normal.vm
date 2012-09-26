@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+
+	$theme.include($top_head_include)
+</head>
+
+<body class="$css_class">
+
+$theme.include($body_top_include)
+
+#if ($is_signed_in)
+	#dockbar()
+#end
+
+#if (!$hasWebFormPortlet && $theme_settings.display-warning-messages == true)
+	<div class="portlet-msg-info">
+		This theme uses "Web Form Portlet", please click <a href="http://www.liferay.com/marketplace/-/mp/application/15195519">here</a> to download from Liferay Marketplace.
+ 	</div>
+#end
+<div id="outside_container">
+	<div id="main_container">
+		<div id="header">
+			#if($theme_settings.display-languages == true)
+				<div class="language">$theme.language()</div>
+			#end
+			#if ($header_text)
+				<div class="header_top_text">
+					$header_text
+				</div>
+			#end
+			<a href="$site_default_url" title="#language("go-to") $site_name"><img alt="$logo_description" height="$site_logo_height" src="$site_logo" class="logo" width="$site_logo_width"></a>
+
+			#if ($header_text_cont)
+				<div class="header_text_cont">
+					$header_text_cont
+				</div>
+			#end
+			<div class="clear"></div>
+      </div>
+
+		#if ($has_navigation || $is_signed_in)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+
+	<div id="content">
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+
+	#parse ("$full_templates_path/footer.vm")
+	</div>
+</div>
+
+$theme.include($body_bottom_include)
+
+</body>
+
+$theme.include($bottom_include)
+
+</html>

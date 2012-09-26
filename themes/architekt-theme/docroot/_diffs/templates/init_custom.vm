@@ -1,0 +1,68 @@
+## ---------- Logo ---------- ##
+
+#if (($company.getLogoId() == 0) && $use_company_logo)
+	#set ($site_logo = "${images_folder}/custom/logo.png")
+	#set ($site_logo_height = 69)
+	#set ($site_logo_width = 403)
+#end
+
+## ---------- Header Content ---------- ##
+
+#if ($theme_settings.header-text-article-id)
+	#set ($header_text = $journalContentUtil.getContent($group_id, $theme_settings.header-text-article-id, null, "$locale", $theme_display))
+#else
+	#set ($header_text = $journalContentUtil.getContent($group_id, "HEADER-TEXT", null, $locale, $theme_display))
+#end
+
+#if ($theme_settings.header-text-cont-article-id)
+	#set ($header_text_cont = $journalContentUtil.getContent($group_id, $theme_settings.header-text-cont-article-id, null, "$locale", $theme_display))
+#else
+	#set ($header_text_cont = $journalContentUtil.getContent($group_id, "HEADER-TEXT-CONT", null, "$locale", $theme_display))
+#end
+
+#if($theme_settings.display-search == true)
+	#set ($css_class = $css_class + " show-search")
+#else
+	#set ($css_class = $css_class + " hide-search")
+#end
+
+## ---------- Footer Content ---------- ##
+
+#if ($theme_settings.display-footer == true)
+	#set ($css_class = $css_class + " show-footer")
+#end
+
+#if ($theme_settings.footer-section-1-article-id)
+	#set ($footer_section_1 = $journalContentUtil.getContent($group_id, $theme_settings.footer-section-1-article-id, null, "$locale", $theme_display))
+#else
+	#set ($footer_section_1 = $journalContentUtil.getContent($group_id, "SOCIAL-LINKS", null, "$locale", $theme_display))
+#end
+
+#if ($theme_settings.footer-section-2-article-id)
+	#set ($footer_section_2 = $journalContentUtil.getContent($group_id, $theme_settings.footer-section-2-article-id, null, "$locale", $theme_display))
+#else
+	#set ($footer_section_2 = $journalContentUtil.getContent($group_id, "BLOG-FOOTER", null, "$locale", $theme_display))
+#end
+
+#if ($theme_settings.footer-section-3-article-id)
+	#set ($footer_section_3 = $journalContentUtil.getContent($group_id, $theme_settings.footer-section-3-article-id, null, "$locale", $theme_display))
+#else
+	#set ($footer_section_3 = $journalContentUtil.getContent($group_id, "ABOUT-ARCHITEKT", null, "$locale", $theme_display))
+#end
+
+#if ($theme_settings.footer-section-4-article-id)
+	#set ($footer_section_4 = $journalContentUtil.getContent($group_id, $theme_settings.footer-section-4-article-id, null, "$locale", $theme_display))
+#else
+	#set ($footer_section_4 = $journalContentUtil.getContent($group_id, "CONTACT", null, "$locale", $theme_display))
+#end
+
+## ---------- Check for Web Form Portlet ---------- ##
+
+#set ($portletLocalServiceUtil = $portal.getClass().forName("com.liferay.portal.service.PortletLocalServiceUtil"))
+
+#set ($webformPortletId = "1_WAR_webformportlet")
+
+#if ($portletLocalServiceUtil.hasPortlet($company_id, $webformPortletId) == true)
+	#set ($hasWebFormPortlet = true)
+#end
+

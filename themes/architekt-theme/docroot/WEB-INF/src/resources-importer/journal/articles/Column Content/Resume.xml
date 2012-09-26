@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element instance-id="SgjYH0HQ" name="left-column" type="text_area" index-type="">
+		<dynamic-content><![CDATA[<h1>
+    Resume
+</h1>
+<div class="single_content">
+    <p>
+        <strong>Objective :</strong>
+    </p>
+    <p>
+        Innovative design professional prepared to add experience, fresh graphic creativity to your team to generate superior quality advertising and promotional operations, using advanced technologies and mutual devising strategies.
+    </p>
+    <p>
+        <strong>Job Profile :</strong>
+    </p>
+    <p>
+        Inventive conceptualist with intelligent eye for new methods and progressive design modalities; identified for generating highly efficient results.
+    </p>
+    <p>
+        Very proficient specialist in image-manipulation with a broad &amp; progressive experience and mastery of colour re-production, digital re-touching and colour-correction.
+    </p>
+    <p>
+        Innovative designer with incomparable design skills and thorough attention to details.
+    </p>
+    <p>
+        Dual-platform and multi-tasker wholly up to date in PC &amp; Mac environments with proficient in most commonly utilized graphics &amp; designs.
+    </p>
+</div>
+<br>
+<br>]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element instance-id="B7GlBoA3" name="side-bar" type="text_area" index-type="">
+		<dynamic-content><![CDATA[<div class="side_box">
+    <a href="http://www.dessign.net/architekttheme/mountain-hill-cabin-winter-www-fantasticnorway-no/"><img width="306" height="215" src="[$FILE=mountain_cabin.jpg$]" class="attachment-featured-side wp-post-image" alt="Mountain_Cabin-blog" title="Mountain_Cabin-blog"></a>
+    <h3>
+        <a href="http://www.dessign.net/architekttheme/mountain-hill-cabin-winter-www-fantasticnorway-no/">Mountain Hill Cabin Winter – www.fantasticnorway.no</a>
+    </h3>
+</div><!--//side_box-->
+<div class="side_box">
+    <a href="http://www.dessign.net/architekttheme/sirene-luxurious/"><img width="306" height="215" src="[$FILE=sirene.jpg$]" class="attachment-featured-side wp-post-image" alt="sirene-1" title="sirene-1"></a>
+    <h3>
+        <a href="http://www.dessign.net/architekttheme/sirene-luxurious/">Sirene Luxurious – www.fantasticnorway.no</a>
+    </h3>
+</div>
+<div class="side_box">
+    <a href="http://www.dessign.net/architekttheme/stimen-tourist-www-fantasticnorway-no/"><img width="306" height="215" src="[$FILE=fantastic_norway_cabin.jpg$]" class="attachment-featured-side wp-post-image" alt="fantastic-norway-cabin" title="fantastic-norway-cabin"></a>
+    <h3>
+        <a href="http://www.dessign.net/architekttheme/stimen-tourist-www-fantasticnorway-no/">Stimen Tourist – www.fantasticnorway.no</a>
+    </h3>
+</div>]]></dynamic-content>
+	</dynamic-element>
+</root>

@@ -1,0 +1,32 @@
+
+	<div class="footer_box_cont">
+		<div class="footer_box">
+			#if ($footer_section_1)
+				$footer_section_1
+			#end
+		</div>
+		<div class="footer_box">
+			#if ($footer_section_2)
+				$footer_section_2
+			#end
+		</div>
+		<div class="footer_box">
+			#if ($footer_section_3)
+				$footer_section_3
+			#end
+		</div>
+		<div class="footer_box footer_box_last">
+			#if ($footer_section_4)
+				$footer_section_4
+			#end
+		</div>
+		<div class="clear"></div>
+	</div>
+	<footer id="footer" role="contentinfo">
+		<p class="powered-by">
+		#if (!$is_signed_in)
+			<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+		#end
+		<a href="http://www.liferay.com/marketplace/-/mp/category/15828894">ARCHITEKT Theme</a> Designed by <a href="http://dessign.net">Dessign.net</a>
+	</p>
+</footer>

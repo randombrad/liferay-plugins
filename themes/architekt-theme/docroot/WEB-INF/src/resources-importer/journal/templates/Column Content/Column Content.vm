@@ -1,0 +1,9 @@
+<div id="single_container">
+    <div id="single_left">
+        $left-column.data
+    </div>
+    <div id="sidebar">
+        $side-bar.data
+    </div>
+    <div class="clear"></div>
+</div>
