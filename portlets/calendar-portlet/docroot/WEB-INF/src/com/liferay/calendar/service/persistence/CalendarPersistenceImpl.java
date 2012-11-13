@@ -375,12 +375,14 @@ public class CalendarPersistenceImpl extends BasePersistenceImpl<Calendar>
 		try {
 			session = openSession();
 
-			if (calendar.isCachedModel()) {
+			if (!session.contains(calendar)) {
 				calendar = (Calendar)session.get(CalendarImpl.class,
 						calendar.getPrimaryKeyObj());
 			}
 
-			session.delete(calendar);
+			if (calendar != null) {
+				session.delete(calendar);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -389,7 +391,9 @@ public class CalendarPersistenceImpl extends BasePersistenceImpl<Calendar>
 			closeSession(session);
 		}
 
-		clearCache(calendar);
+		if (calendar != null) {
+			clearCache(calendar);
+		}
 
 		return calendar;
 	}

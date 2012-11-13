@@ -354,12 +354,14 @@ public class UserThreadPersistenceImpl extends BasePersistenceImpl<UserThread>
 		try {
 			session = openSession();
 
-			if (userThread.isCachedModel()) {
+			if (!session.contains(userThread)) {
 				userThread = (UserThread)session.get(UserThreadImpl.class,
 						userThread.getPrimaryKeyObj());
 			}
 
-			session.delete(userThread);
+			if (userThread != null) {
+				session.delete(userThread);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -368,7 +370,9 @@ public class UserThreadPersistenceImpl extends BasePersistenceImpl<UserThread>
 			closeSession(session);
 		}
 
-		clearCache(userThread);
+		if (userThread != null) {
+			clearCache(userThread);
+		}
 
 		return userThread;
 	}

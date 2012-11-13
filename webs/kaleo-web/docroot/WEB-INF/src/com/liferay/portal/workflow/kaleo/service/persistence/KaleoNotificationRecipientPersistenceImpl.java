@@ -322,12 +322,14 @@ public class KaleoNotificationRecipientPersistenceImpl
 		try {
 			session = openSession();
 
-			if (kaleoNotificationRecipient.isCachedModel()) {
+			if (!session.contains(kaleoNotificationRecipient)) {
 				kaleoNotificationRecipient = (KaleoNotificationRecipient)session.get(KaleoNotificationRecipientImpl.class,
 						kaleoNotificationRecipient.getPrimaryKeyObj());
 			}
 
-			session.delete(kaleoNotificationRecipient);
+			if (kaleoNotificationRecipient != null) {
+				session.delete(kaleoNotificationRecipient);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -336,7 +338,9 @@ public class KaleoNotificationRecipientPersistenceImpl
 			closeSession(session);
 		}
 
-		clearCache(kaleoNotificationRecipient);
+		if (kaleoNotificationRecipient != null) {
+			clearCache(kaleoNotificationRecipient);
+		}
 
 		return kaleoNotificationRecipient;
 	}

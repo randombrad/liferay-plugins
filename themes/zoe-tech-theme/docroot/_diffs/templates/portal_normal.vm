@@ -8,6 +8,8 @@
 	<title>$the_title - $company_name</title>
 
 	$theme.include($top_head_include)
+
+	$meta_data_mobile
 </head>
 
 <body class="$css_class">
@@ -23,6 +25,7 @@ $theme.include($body_top_include)
 <div id="wrapper">
 	<header id="banner" role="banner">
 		<div id="heading">
+			<a id="toggle"><span>Toggle Navigation</span></a>
 			<h1 class="site-title">
 				<a class="$logo_css_class" href="$site_default_url" title="#language ("go-to") $site_name">
 					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
@@ -79,6 +82,10 @@ $theme.include($body_top_include)
 #end
 
 $theme.include($body_bottom_include)
+
+#if ($is_mobile)
+	<a id="desktop-view-link" class="desktop-link">Go To Mobile View</a>
+#end
 
 </body>
 

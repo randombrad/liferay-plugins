@@ -319,12 +319,14 @@ public class MeetupsRegistrationPersistenceImpl extends BasePersistenceImpl<Meet
 		try {
 			session = openSession();
 
-			if (meetupsRegistration.isCachedModel()) {
+			if (!session.contains(meetupsRegistration)) {
 				meetupsRegistration = (MeetupsRegistration)session.get(MeetupsRegistrationImpl.class,
 						meetupsRegistration.getPrimaryKeyObj());
 			}
 
-			session.delete(meetupsRegistration);
+			if (meetupsRegistration != null) {
+				session.delete(meetupsRegistration);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -333,7 +335,9 @@ public class MeetupsRegistrationPersistenceImpl extends BasePersistenceImpl<Meet
 			closeSession(session);
 		}
 
-		clearCache(meetupsRegistration);
+		if (meetupsRegistration != null) {
+			clearCache(meetupsRegistration);
+		}
 
 		return meetupsRegistration;
 	}

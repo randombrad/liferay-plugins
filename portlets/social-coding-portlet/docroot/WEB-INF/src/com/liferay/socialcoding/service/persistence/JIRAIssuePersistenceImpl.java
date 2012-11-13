@@ -474,12 +474,14 @@ public class JIRAIssuePersistenceImpl extends BasePersistenceImpl<JIRAIssue>
 		try {
 			session = openSession();
 
-			if (jiraIssue.isCachedModel()) {
+			if (!session.contains(jiraIssue)) {
 				jiraIssue = (JIRAIssue)session.get(JIRAIssueImpl.class,
 						jiraIssue.getPrimaryKeyObj());
 			}
 
-			session.delete(jiraIssue);
+			if (jiraIssue != null) {
+				session.delete(jiraIssue);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -488,7 +490,9 @@ public class JIRAIssuePersistenceImpl extends BasePersistenceImpl<JIRAIssue>
 			closeSession(session);
 		}
 
-		clearCache(jiraIssue);
+		if (jiraIssue != null) {
+			clearCache(jiraIssue);
+		}
 
 		return jiraIssue;
 	}

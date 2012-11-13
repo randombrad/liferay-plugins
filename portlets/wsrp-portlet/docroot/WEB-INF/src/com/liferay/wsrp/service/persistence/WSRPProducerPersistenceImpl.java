@@ -333,12 +333,14 @@ public class WSRPProducerPersistenceImpl extends BasePersistenceImpl<WSRPProduce
 		try {
 			session = openSession();
 
-			if (wsrpProducer.isCachedModel()) {
+			if (!session.contains(wsrpProducer)) {
 				wsrpProducer = (WSRPProducer)session.get(WSRPProducerImpl.class,
 						wsrpProducer.getPrimaryKeyObj());
 			}
 
-			session.delete(wsrpProducer);
+			if (wsrpProducer != null) {
+				session.delete(wsrpProducer);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -347,7 +349,9 @@ public class WSRPProducerPersistenceImpl extends BasePersistenceImpl<WSRPProduce
 			closeSession(session);
 		}
 
-		clearCache(wsrpProducer);
+		if (wsrpProducer != null) {
+			clearCache(wsrpProducer);
+		}
 
 		return wsrpProducer;
 	}

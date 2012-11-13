@@ -282,12 +282,14 @@ public class AccountPersistenceImpl extends BasePersistenceImpl<Account>
 		try {
 			session = openSession();
 
-			if (account.isCachedModel()) {
+			if (!session.contains(account)) {
 				account = (Account)session.get(AccountImpl.class,
 						account.getPrimaryKeyObj());
 			}
 
-			session.delete(account);
+			if (account != null) {
+				session.delete(account);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -296,7 +298,9 @@ public class AccountPersistenceImpl extends BasePersistenceImpl<Account>
 			closeSession(session);
 		}
 
-		clearCache(account);
+		if (account != null) {
+			clearCache(account);
+		}
 
 		return account;
 	}

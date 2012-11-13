@@ -305,12 +305,14 @@ public class WSRPConsumerPersistenceImpl extends BasePersistenceImpl<WSRPConsume
 		try {
 			session = openSession();
 
-			if (wsrpConsumer.isCachedModel()) {
+			if (!session.contains(wsrpConsumer)) {
 				wsrpConsumer = (WSRPConsumer)session.get(WSRPConsumerImpl.class,
 						wsrpConsumer.getPrimaryKeyObj());
 			}
 
-			session.delete(wsrpConsumer);
+			if (wsrpConsumer != null) {
+				session.delete(wsrpConsumer);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -319,7 +321,9 @@ public class WSRPConsumerPersistenceImpl extends BasePersistenceImpl<WSRPConsume
 			closeSession(session);
 		}
 
-		clearCache(wsrpConsumer);
+		if (wsrpConsumer != null) {
+			clearCache(wsrpConsumer);
+		}
 
 		return wsrpConsumer;
 	}

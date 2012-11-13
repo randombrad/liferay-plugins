@@ -288,12 +288,14 @@ public class EntryPersistenceImpl extends BasePersistenceImpl<Entry>
 		try {
 			session = openSession();
 
-			if (entry.isCachedModel()) {
+			if (!session.contains(entry)) {
 				entry = (Entry)session.get(EntryImpl.class,
 						entry.getPrimaryKeyObj());
 			}
 
-			session.delete(entry);
+			if (entry != null) {
+				session.delete(entry);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -302,7 +304,9 @@ public class EntryPersistenceImpl extends BasePersistenceImpl<Entry>
 			closeSession(session);
 		}
 
-		clearCache(entry);
+		if (entry != null) {
+			clearCache(entry);
+		}
 
 		return entry;
 	}

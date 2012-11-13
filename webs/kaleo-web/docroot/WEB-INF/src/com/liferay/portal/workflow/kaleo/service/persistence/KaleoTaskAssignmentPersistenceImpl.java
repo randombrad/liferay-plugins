@@ -344,12 +344,14 @@ public class KaleoTaskAssignmentPersistenceImpl extends BasePersistenceImpl<Kale
 		try {
 			session = openSession();
 
-			if (kaleoTaskAssignment.isCachedModel()) {
+			if (!session.contains(kaleoTaskAssignment)) {
 				kaleoTaskAssignment = (KaleoTaskAssignment)session.get(KaleoTaskAssignmentImpl.class,
 						kaleoTaskAssignment.getPrimaryKeyObj());
 			}
 
-			session.delete(kaleoTaskAssignment);
+			if (kaleoTaskAssignment != null) {
+				session.delete(kaleoTaskAssignment);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -358,7 +360,9 @@ public class KaleoTaskAssignmentPersistenceImpl extends BasePersistenceImpl<Kale
 			closeSession(session);
 		}
 
-		clearCache(kaleoTaskAssignment);
+		if (kaleoTaskAssignment != null) {
+			clearCache(kaleoTaskAssignment);
+		}
 
 		return kaleoTaskAssignment;
 	}

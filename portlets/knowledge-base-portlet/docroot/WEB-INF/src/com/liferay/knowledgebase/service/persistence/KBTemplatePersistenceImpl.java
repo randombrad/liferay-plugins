@@ -335,12 +335,14 @@ public class KBTemplatePersistenceImpl extends BasePersistenceImpl<KBTemplate>
 		try {
 			session = openSession();
 
-			if (kbTemplate.isCachedModel()) {
+			if (!session.contains(kbTemplate)) {
 				kbTemplate = (KBTemplate)session.get(KBTemplateImpl.class,
 						kbTemplate.getPrimaryKeyObj());
 			}
 
-			session.delete(kbTemplate);
+			if (kbTemplate != null) {
+				session.delete(kbTemplate);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -349,7 +351,9 @@ public class KBTemplatePersistenceImpl extends BasePersistenceImpl<KBTemplate>
 			closeSession(session);
 		}
 
-		clearCache(kbTemplate);
+		if (kbTemplate != null) {
+			clearCache(kbTemplate);
+		}
 
 		return kbTemplate;
 	}

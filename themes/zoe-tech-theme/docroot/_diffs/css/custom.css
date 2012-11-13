@@ -59,6 +59,10 @@ body {
 	position: relative;
 }
 
+#toggle {
+	display: none;
+}
+
 #sign-in {
 	background: #142933;
 	color: #FFF;
@@ -207,7 +211,7 @@ hr {
 		font-size: 12px;
 		height: 14px;
 		padding: 10px 0 10px 10px;
-		width: 170px
+		width: 170px;
 	}
 
 	.lfr-search-keywords {
@@ -233,6 +237,10 @@ hr {
 }
 
 /* -------- Navigation -------- */
+
+#mobile-buttons {
+	display: none;
+}
 
 #navigation {
 	background: url(../images/custom/nav_bg.png) repeat-x 0 10px;
@@ -363,6 +371,10 @@ hr {
 }
 
 /* -------- Pod -------- */
+
+.portlet-column-content {
+	padding: 0;
+}
 
 .pod {
 	width: 305px;
@@ -577,6 +589,282 @@ ul.arrow {
 	}
 }
 
+/* ------- Mobile ------ */
+
+@media screen and (max-width: 961px) {
+	.mobile body.mobile-enabled {
+		border-width: 0;
+		overflow-x: hidden !important; 
+
+		.portlet-dockbar {
+			display: none;
+		}
+
+		&.show-nav {
+			#navigation {
+				left: 0;
+			} 
+
+			#footerWrapper, #heading, #wrapper {
+				left: 260px;
+			}
+		}
+
+		#sign-in {
+			display: none;
+		}
+
+		#heading {
+			background: url(../images/custom/background.png);
+			height: 50px;
+			position: fixed;
+			width: 100%;
+			z-index: 5;
+
+			#toggle {
+				background: url(../images/custom/toggleImage.png) 50% center no-repeat;
+				border-right: 1px solid #142933;
+				cursor: pointer;
+				display: inline-block;
+				height: 35px;
+				margin: 2px 0;
+				padding: 5px;
+				width: 35px;
+				z-index: 3;
+
+				span {
+					display: none;
+				}
+			}
+
+			.site-title {
+				display: inline-block;
+				padding: 5px 10px;
+				vertical-align: top;
+
+				img {
+					height: 35px;
+					width: auto;
+				}
+
+				#pageSearch {
+					background-image: url(../images/custom/page_search_mobile.png);
+					background-position: right;
+					right: 5px;
+					top: 5px;
+
+					#keywords {
+						width: 125px;
+					}
+
+					.lfr-search-button .aui-field-content {
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+
+		#navigation{
+			&, li, #mobile-buttons div {
+				border: 1px solid #FFF;
+			}
+		}
+
+		#navigation {
+			background: #1D1D1B;
+			border-width: 0 1px 0 0;
+			height: 100%;
+			left: -270px;
+			position: fixed;
+			top: 0;
+			width: 260px;
+			z-index: 5;
+
+			ul {
+				height: 100% !important;
+				margin: 0;
+				overflow-x: hidden;
+				padding: 0;
+
+				#mobile-buttons {
+					display: block;
+
+					div {
+						background: #E06F35;
+						border-width: 0 0 1px 0;
+						color: #FFF;
+						display: block;
+						font-size: .85em;
+						padding: 10px;
+						right: 2px;
+						text-align: center;
+
+						img {
+							left: -25px;
+							position: absolute;
+							top: -2px;
+						}
+
+						span {
+							position: relative;
+						}
+					}
+				}
+			}
+
+			li {
+				border-width: 0 0 1px 0;
+				float: none;
+				font-size: 2em;
+				padding: 15px 30px;
+				position: relative;
+
+				&.selected:after {
+					border: 15px solid transparent;
+					border-left-color: white;
+					content: "";
+					left: 0;
+					position: absolute;
+					top: 14px;
+				}
+			}
+
+			a {
+				color: #FFF !important;
+				display: block !important;
+			}
+		}
+
+		img.main-content-image, #content, #footerWrapper #footerContent, #navigation ul, .column-text, .column-text img, .pod {
+			height: auto;
+			width: 100%;
+		}
+
+		#content {
+			padding-top: 40px;
+
+			#main-content {
+				padding: 10px 10px 20px 10px;
+			}
+		}
+
+		.aui-column-content, .aui-column-content-center {
+			padding: 0;
+		}
+
+		.columns-1-3-1, #footerWrapper .aui-w25 {
+			text-align: center;
+		}
+
+		.columns-1-3-1 #column-2, .columns-1-3-1 #column-3, .columns-1-3-1 #column-4 {
+			display: inline-block;
+			width: 50%;
+
+			.portlet-body {
+				padding: 5px;
+			}
+		}
+
+		.portlet-column-content {
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+
+		.carousel-container {
+			background: #193440;
+			height: auto;
+
+			#tabs {
+				background: #193440;
+				width: auto;
+
+				.tab-item {
+					display: inline-block;
+					margin: 3px;
+					padding: 2px;
+					width: 30px;
+
+					&.aui-carousel-menu-active {
+						background: #E06F35;
+					}
+
+					.icon {
+						left: 5px;
+						position: relative;
+						width: 20px;
+					}
+				}
+				
+				.divider, .tagline, .title {
+					display: none;
+				}
+			}
+
+			#carousel, .aui-carousel, .aui-carousel-item {
+				background-position: center !important;
+				background-size: 100% auto !important; 
+				left: 0;
+				margin: 0;
+				width: 100% !important;
+			}
+		}
+
+		#quoteBoxContainer .quote-item {
+			padding: 1em;
+
+			.quote {
+				font-size: 2em;
+				line-height: 1em;
+
+			}
+
+			.author {
+				margin-top: 0;
+			}
+		}
+
+		.journal-content-article .list-block {
+			display: block;
+			margin: 0 10px;
+		}
+
+		#footerWrapper {
+			padding: 5px;
+			position: relative;
+
+			#footerContent {
+				ul.social li {
+					padding-right: 10px;
+				}
+
+				p {
+					padding: 5px;
+				}
+			}
+		}
+
+		#desktop-view-link {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 599px) {
+	.mobile body.mobile-enabled {
+		#column-1, #column-2, #column-3, #column-4, #footerWrapper .aui-w25 {
+			display: block;
+			width: 100% !important;
+		}
+	}	
+}
+
+#desktop-view-link {
+	color: #EE9F44;
+	display: block;
+	font-size: 2.5em;
+	text-align: center;
+}
+
 /* ------- Browser Specific Rules ------ */
 
 .ie6 {
@@ -601,7 +889,7 @@ ul.arrow {
 
 #sign-in {
 	@include border-bottom-radius(3px);
-	@include box-shadow(1px 2px 3px 0px #999);
+	@include box-shadow(1px 2px 3px 0 #999);
 }
 
 .carousel-container #carousel .aui-carousel-item {
@@ -618,4 +906,35 @@ ul.arrow {
 
 #quoteBox h3 {
 	@include text-shadow(1px 1px rgba(255, 255, 255, 1));
+}
+
+@media screen and (max-width: 961px) {
+	.mobile body.mobile-enabled {
+		#heading {
+			@include box-shadow(#383837 0 1px 8px);
+		}
+
+		#navigation {
+			@include background(linear-gradient(#959595, #142933));
+			@include box-shadow(#383837 1px 51px 8px);
+
+			ul {
+				-webkit-overflow-scrolling: touch;
+			}
+
+			li {
+				@include background(linear-gradient(#959595, #2E3F47 35%, #142933));
+			}
+		}
+
+		#navigation, #heading, #wrapper, #footerWrapper, .show-nav #navigation, .show-nav #heading, .show-nav #wrapper, .show-nav #footerWrapper {
+			@include transition-duration(1s);
+			@include transition-property(left);
+		}
+
+		#tabs {
+			@include border-bottom-right-radius(5px);
+			@include border-top-left-radius(5px);
+		}
+	}
 }

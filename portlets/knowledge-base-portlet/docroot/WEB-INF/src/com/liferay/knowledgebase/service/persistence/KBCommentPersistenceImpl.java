@@ -399,12 +399,14 @@ public class KBCommentPersistenceImpl extends BasePersistenceImpl<KBComment>
 		try {
 			session = openSession();
 
-			if (kbComment.isCachedModel()) {
+			if (!session.contains(kbComment)) {
 				kbComment = (KBComment)session.get(KBCommentImpl.class,
 						kbComment.getPrimaryKeyObj());
 			}
 
-			session.delete(kbComment);
+			if (kbComment != null) {
+				session.delete(kbComment);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -413,7 +415,9 @@ public class KBCommentPersistenceImpl extends BasePersistenceImpl<KBComment>
 			closeSession(session);
 		}
 
-		clearCache(kbComment);
+		if (kbComment != null) {
+			clearCache(kbComment);
+		}
 
 		return kbComment;
 	}

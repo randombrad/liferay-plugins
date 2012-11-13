@@ -236,12 +236,14 @@ public class AssetPersistenceImpl extends BasePersistenceImpl<Asset>
 		try {
 			session = openSession();
 
-			if (asset.isCachedModel()) {
+			if (!session.contains(asset)) {
 				asset = (Asset)session.get(AssetImpl.class,
 						asset.getPrimaryKeyObj());
 			}
 
-			session.delete(asset);
+			if (asset != null) {
+				session.delete(asset);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -250,7 +252,9 @@ public class AssetPersistenceImpl extends BasePersistenceImpl<Asset>
 			closeSession(session);
 		}
 
-		clearCache(asset);
+		if (asset != null) {
+			clearCache(asset);
+		}
 
 		return asset;
 	}

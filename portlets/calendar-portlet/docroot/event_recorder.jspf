@@ -61,17 +61,11 @@
 					</td>
 					<td>
 						<select id="<portlet:namespace />eventRecorderCalendar" name="calendarId">
-
-							<%
-							for (Calendar calendar : manageableCalendars) {
-							%>
-
-								<option value="<%= calendar.getCalendarId() %>"><%= calendar.getName(locale) %></option>
-
-							<%
-							}
-							%>
-
+							<tpl for="calendarIds">
+								<tpl for="parent.availableCalendars[values]">
+									<option value="{[values.get('calendarId')]}">{[Liferay.CalendarUtil.getCalendarName(values.get('name'), values.get('calendarResourceName'))]}</option>
+								</tpl>
+							</tpl>
 						</select>
 					</td>
 				</tr>
@@ -82,7 +76,7 @@
 					<liferay-ui:message key="users" />:
 				</td>
 				<td>
-					<label class="calendar-portlet-invitees"></label>
+					<label class="calendar-portlet-invitees"><liferay-ui:message key="loading" /></label>
 				</td>
 			</tr>
 			<tr <tpl if="!values.editing">class="aui-helper-hidden"</tpl> id="<portlet:namespace />eventRecorderResources">
@@ -90,7 +84,7 @@
 					<liferay-ui:message key="resources" />:
 				</td>
 				<td>
-					<label class="calendar-portlet-invitees"></label>
+					<label class="calendar-portlet-invitees"><liferay-ui:message key="loading" /></label>
 				</td>
 			</tr>
 		</table>

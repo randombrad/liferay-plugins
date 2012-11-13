@@ -348,12 +348,14 @@ public class KaleoTaskInstanceTokenPersistenceImpl extends BasePersistenceImpl<K
 		try {
 			session = openSession();
 
-			if (kaleoTaskInstanceToken.isCachedModel()) {
+			if (!session.contains(kaleoTaskInstanceToken)) {
 				kaleoTaskInstanceToken = (KaleoTaskInstanceToken)session.get(KaleoTaskInstanceTokenImpl.class,
 						kaleoTaskInstanceToken.getPrimaryKeyObj());
 			}
 
-			session.delete(kaleoTaskInstanceToken);
+			if (kaleoTaskInstanceToken != null) {
+				session.delete(kaleoTaskInstanceToken);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -362,7 +364,9 @@ public class KaleoTaskInstanceTokenPersistenceImpl extends BasePersistenceImpl<K
 			closeSession(session);
 		}
 
-		clearCache(kaleoTaskInstanceToken);
+		if (kaleoTaskInstanceToken != null) {
+			clearCache(kaleoTaskInstanceToken);
+		}
 
 		return kaleoTaskInstanceToken;
 	}

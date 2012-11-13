@@ -12,17 +12,28 @@
  * details.
  */
 
-package com.liferay.resourcesimporter.util;
+package com.liferay.calendar;
 
-import com.liferay.portal.kernel.util.GetterUtil;
-import com.liferay.util.portlet.PortletProps;
+import com.liferay.calendar.model.CalendarBooking;
+import com.liferay.portal.theme.ThemeDisplay;
+import com.liferay.portlet.expando.model.BaseCustomAttributesDisplay;
 
 /**
- * @author Shinn Lok
+ * @author Fabio Pezzutto
+ * @author Eduardo Lundgren
  */
-public class PortletPropsValues {
+public class CalendarCustomAttributesDisplay
+	extends BaseCustomAttributesDisplay {
 
-	public static final boolean DEVELOPER_MODE_ENABLED = GetterUtil.getBoolean(
-		PortletProps.get(PortletPropsKeys.DEVELOPER_MODE_ENABLED));
+	public static final String CLASS_NAME = CalendarBooking.class.getName();
+
+	public String getClassName() {
+		return CLASS_NAME;
+	}
+
+	@Override
+	public String getIconPath(ThemeDisplay themeDisplay) {
+		return themeDisplay.getPathThemeImages() + "/common/date.png";
+	}
 
 }

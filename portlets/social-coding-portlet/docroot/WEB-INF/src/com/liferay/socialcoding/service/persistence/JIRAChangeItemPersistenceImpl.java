@@ -266,12 +266,14 @@ public class JIRAChangeItemPersistenceImpl extends BasePersistenceImpl<JIRAChang
 		try {
 			session = openSession();
 
-			if (jiraChangeItem.isCachedModel()) {
+			if (!session.contains(jiraChangeItem)) {
 				jiraChangeItem = (JIRAChangeItem)session.get(JIRAChangeItemImpl.class,
 						jiraChangeItem.getPrimaryKeyObj());
 			}
 
-			session.delete(jiraChangeItem);
+			if (jiraChangeItem != null) {
+				session.delete(jiraChangeItem);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -280,7 +282,9 @@ public class JIRAChangeItemPersistenceImpl extends BasePersistenceImpl<JIRAChang
 			closeSession(session);
 		}
 
-		clearCache(jiraChangeItem);
+		if (jiraChangeItem != null) {
+			clearCache(jiraChangeItem);
+		}
 
 		return jiraChangeItem;
 	}

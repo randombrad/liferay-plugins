@@ -18,7 +18,7 @@
 
 <%
 String activeView = ParamUtil.getString(request, "activeView", defaultView);
-long date = ParamUtil.getLong(request, "date", now.getTimeInMillis());
+long date = ParamUtil.getLong(request, "date", System.currentTimeMillis());
 
 List<Calendar> groupCalendars = null;
 
@@ -42,6 +42,12 @@ for (long calendarId : calendarIds) {
 	if ((calendar != null) && (CalendarPermission.contains(permissionChecker, calendar, ActionKeys.VIEW))) {
 		otherCalendars.add(calendar);
 	}
+}
+
+Calendar defaultCalendar = null;
+
+if ((userCalendars != null) && (userCalendars.size() > 0)) {
+	defaultCalendar = userCalendars.get(0);
 }
 
 JSONArray groupCalendarsJSONArray = CalendarUtil.toCalendarsJSONArray(themeDisplay, groupCalendars);
@@ -126,8 +132,8 @@ JSONArray otherCalendarsJSONArray = CalendarUtil.toCalendarsJSONArray(themeDispl
 	Liferay.CalendarUtil.INVITEES_URL = '<liferay-portlet:resourceURL copyCurrentRenderParameters="<%= false %>" id="calendarBookingInvitees" />';
 	Liferay.CalendarUtil.RENDERING_RULES_URL = '<liferay-portlet:resourceURL copyCurrentRenderParameters="<%= false %>" id="calendarRenderingRules" />';
 
-	<c:if test="<%= userCalendars != null %>">
-		Liferay.CalendarUtil.DEFAULT_CALENDAR = <%= CalendarUtil.toCalendarJSONObject(themeDisplay, userCalendars.get(0)) %>;
+	<c:if test="<%= defaultCalendar != null %>">
+		Liferay.CalendarUtil.DEFAULT_USER_CALENDAR_ID = <%= defaultCalendar.getCalendarId() %>;
 	</c:if>
 
 	var syncCalendarsMap = function() {
@@ -321,6 +327,8 @@ JSONArray otherCalendarsJSONArray = CalendarUtil.toCalendarsJSONArray(themeDispl
 			}
 		);
 	});
+
+	<portlet:namespace />scheduler.load();
 </aui:script>
 
 <%!

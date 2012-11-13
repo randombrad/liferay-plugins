@@ -318,12 +318,14 @@ public class StatusPersistenceImpl extends BasePersistenceImpl<Status>
 		try {
 			session = openSession();
 
-			if (status.isCachedModel()) {
+			if (!session.contains(status)) {
 				status = (Status)session.get(StatusImpl.class,
 						status.getPrimaryKeyObj());
 			}
 
-			session.delete(status);
+			if (status != null) {
+				session.delete(status);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -332,7 +334,9 @@ public class StatusPersistenceImpl extends BasePersistenceImpl<Status>
 			closeSession(session);
 		}
 
-		clearCache(status);
+		if (status != null) {
+			clearCache(status);
+		}
 
 		return status;
 	}

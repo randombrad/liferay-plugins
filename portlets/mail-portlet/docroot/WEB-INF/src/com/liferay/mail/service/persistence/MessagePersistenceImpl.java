@@ -306,12 +306,14 @@ public class MessagePersistenceImpl extends BasePersistenceImpl<Message>
 		try {
 			session = openSession();
 
-			if (message.isCachedModel()) {
+			if (!session.contains(message)) {
 				message = (Message)session.get(MessageImpl.class,
 						message.getPrimaryKeyObj());
 			}
 
-			session.delete(message);
+			if (message != null) {
+				session.delete(message);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -320,7 +322,9 @@ public class MessagePersistenceImpl extends BasePersistenceImpl<Message>
 			closeSession(session);
 		}
 
-		clearCache(message);
+		if (message != null) {
+			clearCache(message);
+		}
 
 		return message;
 	}

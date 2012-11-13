@@ -342,12 +342,14 @@ public class MemberRequestPersistenceImpl extends BasePersistenceImpl<MemberRequ
 		try {
 			session = openSession();
 
-			if (memberRequest.isCachedModel()) {
+			if (!session.contains(memberRequest)) {
 				memberRequest = (MemberRequest)session.get(MemberRequestImpl.class,
 						memberRequest.getPrimaryKeyObj());
 			}
 
-			session.delete(memberRequest);
+			if (memberRequest != null) {
+				session.delete(memberRequest);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -356,7 +358,9 @@ public class MemberRequestPersistenceImpl extends BasePersistenceImpl<MemberRequ
 			closeSession(session);
 		}
 
-		clearCache(memberRequest);
+		if (memberRequest != null) {
+			clearCache(memberRequest);
+		}
 
 		return memberRequest;
 	}

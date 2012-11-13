@@ -893,12 +893,14 @@ public class KBArticlePersistenceImpl extends BasePersistenceImpl<KBArticle>
 		try {
 			session = openSession();
 
-			if (kbArticle.isCachedModel()) {
+			if (!session.contains(kbArticle)) {
 				kbArticle = (KBArticle)session.get(KBArticleImpl.class,
 						kbArticle.getPrimaryKeyObj());
 			}
 
-			session.delete(kbArticle);
+			if (kbArticle != null) {
+				session.delete(kbArticle);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -907,7 +909,9 @@ public class KBArticlePersistenceImpl extends BasePersistenceImpl<KBArticle>
 			closeSession(session);
 		}
 
-		clearCache(kbArticle);
+		if (kbArticle != null) {
+			clearCache(kbArticle);
+		}
 
 		return kbArticle;
 	}

@@ -290,12 +290,14 @@ public class FolderPersistenceImpl extends BasePersistenceImpl<Folder>
 		try {
 			session = openSession();
 
-			if (folder.isCachedModel()) {
+			if (!session.contains(folder)) {
 				folder = (Folder)session.get(FolderImpl.class,
 						folder.getPrimaryKeyObj());
 			}
 
-			session.delete(folder);
+			if (folder != null) {
+				session.delete(folder);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -304,7 +306,9 @@ public class FolderPersistenceImpl extends BasePersistenceImpl<Folder>
 			closeSession(session);
 		}
 
-		clearCache(folder);
+		if (folder != null) {
+			clearCache(folder);
+		}
 
 		return folder;
 	}

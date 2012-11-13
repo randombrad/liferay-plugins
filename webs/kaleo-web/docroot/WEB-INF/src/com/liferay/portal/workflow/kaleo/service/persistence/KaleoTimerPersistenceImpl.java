@@ -292,12 +292,14 @@ public class KaleoTimerPersistenceImpl extends BasePersistenceImpl<KaleoTimer>
 		try {
 			session = openSession();
 
-			if (kaleoTimer.isCachedModel()) {
+			if (!session.contains(kaleoTimer)) {
 				kaleoTimer = (KaleoTimer)session.get(KaleoTimerImpl.class,
 						kaleoTimer.getPrimaryKeyObj());
 			}
 
-			session.delete(kaleoTimer);
+			if (kaleoTimer != null) {
+				session.delete(kaleoTimer);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -306,7 +308,9 @@ public class KaleoTimerPersistenceImpl extends BasePersistenceImpl<KaleoTimer>
 			closeSession(session);
 		}
 
-		clearCache(kaleoTimer);
+		if (kaleoTimer != null) {
+			clearCache(kaleoTimer);
+		}
 
 		return kaleoTimer;
 	}

@@ -257,11 +257,13 @@ public class BarPersistenceImpl extends BasePersistenceImpl<Bar>
 		try {
 			session = openSession();
 
-			if (bar.isCachedModel()) {
+			if (!session.contains(bar)) {
 				bar = (Bar)session.get(BarImpl.class, bar.getPrimaryKeyObj());
 			}
 
-			session.delete(bar);
+			if (bar != null) {
+				session.delete(bar);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -270,7 +272,9 @@ public class BarPersistenceImpl extends BasePersistenceImpl<Bar>
 			closeSession(session);
 		}
 
-		clearCache(bar);
+		if (bar != null) {
+			clearCache(bar);
+		}
 
 		return bar;
 	}

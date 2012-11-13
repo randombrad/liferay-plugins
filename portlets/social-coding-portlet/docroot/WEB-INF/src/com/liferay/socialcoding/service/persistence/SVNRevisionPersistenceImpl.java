@@ -303,12 +303,14 @@ public class SVNRevisionPersistenceImpl extends BasePersistenceImpl<SVNRevision>
 		try {
 			session = openSession();
 
-			if (svnRevision.isCachedModel()) {
+			if (!session.contains(svnRevision)) {
 				svnRevision = (SVNRevision)session.get(SVNRevisionImpl.class,
 						svnRevision.getPrimaryKeyObj());
 			}
 
-			session.delete(svnRevision);
+			if (svnRevision != null) {
+				session.delete(svnRevision);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -317,7 +319,9 @@ public class SVNRevisionPersistenceImpl extends BasePersistenceImpl<SVNRevision>
 			closeSession(session);
 		}
 
-		clearCache(svnRevision);
+		if (svnRevision != null) {
+			clearCache(svnRevision);
+		}
 
 		return svnRevision;
 	}

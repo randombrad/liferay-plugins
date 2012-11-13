@@ -322,11 +322,13 @@ public class AppPersistenceImpl extends BasePersistenceImpl<App>
 		try {
 			session = openSession();
 
-			if (app.isCachedModel()) {
+			if (!session.contains(app)) {
 				app = (App)session.get(AppImpl.class, app.getPrimaryKeyObj());
 			}
 
-			session.delete(app);
+			if (app != null) {
+				session.delete(app);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -335,7 +337,9 @@ public class AppPersistenceImpl extends BasePersistenceImpl<App>
 			closeSession(session);
 		}
 
-		clearCache(app);
+		if (app != null) {
+			clearCache(app);
+		}
 
 		return app;
 	}

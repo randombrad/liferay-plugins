@@ -1,3 +1,4 @@
+<%--
 /**
  * Copyright (c) 2000-2012 Liferay, Inc. All rights reserved.
  *
@@ -11,15 +12,14 @@
  * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
  * details.
  */
+--%>
 
-package com.liferay.resourcesimporter.util;
+<%@ include file="/html/taglib/ui/social_bookmark/init.jsp" %>
 
-/**
- * @author Shinn Lok
- */
-public interface PortletPropsKeys {
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=xa-50994fd636c849d6">
+	<img alt="Bookmark and Share" height="16" src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" style="border:0" width="125" />
+</a>
 
-	public static final String DEVELOPER_MODE_ENABLED =
-		"developer.mode.enabled";
-
-}
+<liferay-util:html-bottom outputKey="addthis">
+	<script src="<%= HttpUtil.getProtocol(request) %>://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50994fd636c849d6" type="text/javascript"></script>
+</liferay-util:html-bottom>

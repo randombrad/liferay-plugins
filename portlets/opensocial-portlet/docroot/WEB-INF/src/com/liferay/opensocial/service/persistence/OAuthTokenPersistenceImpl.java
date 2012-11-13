@@ -310,12 +310,14 @@ public class OAuthTokenPersistenceImpl extends BasePersistenceImpl<OAuthToken>
 		try {
 			session = openSession();
 
-			if (oAuthToken.isCachedModel()) {
+			if (!session.contains(oAuthToken)) {
 				oAuthToken = (OAuthToken)session.get(OAuthTokenImpl.class,
 						oAuthToken.getPrimaryKeyObj());
 			}
 
-			session.delete(oAuthToken);
+			if (oAuthToken != null) {
+				session.delete(oAuthToken);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -324,7 +326,9 @@ public class OAuthTokenPersistenceImpl extends BasePersistenceImpl<OAuthToken>
 			closeSession(session);
 		}
 
-		clearCache(oAuthToken);
+		if (oAuthToken != null) {
+			clearCache(oAuthToken);
+		}
 
 		return oAuthToken;
 	}

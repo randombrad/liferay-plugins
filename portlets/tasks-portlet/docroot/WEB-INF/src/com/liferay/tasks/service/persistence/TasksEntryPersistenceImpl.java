@@ -378,12 +378,14 @@ public class TasksEntryPersistenceImpl extends BasePersistenceImpl<TasksEntry>
 		try {
 			session = openSession();
 
-			if (tasksEntry.isCachedModel()) {
+			if (!session.contains(tasksEntry)) {
 				tasksEntry = (TasksEntry)session.get(TasksEntryImpl.class,
 						tasksEntry.getPrimaryKeyObj());
 			}
 
-			session.delete(tasksEntry);
+			if (tasksEntry != null) {
+				session.delete(tasksEntry);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -392,7 +394,9 @@ public class TasksEntryPersistenceImpl extends BasePersistenceImpl<TasksEntry>
 			closeSession(session);
 		}
 
-		clearCache(tasksEntry);
+		if (tasksEntry != null) {
+			clearCache(tasksEntry);
+		}
 
 		return tasksEntry;
 	}

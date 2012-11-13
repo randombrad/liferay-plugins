@@ -43,6 +43,8 @@ import com.liferay.portal.service.ThemeLocalServiceUtil;
 import com.liferay.portal.util.PortalUtil;
 import com.liferay.portal.util.PortletKeys;
 import com.liferay.portlet.PortletPreferencesFactoryUtil;
+import com.liferay.portlet.asset.model.AssetTag;
+import com.liferay.portlet.asset.service.AssetTagLocalServiceUtil;
 import com.liferay.portlet.documentlibrary.service.DLAppLocalServiceUtil;
 import com.liferay.portlet.documentlibrary.util.DLUtil;
 import com.liferay.portlet.journal.model.JournalArticle;
@@ -452,6 +454,8 @@ public class FileSystemImporter extends BaseImporter {
 
 		String xsl = StringUtil.read(inputStream);
 
+		xsl = replaceFileEntryURL(xsl);
+
 		setServiceContext(fileName);
 
 		JournalTemplate journalTemplate =
@@ -586,25 +590,7 @@ public class FileSystemImporter extends BaseImporter {
 	protected String processJournalArticleContent(String content)
 		throws Exception {
 
-		Matcher matcher = _fileEntryPattern.matcher(content);
-
-		while (matcher.find()) {
-			String fileName = matcher.group(1);
-
-			FileEntry fileEntry = _fileEntries.get(fileName);
-
-			String fileEntryURL = StringPool.BLANK;
-
-			if (fileEntry != null) {
-				fileEntryURL = DLUtil.getPreviewURL(
-					fileEntry, fileEntry.getFileVersion(), null,
-					StringPool.BLANK);
-			}
-
-			content = matcher.replaceFirst(fileEntryURL);
-
-			matcher.reset(content);
-		}
+		content = replaceFileEntryURL(content);
 
 		if (content.contains("<?xml version=\"1.0\"")) {
 			return content;
@@ -627,6 +613,30 @@ public class FileSystemImporter extends BaseImporter {
 		sb.append("</static-content></root>");
 
 		return sb.toString();
+	}
+
+	protected String replaceFileEntryURL(String content) throws Exception {
+		Matcher matcher = _fileEntryPattern.matcher(content);
+
+		while (matcher.find()) {
+			String fileName = matcher.group(1);
+
+			FileEntry fileEntry = _fileEntries.get(fileName);
+
+			String fileEntryURL = StringPool.BLANK;
+
+			if (fileEntry != null) {
+				fileEntryURL = DLUtil.getPreviewURL(
+					fileEntry, fileEntry.getFileVersion(), null,
+					StringPool.BLANK);
+			}
+
+			content = matcher.replaceFirst(fileEntryURL);
+
+			matcher.reset(content);
+		}
+
+		return content;
 	}
 
 	protected void setServiceContext(String name) {
@@ -653,6 +663,13 @@ public class FileSystemImporter extends BaseImporter {
 	}
 
 	protected void setupAssets(String fileName) throws Exception {
+		List<AssetTag> assetTags = AssetTagLocalServiceUtil.getGroupTags(
+			groupId);
+
+		for (AssetTag assetTag : assetTags) {
+			AssetTagLocalServiceUtil.deleteAssetTag(assetTag);
+		}
+
 		RepositoryLocalServiceUtil.deleteRepositories(groupId);
 
 		JournalArticleLocalServiceUtil.deleteArticles(groupId);

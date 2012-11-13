@@ -261,12 +261,14 @@ public class AttachmentPersistenceImpl extends BasePersistenceImpl<Attachment>
 		try {
 			session = openSession();
 
-			if (attachment.isCachedModel()) {
+			if (!session.contains(attachment)) {
 				attachment = (Attachment)session.get(AttachmentImpl.class,
 						attachment.getPrimaryKeyObj());
 			}
 
-			session.delete(attachment);
+			if (attachment != null) {
+				session.delete(attachment);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -275,7 +277,9 @@ public class AttachmentPersistenceImpl extends BasePersistenceImpl<Attachment>
 			closeSession(session);
 		}
 
-		clearCache(attachment);
+		if (attachment != null) {
+			clearCache(attachment);
+		}
 
 		return attachment;
 	}

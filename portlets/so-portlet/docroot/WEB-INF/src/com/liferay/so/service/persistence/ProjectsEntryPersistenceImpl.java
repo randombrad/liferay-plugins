@@ -264,12 +264,14 @@ public class ProjectsEntryPersistenceImpl extends BasePersistenceImpl<ProjectsEn
 		try {
 			session = openSession();
 
-			if (projectsEntry.isCachedModel()) {
+			if (!session.contains(projectsEntry)) {
 				projectsEntry = (ProjectsEntry)session.get(ProjectsEntryImpl.class,
 						projectsEntry.getPrimaryKeyObj());
 			}
 
-			session.delete(projectsEntry);
+			if (projectsEntry != null) {
+				session.delete(projectsEntry);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -278,7 +280,9 @@ public class ProjectsEntryPersistenceImpl extends BasePersistenceImpl<ProjectsEn
 			closeSession(session);
 		}
 
-		clearCache(projectsEntry);
+		if (projectsEntry != null) {
+			clearCache(projectsEntry);
+		}
 
 		return projectsEntry;
 	}

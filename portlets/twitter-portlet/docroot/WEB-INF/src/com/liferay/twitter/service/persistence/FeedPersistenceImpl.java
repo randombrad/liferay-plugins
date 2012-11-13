@@ -290,11 +290,13 @@ public class FeedPersistenceImpl extends BasePersistenceImpl<Feed>
 		try {
 			session = openSession();
 
-			if (feed.isCachedModel()) {
+			if (!session.contains(feed)) {
 				feed = (Feed)session.get(FeedImpl.class, feed.getPrimaryKeyObj());
 			}
 
-			session.delete(feed);
+			if (feed != null) {
+				session.delete(feed);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -303,7 +305,9 @@ public class FeedPersistenceImpl extends BasePersistenceImpl<Feed>
 			closeSession(session);
 		}
 
-		clearCache(feed);
+		if (feed != null) {
+			clearCache(feed);
+		}
 
 		return feed;
 	}

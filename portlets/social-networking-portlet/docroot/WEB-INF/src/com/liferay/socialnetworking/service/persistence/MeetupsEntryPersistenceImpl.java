@@ -280,12 +280,14 @@ public class MeetupsEntryPersistenceImpl extends BasePersistenceImpl<MeetupsEntr
 		try {
 			session = openSession();
 
-			if (meetupsEntry.isCachedModel()) {
+			if (!session.contains(meetupsEntry)) {
 				meetupsEntry = (MeetupsEntry)session.get(MeetupsEntryImpl.class,
 						meetupsEntry.getPrimaryKeyObj());
 			}
 
-			session.delete(meetupsEntry);
+			if (meetupsEntry != null) {
+				session.delete(meetupsEntry);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -294,7 +296,9 @@ public class MeetupsEntryPersistenceImpl extends BasePersistenceImpl<MeetupsEntr
 			closeSession(session);
 		}
 
-		clearCache(meetupsEntry);
+		if (meetupsEntry != null) {
+			clearCache(meetupsEntry);
+		}
 
 		return meetupsEntry;
 	}

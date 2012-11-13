@@ -305,6 +305,10 @@ public class CalendarPortlet extends MVCPortlet {
 		redirect = HttpUtil.setParameter(
 			redirect, actionResponse.getNamespace() + "calendarId", calendarId);
 		redirect = HttpUtil.removeParameter(
+			redirect, actionResponse.getNamespace() + "startDate");
+		redirect = HttpUtil.removeParameter(
+			redirect, actionResponse.getNamespace() + "endDate");
+		redirect = HttpUtil.removeParameter(
 			redirect, actionResponse.getNamespace() + "allDay");
 		redirect = HttpUtil.removeParameter(
 			redirect, actionResponse.getNamespace() + "repeat");
@@ -741,7 +745,7 @@ public class CalendarPortlet extends MVCPortlet {
 		ThemeDisplay themeDisplay = (ThemeDisplay)resourceRequest.getAttribute(
 			WebKeys.THEME_DISPLAY);
 
-		long calendarId = ParamUtil.getLong(resourceRequest, "calendarId");
+		long calendarId = ParamUtil.getLong(uploadPortletRequest, "calendarId");
 
 		File file = uploadPortletRequest.getFile("file");
 

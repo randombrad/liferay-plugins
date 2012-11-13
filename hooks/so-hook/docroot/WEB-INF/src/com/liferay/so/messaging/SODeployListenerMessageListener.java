@@ -18,10 +18,12 @@
 package com.liferay.so.messaging;
 
 import com.liferay.deploylistener.messaging.BaseDeployListenerMessageListener;
+import com.liferay.portal.kernel.dao.orm.ActionableDynamicQuery;
+import com.liferay.portal.kernel.exception.PortalException;
+import com.liferay.portal.kernel.exception.SystemException;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.messaging.Message;
-import com.liferay.portal.kernel.search.Indexer;
 import com.liferay.portal.kernel.util.StringPool;
 import com.liferay.portal.kernel.util.UnicodeProperties;
 import com.liferay.portal.model.Company;
@@ -34,6 +36,11 @@ import com.liferay.portal.service.GroupLocalServiceUtil;
 import com.liferay.portal.service.LayoutSetLocalServiceUtil;
 import com.liferay.portal.service.LayoutSetPrototypeLocalServiceUtil;
 import com.liferay.portal.service.RoleLocalServiceUtil;
+import com.liferay.portal.service.persistence.GroupActionableDynamicQuery;
+import com.liferay.portlet.expando.model.ExpandoColumn;
+import com.liferay.portlet.expando.model.ExpandoTableConstants;
+import com.liferay.portlet.expando.service.ExpandoColumnLocalServiceUtil;
+import com.liferay.portlet.expando.service.ExpandoValueLocalServiceUtil;
 import com.liferay.so.service.SocialOfficeServiceUtil;
 import com.liferay.so.util.InstanceUtil;
 import com.liferay.so.util.LayoutSetPrototypeUtil;
@@ -61,8 +68,9 @@ public class SODeployListenerMessageListener
 	protected void cleanUpSocialOffice(long companyId) throws Exception {
 		updateGroups(companyId);
 
-		deleteSocialOfficeLayoutSetPrototypes(companyId);
 		deleteSocialOfficeUserRole(companyId);
+
+		deleteSocialOfficeLayoutSetPrototypes(companyId);
 
 		InstanceUtil.setInitialized(companyId, false);
 	}
@@ -111,6 +119,20 @@ public class SODeployListenerMessageListener
 				_log.error(e, e);
 			}
 		}
+
+		try {
+			ExpandoColumn expandoColumn =
+				ExpandoColumnLocalServiceUtil.getColumn(
+					companyId, LayoutSetPrototype.class.getName(),
+					ExpandoTableConstants.DEFAULT_TABLE_NAME,
+					SocialOfficeConstants.LAYOUT_SET_PROTOTYPE_KEY);
+
+			ExpandoValueLocalServiceUtil.deleteColumnValues(
+				expandoColumn.getColumnId());
+		}
+		catch (Exception e) {
+			_log.error(e, e);
+		}
 	}
 
 	protected void deleteSocialOfficeUserRole(long companyId) throws Exception {
@@ -127,27 +149,26 @@ public class SODeployListenerMessageListener
 		}
 	}
 
-	protected void updateGroups(long companyId) throws Exception {
-		int count = GroupLocalServiceUtil.getCompanyGroupsCount(companyId);
+	protected void updateGroups(long companyId)
+		throws PortalException, SystemException {
 
-		int pages = count / Indexer.DEFAULT_INTERVAL;
+		ActionableDynamicQuery actionableDynamicQuery =
+			new GroupActionableDynamicQuery() {
 
-		for (int i = 0; i <= pages; i++) {
-			int start = (i * Indexer.DEFAULT_INTERVAL);
-			int end = start + Indexer.DEFAULT_INTERVAL;
+			@Override
+			protected void performAction(Object object)
+				throws PortalException, SystemException {
 
-			List<Group> groups = GroupLocalServiceUtil.getCompanyGroups(
-				companyId, start, end);
+				Group group = (Group)object;
 
-			for (Group group : groups) {
 				if (!group.isRegularSite()) {
-					continue;
+					return;
 				}
 
 				if (!SocialOfficeServiceUtil.isSocialOfficeGroup(
 						group.getGroupId())) {
 
-					continue;
+					return;
 				}
 
 				if (group.hasPrivateLayouts()) {
@@ -157,12 +178,25 @@ public class SODeployListenerMessageListener
 				if (group.hasPublicLayouts()) {
 					updateLayoutSetPrototype(group.getGroupId(), false);
 				}
+
+				UnicodeProperties typeSettingsProperties =
+					group.getTypeSettingsProperties();
+
+				typeSettingsProperties.remove("customJspServletContextName");
+
+				GroupLocalServiceUtil.updateGroup(
+					group.getGroupId(), typeSettingsProperties.toString());
 			}
-		}
+
+		};
+
+		actionableDynamicQuery.setCompanyId(companyId);
+
+		actionableDynamicQuery.performActions();
 	}
 
 	protected void updateLayoutSetPrototype(long groupId, boolean privateLayout)
-		throws Exception {
+		throws PortalException, SystemException {
 
 		LayoutSet layoutSet = LayoutSetLocalServiceUtil.getLayoutSet(
 			groupId, privateLayout);

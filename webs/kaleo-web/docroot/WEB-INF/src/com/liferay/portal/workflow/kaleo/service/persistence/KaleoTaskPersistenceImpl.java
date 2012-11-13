@@ -301,12 +301,14 @@ public class KaleoTaskPersistenceImpl extends BasePersistenceImpl<KaleoTask>
 		try {
 			session = openSession();
 
-			if (kaleoTask.isCachedModel()) {
+			if (!session.contains(kaleoTask)) {
 				kaleoTask = (KaleoTask)session.get(KaleoTaskImpl.class,
 						kaleoTask.getPrimaryKeyObj());
 			}
 
-			session.delete(kaleoTask);
+			if (kaleoTask != null) {
+				session.delete(kaleoTask);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -315,7 +317,9 @@ public class KaleoTaskPersistenceImpl extends BasePersistenceImpl<KaleoTask>
 			closeSession(session);
 		}
 
-		clearCache(kaleoTask);
+		if (kaleoTask != null) {
+			clearCache(kaleoTask);
+		}
 
 		return kaleoTask;
 	}

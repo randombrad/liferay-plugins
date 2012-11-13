@@ -238,12 +238,14 @@ public class CheckoutPersistenceImpl extends BasePersistenceImpl<Checkout>
 		try {
 			session = openSession();
 
-			if (checkout.isCachedModel()) {
+			if (!session.contains(checkout)) {
 				checkout = (Checkout)session.get(CheckoutImpl.class,
 						checkout.getPrimaryKeyObj());
 			}
 
-			session.delete(checkout);
+			if (checkout != null) {
+				session.delete(checkout);
+			}
 		}
 		catch (Exception e) {
 			throw processException(e);
@@ -252,7 +254,9 @@ public class CheckoutPersistenceImpl extends BasePersistenceImpl<Checkout>
 			closeSession(session);
 		}
 
-		clearCache(checkout);
+		if (checkout != null) {
+			clearCache(checkout);
+		}
 
 		return checkout;
 	}
