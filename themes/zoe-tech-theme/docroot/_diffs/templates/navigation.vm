@@ -1,0 +1,54 @@
+<nav class="$nav_css_class" id="navigation">
+	<h1>
+		<span>#language ("navigation")</span>
+	</h1>
+
+	<ul>
+		#foreach ($nav_item in $nav_items)
+			#if ($nav_item.isSelected())
+				<li aria-selected="true" class="selected">
+			#else
+				<li>
+			#end
+				<a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $nav_item.getName()</span></a>
+
+				#if ($nav_item.hasChildren())
+					<ul class="child-menu">
+						#foreach ($nav_child in $nav_item.getChildren())
+							#if ($nav_child.isSelected())
+								<li aria-selected="true" class="selected">
+							#else
+								<li>
+							#end
+								<a href="$nav_child.getURL()" $nav_child.getTarget()>$nav_child.getName()</a>
+							</li>
+						#end
+					</ul>
+				#end
+			</li>
+		#end
+
+		#if ($is_mobile)
+			<div id="mobile-buttons">
+				#if ($is_signed_in)
+					#set ($sign_in_button = "$sign_out_url")
+					#set ($sign_in_text = "Sign Out")
+					<div id="my-account-button"><a href="$my_account_url"><span><img src="/html/icons/my_account.png"/>My Account</span></a></div>
+				#else
+					#set ($sign_in_button = "$sign_in_url")
+					#set ($sign_in_text = "Sign In")
+				#end
+
+				<div id="mobile-sign-out">
+					<a href="$sign_in_button">
+						<span><img src="${images_folder}/common/user_icon.png"/>$sign_in_text</span>
+					</a>
+				</div>
+
+				<div class="desktop-link">
+						<span><img src="${images_folder}/common/desktop.png"/>Go To Desktop View</span>
+				</div>
+			</div>
+		#end
+	</ul>
+</nav>

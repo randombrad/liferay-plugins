@@ -35,14 +35,6 @@ $theme.include($body_top_include)
 						$site_name
 					</span>
 				#end
-
-				#if (!$is_signed_in)
-					<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
-				#end
-
-				<div id="page-search">
-					$theme.journalContentSearch()
-				</div>
 			</h1>
 
 			<h2 class="page-title">
@@ -50,9 +42,8 @@ $theme.include($body_top_include)
 			</h2>
 		</div>
 
-		#if ($is_mobile)
-			<div class="scroll-arrow" id="scroll-left"></div>
-			<div class="scroll-arrow" id="scroll-right"></div>
+		#if (!$is_signed_in)
+			<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
 		#end
 
 		#if ($has_navigation || $is_signed_in)
@@ -61,15 +52,13 @@ $theme.include($body_top_include)
 	</header>
 
 	<div id="content">
-		#if ($show_breadcrumbs)
-			<nav class="site-breadcrumbs" id="breadcrumbs">
-				<h1>
-					<span>#language ("breadcrumbs")</span>
-				</h1>
+		<nav class="site-breadcrumbs" id="breadcrumbs">
+			<h1>
+				<span>#language ("breadcrumbs")</span>
+			</h1>
 
-				#breadcrumbs()
-			</nav>
-		#end
+			#breadcrumbs()
+		</nav>
 
 		#if ($selectable)
 			$theme.include($content_include)
@@ -81,7 +70,12 @@ $theme.include($body_top_include)
 			$theme.wrapPortlet("portlet.vm", $content_include)
 		#end
 	</div>
-	#parse ("$full_templates_path/footer.vm")
+
+	<footer id="footer" role="contentinfo">
+		<p class="powered-by">
+			#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+		</p>
+	</footer>
 </div>
 
 $theme.include($body_bottom_include)
