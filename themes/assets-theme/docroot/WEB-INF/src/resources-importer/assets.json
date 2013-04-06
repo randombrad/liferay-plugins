@@ -1,0 +1,15 @@
+{
+	"assets": [
+		{
+			"name": "test.html",
+			"tags": [
+				"sample",
+				"title"
+			]
+		},
+		{
+			"name": "Abstract Summary Example.xml",
+			"AbstractSummary": "this is the abstract summary of the web content"
+		}
+	]
+}

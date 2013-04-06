@@ -1,0 +1,18 @@
+{
+	"layouts": [
+		{
+			"columns": [
+				[
+					"test.html"
+				],
+				[
+					"Abstract Summary Example.xml"
+				]
+			],
+			"friendlyURL": "/home",
+			"name": "Welcome",
+			"title": "Welcome"
+		}
+	],
+	"layoutTemplateId": "2_columns_ii"
+}
