@@ -15,7 +15,17 @@
 				#if ($nav_item.hasChildren())
 					<ul class="child-menu">
 						#foreach ($nav_child in $nav_item.getChildren())
+							## Original Code
+
+							#if ($nav_child.isSelected())
+								<li class="selected">
+							#else
+								<li>
+							#end
+
+
 							## Add Has Child Class
+							#**
 							#set ($nav_child_class = "")
 
 							#if ($nav_child.isSelected())
@@ -31,10 +41,11 @@
 							#else
 								<li>
 							#end
+							**#
 								<a href="$nav_child.getURL()" $nav_child.getTarget()>$nav_child.getName()</a>
 
 								## Add Grand Child Menu
-
+								#**
 								#if ($nav_child.hasChildren())
 									<ul class="grandchild-menu">
 										#foreach ($nav_grandchild in $nav_child.getChildren())
@@ -47,6 +58,7 @@
 										#end
 									</ul>
 								#end
+								**#
 							</li>
 						#end
 					</ul>
