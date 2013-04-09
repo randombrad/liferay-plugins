@@ -1,2 +1,6 @@
-$content.data
-$reserved-article-description.data
+<h3>Content</h3>
+<p>$content.data</p>
+<h3>Abstract Summary</h3>
+<p>$reserved-article-description.data</p>
+<h3>Small Image</h3>
+<img src="$reserved-article-small-image-url.data" />

@@ -9,7 +9,15 @@
 		},
 		{
 			"name": "Abstract Summary Example.xml",
-			"AbstractSummary": "this is the abstract summary of the web content"
-		}
+			"abstractSummary": "this is the abstract summary of the web content",
+			"smallImage": "Small Image.jpg"
+		},
+		{
+			"name": "Small Image.jpg",
+			"tags": [
+				"image",
+				"special image"
+			]
+		},
 	]
 }

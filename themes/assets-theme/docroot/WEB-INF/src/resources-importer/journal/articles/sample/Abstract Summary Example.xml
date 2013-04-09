@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 
-<root available-locales="en_US" default-locale="en_US">
+<root available-locales="en_US">
 	<dynamic-element instance-id="xC9fuFqE" name="content" type="text_area" index-type="">
-		<dynamic-content><![CDATA[<h1>Abstract Summary Example</h1>
-<p>This is the Content from the web content</p>
+		<dynamic-content><![CDATA[
+		<p>This is the Content from the web content</p>
 ]]></dynamic-content>
 	</dynamic-element>
 </root>
