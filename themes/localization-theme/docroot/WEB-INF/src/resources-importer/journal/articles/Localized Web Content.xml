@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US,es_ES,de_DE">
+	<static-content language-id="es_ES"><![CDATA[<a class="ad" href="">
+	<span>
+		<h2>Haga clic aquí para ver un anuncio</h2>
+		<h4>Realmente quiere que su negocio!</h4>
+		<span class="aui-button-input">Más información</span>
+	</span>
+</a>]]></static-content>
+	<static-content language-id="en_US"><![CDATA[<a class="ad" href="">
+	<span>
+		<h2>Click here to view an Ad</h2>
+		<h4>We really want your business!</h4>
+		<span class="aui-button-input">Learn More</span>
+	</span>
+</a>]]></static-content>
+	<static-content language-id="de_DE"><![CDATA[<a class="ad" href="">
+	<span>
+		<h2>Klicken Sie hier, um eine Ad anzeigen</h2>
+		<h4>Wir wollen wirklich für Ihr Unternehmen!</h4>
+		<span class="aui-button-input">Erfahren Sie mehr</span>
+	</span>
+</a>]]></static-content>
+</root>

@@ -1,0 +1,19 @@
+{
+	"layouts": [
+		{
+			"columns": [
+				[
+					"test.html",
+					"Localized Web Content.xml"
+				],
+				[
+
+				]
+			],
+			"friendlyURL": "/home",
+			"name": "Welcome",
+			"title": "Welcome"
+		}
+	],
+	"layoutTemplateId": "2_columns_ii"
+}
