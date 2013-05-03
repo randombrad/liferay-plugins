@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element name="autoplay" type="boolean" index-type="">
+		<dynamic-content><![CDATA[]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="loop" type="boolean" index-type="">
+		<dynamic-content><![CDATA[true]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="item-width" type="text" index-type="">
+		<dynamic-content><![CDATA[210]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="item-margin" type="text" index-type="">
+		<dynamic-content><![CDATA[5]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="min-items" type="text" index-type="">
+		<dynamic-content><![CDATA[2]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="max-items" type="text" index-type="">
+		<dynamic-content><![CDATA[3]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="items" type="document_library" index-type="">
+		<dynamic-element name="small" type="boolean" index-type="">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="link-url" type="text" index-type="">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=show_1.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="items" type="document_library" index-type="">
+		<dynamic-element name="small" type="boolean" index-type="">
+			<dynamic-content><![CDATA[true]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="link-url" type="text" index-type="">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=show_2.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="items" type="document_library" index-type="">
+		<dynamic-element name="small" type="boolean" index-type="">
+			<dynamic-content><![CDATA[true]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="link-url" type="text" index-type="">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=show_3.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="items" type="document_library" index-type="">
+		<dynamic-element name="small" type="boolean" index-type="">
+			<dynamic-content><![CDATA[true]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="link-url" type="text" index-type="">
+			<dynamic-content><![CDATA[//liferay.com]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=show_4.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="items" type="document_library" index-type="">
+		<dynamic-element name="small" type="boolean" index-type="">
+			<dynamic-content><![CDATA[true]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="link-url" type="text" index-type="">
+			<dynamic-content><![CDATA[//randombrad.com]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=show_5.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="items" type="document_library" index-type="">
+		<dynamic-element name="small" type="boolean" index-type="">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="link-url" type="text" index-type="">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=show_6.jpg$]]]></dynamic-content>
+	</dynamic-element>
+</root>

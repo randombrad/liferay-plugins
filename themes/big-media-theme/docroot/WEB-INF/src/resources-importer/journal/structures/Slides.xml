@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<root>
+	<dynamic-element name="autoplay" type="boolean" index-type="" repeatable="false"/>
+	<dynamic-element name="loop" type="boolean" index-type="" repeatable="false"/>
+	<dynamic-element name="item-width" type="text" index-type="" repeatable="false"/>
+	<dynamic-element name="item-margin" type="text" index-type="" repeatable="false"/>
+	<dynamic-element name="min-items" type="text" index-type="" repeatable="false"/>
+	<dynamic-element name="max-items" type="text" index-type="" repeatable="false"/>
+	<dynamic-element name="items" type="document_library" index-type="" repeatable="true">
+		<dynamic-element name="small" type="boolean" index-type="" repeatable="false"></dynamic-element>
+		<dynamic-element name="link-url" type="text" index-type="" repeatable="false"/>
+	</dynamic-element>
+</root>

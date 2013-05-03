@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<root available-locales="en_US">
+	<dynamic-element name="autoplay" type="boolean" index-type="">
+		<dynamic-content><![CDATA[true]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="loop" type="boolean" index-type="">
+		<dynamic-content><![CDATA[true]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="images" type="document_library" index-type="">
+		<dynamic-element name="link-url" type="text" index-type="">
+			<dynamic-content><![CDATA[//liferay.com]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=main_1.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="images" type="document_library" index-type="">
+		<dynamic-element name="link-url" type="text" index-type="">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=main_2.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="images" type="document_library" index-type="">
+		<dynamic-element name="link-url" type="text" index-type="">
+			<dynamic-content><![CDATA[]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content><![CDATA[[$FILE=main_3.jpg$]]]></dynamic-content>
+	</dynamic-element>
+</root>

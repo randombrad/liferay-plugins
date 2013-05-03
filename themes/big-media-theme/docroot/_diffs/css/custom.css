@@ -1,0 +1,140 @@
+@import "compass";
+
+/* -------- Global -------- */
+
+#breadcrumbs, #heading .page-title, #navigation h1, #skip-to-content {
+	clip: rect(0 0 0 0);
+	position: absolute;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+	background-color: #fff;
+	text-rendering: optimizeLegibility;
+}
+
+.clear {
+	clear: both;
+}
+
+#banner {
+	background: url(../images/custom/header.png) repeat-x;
+	display: block;
+	height: 190px;
+	max-width: 1616px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+}
+
+#banner.changed {
+	background: rgba(0, 0, 0, 0.7);
+	height: 80px;
+	position: fixed;
+	top: 0;
+}
+
+#navigation a#sign-in {
+	float: right;
+}
+
+#main-content.columns-max {
+	padding: 200px 20px 10px;
+}
+
+body.lfr-dockbar-ready.lfr-dockbar-pinned {
+	position: absolute;
+	padding-top: 3.45em;
+}
+
+#heading {
+	float: left;
+}
+
+.site-title {
+	margin: 0;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	font: 12px/1.25em;
+}
+
+#wrapper {
+	max-width: 1616px;
+	margin: 0 auto;
+	position: relative;
+	@include box-shadow(1px 1px 5px rgba(0,0,0, 0.5));
+}
+
+#navigation {
+
+	ul {
+		display: block;
+		list-style: none;
+	}
+
+	a {
+		float: left;
+		font-size: 1.5em;
+		color: #FFF;
+		text-decoration: none;
+		padding: 20px;
+
+		&:visted, &:link {
+			color: #FFF;
+		}
+	}
+}
+
+.portlet-layout {
+	display: inherit;
+	width: auto;
+}
+
+.portlet-column {
+	display: block;
+}
+
+.columns-1 #layout-column_column-1 {
+	padding-top: 0;
+}
+
+.flexslider .slides img.half {
+	float: left;
+	width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+	#banner, #banner.changed {
+		background: #000;
+		display: inline-block;
+		height: auto;
+		position: relative;
+	}
+
+	#heading {
+		float: none;
+	}
+
+	.site-title {
+		margin: 0 auto;
+	}
+
+	#navigation ul {
+		width: 100%;
+	}
+
+	#navigation li a {
+		display: block;
+		text-align: center;
+		padding: 5px 0;
+		width: 100%;
+	}
+}

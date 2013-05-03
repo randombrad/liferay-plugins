@@ -1,0 +1,71 @@
+<div id="showSlide" class="flexslider carousel-${reserved-article-id.data} no-border">
+  <ul class="slides">
+    #set ($halfCount = 0)
+    #foreach ($item in $items.getSiblings())
+      #if($item.small.data == '')
+        <li>
+          #if ($item.link-url.data != "")
+            <a href="$item.link-url.data">
+          #end
+            <img src="$item.data" />
+          #if ($item.link-url.data != "")
+            </a>
+          #end
+        </li>
+      #else
+        #if ($halfCount == 0)
+          <li class="half">
+        #end
+
+        #if ($item.link-url.data != "")
+          <a href="$item.link-url.data">
+        #end
+            <img class="half" src="$item.data" />
+        #if ($item.link-url.data != "")
+          </a>
+        #end
+
+        #set ($halfCount = $halfCount + 1)
+
+        #if ($halfCount == 4)
+          </li>
+          #set ($halfCount = 0)
+        #end
+      #end
+    #end
+  </ul>
+</div>
+
+<div class="clear"></div>
+<script>
+$(window).load(function() {
+  $('.flexslider.carousel-${reserved-article-id.data}').flexslider({
+    animation: "slide",
+    #if($loop.data == "")
+      animationLoop: false,
+    #else
+      animationLoop: true,
+    #end
+
+    #if ($item-width.data != "")
+      itemWidth: $item-width.data,
+    #end
+
+    #if ($item-margin.data != "")
+      itemMargin: $item-margin.data,
+    #end
+
+    #if ($min-items.data != "")
+      minItems: $min-items.data,
+    #end
+
+    #if ($max-items.data != "")
+      maxItems: $max-items.data
+    #end
+  });
+
+  #if ($autoplay.data == "")
+    $('.flexslider.carousel-${reserved-article-id.data}').flexslider("pause");
+  #end
+});
+</script>

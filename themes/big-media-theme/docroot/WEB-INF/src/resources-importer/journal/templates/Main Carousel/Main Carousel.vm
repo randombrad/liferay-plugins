@@ -1,0 +1,58 @@
+<div id="main-carousel" class="flexslider carousel-${reserved-article-id.data} no-border">
+  <ul class="slides">
+    #foreach ($image in $images.getSiblings())
+    <li>
+      #if ($image.link-url.data != "")
+       <a href="$image.link-url.data" >
+      #end
+        <img src="$image.data" />
+      #if ($image.link-url.data != "")
+       </a>
+      #end
+    </li>
+    #end
+  </ul>
+</div>
+<div class="clear"></div>
+<script>
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider.carousel-${reserved-article-id.data}').flexslider({
+    animation: "slide",
+    #if ($loop.data != "")
+      animationLoop: true,
+    #else
+      animationLoop: false,
+    #end
+    start: function(slider){
+      $('body').removeClass('loading');
+
+      if ($(window).width() > 480){
+      	$(window).scroll(function () {
+      	//Handel Dockbar Banner Positioning
+      	if ($('body').hasClass('dockbar-ready') && window.scrollY < 30){
+      		$('#banner').css('position', 'absolute');
+      	}else {
+      		$('#banner').css('position', 'fixed');
+      	}
+
+      	//Handel Banner Class when scrolling past the main carousel
+      	if (window.scrollY >= $('#main-carousel .slides li').height() - $('#banner').height()){
+      		$('#banner').addClass('changed');
+      		console.log(window.scrollY);
+      	}
+
+      	if (window.scrollY < $('#main-carousel .slides li').height() - $('#banner').height()){
+      		$('#banner').removeClass('changed');
+      	}
+      });
+      }
+    #if ($autoplay.data == "")
+      $('.flexslider.carousel-${reserved-article-id.data}').flexslider("pause");
+    #end
+    }
+    
+  });
+});
+
+</script>

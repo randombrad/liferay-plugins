@@ -1,0 +1,28 @@
+{
+	"layouts": [
+		{
+			"columns": [
+				[
+					"Main Carousel.xml",
+					"Content.html",
+					"Shows.xml"
+				]
+			],
+			"friendlyURL": "/home",
+			"name": "Welcome",
+			"title": "Welcome"
+		},
+		{
+			"columns": [
+				[
+					"Main Carousel.xml",
+					"Shows.xml"
+				]
+			],
+			"friendlyURL": "/about-us",
+			"name": "About Us",
+			"title": "About Us"
+		}
+	],
+	"layoutTemplateId": "1_column"
+}
