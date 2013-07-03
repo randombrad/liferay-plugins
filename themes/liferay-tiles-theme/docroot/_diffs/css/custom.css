@@ -1,0 +1,164 @@
+@import "compass";s
+
+
+/* ---------- Hidden Accessible ---------- */
+
+#banner h2, #banner h3, .site-breadcrumbs h1, #skip-to-content, #navigation h1, .page-title, #breadcrumbs {
+	clip: rect(0 0 0 0);
+	position: absolute;
+}
+
+/* ---------- Main navigation ---------- */
+
+#navigation {
+	.add-page-editor {
+		input {
+			margin-top: 0;
+		}
+	}
+
+	.brand {
+		padding: 0;
+		padding-right: 20px;
+		margin-left: 0;
+
+		img {
+			height: 40px;
+			width: auto;
+		}
+	}
+
+	.nav {
+		li {
+			&.dropdown {
+				> .dropdown-toggle {
+					.caret {
+						border-bottom-color: #FFF;
+						border-top-color: #FFF;
+					}
+				}
+			}
+
+			&.open {
+				> a {
+					color: #FFF;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			background: #00ACFF;
+			border-width: 0;
+			margin: 0;
+
+			&:after, &:before {
+				border-width: 0;
+			}
+
+			a {
+				color: #FFF;
+
+				&:hover {
+					background: none;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.navbar-inner {
+		background: #555;
+		border-width: 0;
+
+		li a {
+			color: #FFF;
+		}
+	}
+}
+
+.modify-pages .delete-tab {
+	background: #555;
+	border: 2px solid #FFF;
+	color: #FFF;
+	font-size: 16px;
+	padding: 4px;
+	right: -10px;
+	top: 0;
+	z-index: 300;
+}
+
+/* ---------- Titles ---------- */
+
+.separator {
+	display: none;
+}
+
+.tile .tile-icon-large {
+	margin-top: 20px;
+	margin-left: 0px;
+	display: table-cell;
+	vertical-align: middle !important;
+	text-align: center;
+	width: 150px;
+	padding-top: 20px;
+
+}
+
+.tile .tile-icon-large img {
+	height: 96px;
+	width: 96px;
+}
+
+.tile {
+	display: block;
+	background-color: #2d89f0;
+	width: 150px;
+	height: 150px;
+	color: #fff;
+	margin-left: 0;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.tile.tile-double {
+	width: 310px;
+}
+
+.tile-double-vertical {
+	height: 310px;
+}
+
+.portlet-asset-publisher .asset-full-content .asset-content {
+	margin: 0;
+}
+
+.bg-color-red {
+	background-color: #c3325f !important;
+}
+
+.bg-color-blue {
+	background-color: darkblue !important;
+}
+
+.portlet-asset-publisher {
+	float: left;
+	margin-right: 10px;
+}
+
+.portlet-column {
+	margin-right: 100px !important;
+	width: 750px !important;
+}
+
+@media (min-width: 1200px) {
+	.aui .row-fluid {
+		width: 5000px;
+	}
+}
+
+.portlet-column.portlet-column-last {
+	margin-right: 0;
+}
